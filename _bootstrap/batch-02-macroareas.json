@@ -1,0 +1,719 @@
+[
+ {
+  "key": "EPIC-A00",
+  "title": "[EPIC MACROÁREA] A00 — Governança, Estratégia e Gestão",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A00"
+  ],
+  "body": "Epic de macroárea `A00` — Governança, Estratégia e Gestão.\n\nDomínios: `D0` Pmbook Governança e Operação, `D01` Gestão Empresarial, `D02` Jurídico, Riscos e Conformidade, `D03` Finanças, `D18` Contratos e Esquemas (alias: Contratos e Schemas)\nPasta: `governanca/A00-governanca-estrategia-e-gestao/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D01-DOC-DDE-001",
+  "title": "[DOC] D01-DOC-DDE-001 — Documento de Direção Empresarial",
+  "labels": [
+   "type:document",
+   "area:A00",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D01-DOC-DDE-001`\n- **macroárea / domínio:** `A00` / `D01` Gestão Empresarial\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A00-governanca-estrategia-e-gestao/D01-gestao-empresarial/D01-DOC-DDE-001-documento-de-direcao-empresarial.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A00"
+ },
+ {
+  "key": "D01-DOC-TAP-001",
+  "title": "[DOC] D01-DOC-TAP-001 — Termo de Abertura do Ecossistema",
+  "labels": [
+   "type:document",
+   "area:A00",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D01-DOC-TAP-001`\n- **macroárea / domínio:** `A00` / `D01` Gestão Empresarial\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A00-governanca-estrategia-e-gestao/D01-gestao-empresarial/D01-DOC-TAP-001-termo-de-abertura-do-ecossistema.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A00"
+ },
+ {
+  "key": "D01-DOC-MNE-001",
+  "title": "[DOC] D01-DOC-MNE-001 — Modelo de Negócio do Ecossistema",
+  "labels": [
+   "type:document",
+   "area:A00",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D01-DOC-MNE-001`\n- **macroárea / domínio:** `A00` / `D01` Gestão Empresarial\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A00-governanca-estrategia-e-gestao/D01-gestao-empresarial/D01-DOC-MNE-001-modelo-de-negocio-do-ecossistema.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A00"
+ },
+ {
+  "key": "D01-DOC-MRE-001",
+  "title": "[DOC] D01-DOC-MRE-001 — Mapa de Relações do Ecossistema",
+  "labels": [
+   "type:document",
+   "area:A00",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D01-DOC-MRE-001`\n- **macroárea / domínio:** `A00` / `D01` Gestão Empresarial\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A00-governanca-estrategia-e-gestao/D01-gestao-empresarial/D01-DOC-MRE-001-mapa-de-relacoes-do-ecossistema.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A00"
+ },
+ {
+  "key": "D02-DOC-DGRC-001",
+  "title": "[DOC] D02-DOC-DGRC-001 — Documento de Governança, Riscos e Conformidade",
+  "labels": [
+   "type:document",
+   "area:A00",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D02-DOC-DGRC-001`\n- **macroárea / domínio:** `A00` / `D02` Jurídico, Riscos e Conformidade\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A00-governanca-estrategia-e-gestao/D02-juridico-riscos-e-conformidade/D02-DOC-DGRC-001-documento-de-governanca-riscos-e-conformidade.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A00"
+ },
+ {
+  "key": "D02-DOC-MRC-001",
+  "title": "[DOC] D02-DOC-MRC-001 — Matriz de Riscos e Controles",
+  "labels": [
+   "type:document",
+   "area:A00",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D02-DOC-MRC-001`\n- **macroárea / domínio:** `A00` / `D02` Jurídico, Riscos e Conformidade\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A00-governanca-estrategia-e-gestao/D02-juridico-riscos-e-conformidade/D02-DOC-MRC-001-matriz-de-riscos-e-controles.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A00"
+ },
+ {
+  "key": "D02-DOC-PPT-001",
+  "title": "[DOC] D02-DOC-PPT-001 — Política de Privacidade e Termos",
+  "labels": [
+   "type:document",
+   "area:A00",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D02-DOC-PPT-001`\n- **macroárea / domínio:** `A00` / `D02` Jurídico, Riscos e Conformidade\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A00-governanca-estrategia-e-gestao/D02-juridico-riscos-e-conformidade/D02-DOC-PPT-001-politica-de-privacidade-e-termos.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A00"
+ },
+ {
+  "key": "D03-DOC-PFO-001",
+  "title": "[DOC] D03-DOC-PFO-001 — Plano Financeiro e Orçamentário",
+  "labels": [
+   "type:document",
+   "area:A00",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D03-DOC-PFO-001`\n- **macroárea / domínio:** `A00` / `D03` Finanças\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A00-governanca-estrategia-e-gestao/D03-financas/D03-DOC-PFO-001-plano-financeiro-e-orcamentario.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A00"
+ },
+ {
+  "key": "D03-DOC-MFO-001",
+  "title": "[DOC] D03-DOC-MFO-001 — Modelo Financeiro do Ecossistema",
+  "labels": [
+   "type:document",
+   "area:A00",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D03-DOC-MFO-001`\n- **macroárea / domínio:** `A00` / `D03` Finanças\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A00-governanca-estrategia-e-gestao/D03-financas/D03-DOC-MFO-001-modelo-financeiro-do-ecossistema.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A00"
+ },
+ {
+  "key": "D18-DOC-PCE-001",
+  "title": "[DOC] D18-DOC-PCE-001 — Plano de Contratos e Esquemas",
+  "labels": [
+   "type:document",
+   "area:A00",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D18-DOC-PCE-001`\n- **macroárea / domínio:** `A00` / `D18` Contratos e Esquemas (alias: Contratos e Schemas)\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A00-governanca-estrategia-e-gestao/D18-contratos-e-esquemas-alias-contratos-e-schemas/D18-DOC-PCE-001-plano-de-contratos-e-esquemas.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A00"
+ },
+ {
+  "key": "A00-FINAL-001",
+  "title": "[DOSSIÊ] A00-FINAL-001 — Documento final A00",
+  "labels": [
+   "type:final-dossier",
+   "area:A00",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A00` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A00"
+ },
+ {
+  "key": "EPIC-A01",
+  "title": "[EPIC MACROÁREA] A01 — Negócio e Go-to-Market",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A01"
+  ],
+  "body": "Epic de macroárea `A01` — Negócio e Go-to-Market.\n\nDomínios: `D13` Mercado e Geração de Demanda, `D14` Vendas, `D15` Atendimento e Sucesso do Cliente\nPasta: `governanca/A01-negocio-e-go-to-market/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D13-DOC-DRM-001",
+  "title": "[DOC] D13-DOC-DRM-001 — Documento de Requisitos de Mercado",
+  "labels": [
+   "type:document",
+   "area:A01",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D13-DOC-DRM-001`\n- **macroárea / domínio:** `A01` / `D13` Mercado e Geração de Demanda\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A01-negocio-e-go-to-market/D13-mercado-e-geracao-de-demanda/D13-DOC-DRM-001-documento-de-requisitos-de-mercado.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A01"
+ },
+ {
+  "key": "D13-DOC-GTM-001",
+  "title": "[DOC] D13-DOC-GTM-001 — Plano de Entrada no Mercado e Lançamento",
+  "labels": [
+   "type:document",
+   "area:A01",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D13-DOC-GTM-001`\n- **macroárea / domínio:** `A01` / `D13` Mercado e Geração de Demanda\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A01-negocio-e-go-to-market/D13-mercado-e-geracao-de-demanda/D13-DOC-GTM-001-plano-de-entrada-no-mercado-e-lancamento.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A01"
+ },
+ {
+  "key": "D14-DOC-PCV-001",
+  "title": "[DOC] D14-DOC-PCV-001 — Plano Comercial e de Vendas",
+  "labels": [
+   "type:document",
+   "area:A01",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D14-DOC-PCV-001`\n- **macroárea / domínio:** `A01` / `D14` Vendas\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A01-negocio-e-go-to-market/D14-vendas/D14-DOC-PCV-001-plano-comercial-e-de-vendas.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A01"
+ },
+ {
+  "key": "D15-DOC-PASC-001",
+  "title": "[DOC] D15-DOC-PASC-001 — Plano de Atendimento e Sucesso do Cliente",
+  "labels": [
+   "type:document",
+   "area:A01",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D15-DOC-PASC-001`\n- **macroárea / domínio:** `A01` / `D15` Atendimento e Sucesso do Cliente\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A01-negocio-e-go-to-market/D15-atendimento-e-sucesso-do-cliente/D15-DOC-PASC-001-plano-de-atendimento-e-sucesso-do-cliente.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A01"
+ },
+ {
+  "key": "A01-FINAL-001",
+  "title": "[DOSSIÊ] A01-FINAL-001 — Documento final A01",
+  "labels": [
+   "type:final-dossier",
+   "area:A01",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A01` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A01"
+ },
+ {
+  "key": "EPIC-A02",
+  "title": "[EPIC MACROÁREA] A02 — Produto e Experiência",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A02"
+  ],
+  "body": "Epic de macroárea `A02` — Produto e Experiência.\n\nDomínios: `D10` Gestão de Produto, `D11` Experiência e Projeto\nPasta: `governanca/A02-produto-e-experiencia/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D10-DOC-DRP-001",
+  "title": "[DOC] D10-DOC-DRP-001 — Documento de Requisitos de Produto",
+  "labels": [
+   "type:document",
+   "area:A02",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D10-DOC-DRP-001`\n- **macroárea / domínio:** `A02` / `D10` Gestão de Produto\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A02-produto-e-experiencia/D10-gestao-de-produto/D10-DOC-DRP-001-documento-de-requisitos-de-produto.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A02"
+ },
+ {
+  "key": "D10-DOC-PRD-001",
+  "title": "[DOC] D10-DOC-PRD-001 — Requisitos Integrados dos Produtos",
+  "labels": [
+   "type:document",
+   "area:A02",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D10-DOC-PRD-001`\n- **macroárea / domínio:** `A02` / `D10` Gestão de Produto\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A02-produto-e-experiencia/D10-gestao-de-produto/D10-DOC-PRD-001-requisitos-integrados-dos-produtos.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A02"
+ },
+ {
+  "key": "D11-DOC-EEP-001",
+  "title": "[DOC] D11-DOC-EEP-001 — Especificação de Experiência e Projeto",
+  "labels": [
+   "type:document",
+   "area:A02",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D11-DOC-EEP-001`\n- **macroárea / domínio:** `A02` / `D11` Experiência e Projeto\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A02-produto-e-experiencia/D11-experiencia-e-projeto/D11-DOC-EEP-001-especificacao-de-experiencia-e-projeto.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A02"
+ },
+ {
+  "key": "D11-DOC-DSI-001",
+  "title": "[DOC] D11-DOC-DSI-001 — Sistema de Design e Interface",
+  "labels": [
+   "type:document",
+   "area:A02",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D11-DOC-DSI-001`\n- **macroárea / domínio:** `A02` / `D11` Experiência e Projeto\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A02-produto-e-experiencia/D11-experiencia-e-projeto/D11-DOC-DSI-001-sistema-de-design-e-interface.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A02"
+ },
+ {
+  "key": "A02-FINAL-001",
+  "title": "[DOSSIÊ] A02-FINAL-001 — Documento final A02",
+  "labels": [
+   "type:final-dossier",
+   "area:A02",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A02` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A02"
+ },
+ {
+  "key": "EPIC-A03",
+  "title": "[EPIC MACROÁREA] A03 — Handoff Produto → Engenharia",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A03"
+  ],
+  "body": "Epic de macroárea `A03` — Handoff Produto → Engenharia.\n\nDomínios: **nenhum** (macroárea sem domínios na planilha)\nPasta: `governanca/A03-handoff-produto-engenharia/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "A03-FINAL-001",
+  "title": "[DOSSIÊ] A03-FINAL-001 — Documento final A03",
+  "labels": [
+   "type:final-dossier",
+   "area:A03",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A03` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A03"
+ },
+ {
+  "key": "EPIC-A04",
+  "title": "[EPIC MACROÁREA] A04 — Arquitetura, Engenharia e Implementação",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A04"
+  ],
+  "body": "Epic de macroárea `A04` — Arquitetura, Engenharia e Implementação.\n\nDomínios: `D12` Engenharia\nPasta: `governanca/A04-arquitetura-engenharia-e-implementacao/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D12-DOC-ETE-001",
+  "title": "[DOC] D12-DOC-ETE-001 — Especificação Técnica de Engenharia",
+  "labels": [
+   "type:document",
+   "area:A04",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D12-DOC-ETE-001`\n- **macroárea / domínio:** `A04` / `D12` Engenharia\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A04-arquitetura-engenharia-e-implementacao/D12-engenharia/D12-DOC-ETE-001-especificacao-tecnica-de-engenharia.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A04"
+ },
+ {
+  "key": "A04-FINAL-001",
+  "title": "[DOSSIÊ] A04-FINAL-001 — Documento final A04",
+  "labels": [
+   "type:final-dossier",
+   "area:A04",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A04` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A04"
+ },
+ {
+  "key": "EPIC-A05",
+  "title": "[EPIC MACROÁREA] A05 — Operações, Plataforma, Deploy e Segurança",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A05"
+  ],
+  "body": "Epic de macroárea `A05` — Operações, Plataforma, Deploy e Segurança.\n\nDomínios: `D08` Operações\nPasta: `governanca/A05-operacoes-plataforma-deploy-e-seguranca/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D08-DOC-MOP-001",
+  "title": "[DOC] D08-DOC-MOP-001 — Manual de Operações",
+  "labels": [
+   "type:document",
+   "area:A05",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D08-DOC-MOP-001`\n- **macroárea / domínio:** `A05` / `D08` Operações\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A05-operacoes-plataforma-deploy-e-seguranca/D08-operacoes/D08-DOC-MOP-001-manual-de-operacoes.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A05"
+ },
+ {
+  "key": "D08-DOC-RUN-001",
+  "title": "[DOC] D08-DOC-RUN-001 — Runbook Operacional do Ecossistema",
+  "labels": [
+   "type:document",
+   "area:A05",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D08-DOC-RUN-001`\n- **macroárea / domínio:** `A05` / `D08` Operações\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A05-operacoes-plataforma-deploy-e-seguranca/D08-operacoes/D08-DOC-RUN-001-runbook-operacional-do-ecossistema.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A05"
+ },
+ {
+  "key": "A05-FINAL-001",
+  "title": "[DOSSIÊ] A05-FINAL-001 — Documento final A05",
+  "labels": [
+   "type:final-dossier",
+   "area:A05",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A05` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A05"
+ },
+ {
+  "key": "EPIC-A06",
+  "title": "[EPIC MACROÁREA] A06 — Dados, Pesquisa e Conhecimento",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A06"
+  ],
+  "body": "Epic de macroárea `A06` — Dados, Pesquisa e Conhecimento.\n\nDomínios: `D05` Dados, `D06` Conhecimento e Busca Corporativa, `D09` Pesquisa e Inovação\nPasta: `governanca/A06-dados-pesquisa-e-conhecimento/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D05-DOC-EPGD-001",
+  "title": "[DOC] D05-DOC-EPGD-001 — Estratégia e Plano de Gestão de Dados",
+  "labels": [
+   "type:document",
+   "area:A06",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D05-DOC-EPGD-001`\n- **macroárea / domínio:** `A06` / `D05` Dados\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A06-dados-pesquisa-e-conhecimento/D05-dados/D05-DOC-EPGD-001-estrategia-e-plano-de-gestao-de-dados.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A06"
+ },
+ {
+  "key": "D05-DOC-DCM-001",
+  "title": "[DOC] D05-DOC-DCM-001 — Dicionário de Dados e Catálogo de Métricas",
+  "labels": [
+   "type:document",
+   "area:A06",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D05-DOC-DCM-001`\n- **macroárea / domínio:** `A06` / `D05` Dados\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A06-dados-pesquisa-e-conhecimento/D05-dados/D05-DOC-DCM-001-dicionario-de-dados-e-catalogo-de-metricas.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A06"
+ },
+ {
+  "key": "D06-DOC-EGC-001",
+  "title": "[DOC] D06-DOC-EGC-001 — Estratégia de Gestão do Conhecimento",
+  "labels": [
+   "type:document",
+   "area:A06",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D06-DOC-EGC-001`\n- **macroárea / domínio:** `A06` / `D06` Conhecimento e Busca Corporativa\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A06-dados-pesquisa-e-conhecimento/D06-conhecimento-e-busca-corporativa/D06-DOC-EGC-001-estrategia-de-gestao-do-conhecimento.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A06"
+ },
+ {
+  "key": "D06-DOC-RMI-001",
+  "title": "[DOC] D06-DOC-RMI-001 — Registro Mestre de Identidades",
+  "labels": [
+   "type:document",
+   "area:A06",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D06-DOC-RMI-001`\n- **macroárea / domínio:** `A06` / `D06` Conhecimento e Busca Corporativa\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A06-dados-pesquisa-e-conhecimento/D06-conhecimento-e-busca-corporativa/D06-DOC-RMI-001-registro-mestre-de-identidades.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A06"
+ },
+ {
+  "key": "D09-DOC-PPE-001",
+  "title": "[DOC] D09-DOC-PPE-001 — Plano de Pesquisa e Experimentação",
+  "labels": [
+   "type:document",
+   "area:A06",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D09-DOC-PPE-001`\n- **macroárea / domínio:** `A06` / `D09` Pesquisa e Inovação\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A06-dados-pesquisa-e-conhecimento/D09-pesquisa-e-inovacao/D09-DOC-PPE-001-plano-de-pesquisa-e-experimentacao.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A06"
+ },
+ {
+  "key": "D09-DOC-DEB-001",
+  "title": "[DOC] D09-DOC-DEB-001 — Dossiê de Evidências e Base Científica",
+  "labels": [
+   "type:document",
+   "area:A06",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D09-DOC-DEB-001`\n- **macroárea / domínio:** `A06` / `D09` Pesquisa e Inovação\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A06-dados-pesquisa-e-conhecimento/D09-pesquisa-e-inovacao/D09-DOC-DEB-001-dossie-de-evidencias-e-base-cientifica.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A06"
+ },
+ {
+  "key": "A06-FINAL-001",
+  "title": "[DOSSIÊ] A06-FINAL-001 — Documento final A06",
+  "labels": [
+   "type:final-dossier",
+   "area:A06",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A06` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A06"
+ },
+ {
+  "key": "EPIC-A07",
+  "title": "[EPIC MACROÁREA] A07 — Corporativo e Suporte",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A07"
+  ],
+  "body": "Epic de macroárea `A07` — Corporativo e Suporte.\n\nDomínios: `D04` Pessoas e Recursos Humanos\nPasta: `governanca/A07-corporativo-e-suporte/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D04-DOC-PPC-001",
+  "title": "[DOC] D04-DOC-PPC-001 — Plano de Pessoas e Capacidade",
+  "labels": [
+   "type:document",
+   "area:A07",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D04-DOC-PPC-001`\n- **macroárea / domínio:** `A07` / `D04` Pessoas e Recursos Humanos\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A07-corporativo-e-suporte/D04-pessoas-e-recursos-humanos/D04-DOC-PPC-001-plano-de-pessoas-e-capacidade.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A07"
+ },
+ {
+  "key": "A07-FINAL-001",
+  "title": "[DOSSIÊ] A07-FINAL-001 — Documento final A07",
+  "labels": [
+   "type:final-dossier",
+   "area:A07",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A07` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A07"
+ },
+ {
+  "key": "EPIC-A08",
+  "title": "[EPIC MACROÁREA] A08 — Conteúdo, Comunicação e Growth",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A08"
+  ],
+  "body": "Epic de macroárea `A08` — Conteúdo, Comunicação e Growth.\n\nDomínios: `D16` Mídias Sociais e Distribuição Digital (alias: Mídias Sociais e Estratégias)\nPasta: `governanca/A08-conteudo-comunicacao-e-growth/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D16-DOC-PEM-001",
+  "title": "[DOC] D16-DOC-PEM-001 — Plano Estratégico de Mídias Sociais",
+  "labels": [
+   "type:document",
+   "area:A08",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D16-DOC-PEM-001`\n- **macroárea / domínio:** `A08` / `D16` Mídias Sociais e Distribuição Digital (alias: Mídias Sociais e Estratégias)\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A08-conteudo-comunicacao-e-growth/D16-midias-sociais-e-distribuicao-digital-alias-midias/D16-DOC-PEM-001-plano-estrategico-de-midias-sociais.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A08"
+ },
+ {
+  "key": "A08-FINAL-001",
+  "title": "[DOSSIÊ] A08-FINAL-001 — Documento final A08",
+  "labels": [
+   "type:final-dossier",
+   "area:A08",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A08` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A08"
+ },
+ {
+  "key": "EPIC-A09",
+  "title": "[EPIC MACROÁREA] A09 — Execução e Planejamento do Trabalho",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A09"
+  ],
+  "body": "Epic de macroárea `A09` — Execução e Planejamento do Trabalho.\n\nDomínios: `D07` Produtividade e Execução\nPasta: `governanca/A09-execucao-e-planejamento-do-trabalho/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D07-DOC-PEX-001",
+  "title": "[DOC] D07-DOC-PEX-001 — Plano de Execução",
+  "labels": [
+   "type:document",
+   "area:A09",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D07-DOC-PEX-001`\n- **macroárea / domínio:** `A09` / `D07` Produtividade e Execução\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A09-execucao-e-planejamento-do-trabalho/D07-produtividade-e-execucao/D07-DOC-PEX-001-plano-de-execucao.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A09"
+ },
+ {
+  "key": "D07-DOC-PIM-001",
+  "title": "[DOC] D07-DOC-PIM-001 — Plano de Implementação e Marcos",
+  "labels": [
+   "type:document",
+   "area:A09",
+   "doc-class:specialized",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D07-DOC-PIM-001`\n- **macroárea / domínio:** `A09` / `D07` Produtividade e Execução\n- **classe:** SPECIALIZED\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A09-execucao-e-planejamento-do-trabalho/D07-produtividade-e-execucao/D07-DOC-PIM-001-plano-de-implementacao-e-marcos.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A09"
+ },
+ {
+  "key": "A09-FINAL-001",
+  "title": "[DOSSIÊ] A09-FINAL-001 — Documento final A09",
+  "labels": [
+   "type:final-dossier",
+   "area:A09",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A09` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A09"
+ },
+ {
+  "key": "EPIC-A10",
+  "title": "[EPIC MACROÁREA] A10 — Documentação e Governança do Conhecimento",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A10"
+  ],
+  "body": "Epic de macroárea `A10` — Documentação e Governança do Conhecimento.\n\nDomínios: `D21` Workbook, `D22` Decision and Register Log, `D23` Blueprints\nPasta: `governanca/A10-documentacao-e-governanca-do-conhecimento/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D21-DOC-PWB-001",
+  "title": "[DOC] D21-DOC-PWB-001 — Plano de Workbooks",
+  "labels": [
+   "type:document",
+   "area:A10",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D21-DOC-PWB-001`\n- **macroárea / domínio:** `A10` / `D21` Workbook\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A10-documentacao-e-governanca-do-conhecimento/D21-workbook/D21-DOC-PWB-001-plano-de-workbooks.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A10"
+ },
+ {
+  "key": "D22-DOC-DRL-001",
+  "title": "[DOC] D22-DOC-DRL-001 — Decision and Register Log do Ecossistema",
+  "labels": [
+   "type:document",
+   "area:A10",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D22-DOC-DRL-001`\n- **macroárea / domínio:** `A10` / `D22` Decision and Register Log\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A10-documentacao-e-governanca-do-conhecimento/D22-decision-and-register-log/D22-DOC-DRL-001-decision-and-register-log-do-ecossistema.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A10"
+ },
+ {
+  "key": "D23-DOC-PBL-001",
+  "title": "[DOC] D23-DOC-PBL-001 — Plano de Blueprints",
+  "labels": [
+   "type:document",
+   "area:A10",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D23-DOC-PBL-001`\n- **macroárea / domínio:** `A10` / `D23` Blueprints\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A10-documentacao-e-governanca-do-conhecimento/D23-blueprints/D23-DOC-PBL-001-plano-de-blueprints.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A10"
+ },
+ {
+  "key": "A10-FINAL-001",
+  "title": "[DOSSIÊ] A10-FINAL-001 — Documento final A10",
+  "labels": [
+   "type:final-dossier",
+   "area:A10",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A10` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A10"
+ },
+ {
+  "key": "EPIC-A11",
+  "title": "[EPIC MACROÁREA] A11 — Ferramentas, IA e Ativos Reutilizáveis",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A11"
+  ],
+  "body": "Epic de macroárea `A11` — Ferramentas, IA e Ativos Reutilizáveis.\n\nDomínios: `D19` Assets e CTAs, `D20` Plataformas e Repositórios\nPasta: `governanca/A11-ferramentas-ia-e-ativos-reutilizaveis/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D19-DOC-PAC-001",
+  "title": "[DOC] D19-DOC-PAC-001 — Plano de Assets e CTAs",
+  "labels": [
+   "type:document",
+   "area:A11",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D19-DOC-PAC-001`\n- **macroárea / domínio:** `A11` / `D19` Assets e CTAs\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A11-ferramentas-ia-e-ativos-reutilizaveis/D19-assets-e-ctas/D19-DOC-PAC-001-plano-de-assets-e-ctas.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A11"
+ },
+ {
+  "key": "D20-DOC-PPR-001",
+  "title": "[DOC] D20-DOC-PPR-001 — Plano de Plataformas e Repositórios",
+  "labels": [
+   "type:document",
+   "area:A11",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D20-DOC-PPR-001`\n- **macroárea / domínio:** `A11` / `D20` Plataformas e Repositórios\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A11-ferramentas-ia-e-ativos-reutilizaveis/D20-plataformas-e-repositorios/D20-DOC-PPR-001-plano-de-plataformas-e-repositorios.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A11"
+ },
+ {
+  "key": "A11-FINAL-001",
+  "title": "[DOSSIÊ] A11-FINAL-001 — Documento final A11",
+  "labels": [
+   "type:final-dossier",
+   "area:A11",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A11` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A11"
+ },
+ {
+  "key": "EPIC-A12",
+  "title": "[EPIC MACROÁREA] A12 — Stakeholders e Ecossistema",
+  "labels": [
+   "type:macroarea-epic",
+   "area:A12"
+  ],
+  "body": "Epic de macroárea `A12` — Stakeholders e Ecossistema.\n\nDomínios: `D17` Emprego e Portfólio\nPasta: `governanca/A12-stakeholders-e-ecossistema/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D17-DOC-PEP-001",
+  "title": "[DOC] D17-DOC-PEP-001 — Plano de Emprego e Portfólio",
+  "labels": [
+   "type:document",
+   "area:A12",
+   "doc-class:macro",
+   "approval:pendente"
+  ],
+  "body": "- **artifact_id:** `D17-DOC-PEP-001`\n- **macroárea / domínio:** `A12` / `D17` Emprego e Portfólio\n- **classe:** MACRO\n- **status:** PRE_PREENCHIDO · **approval:** PENDENTE · **owner:** A_DEFINIR\n- **stub:** `governanca/A12-stakeholders-e-ecossistema/D17-emprego-e-portfolio/D17-DOC-PEP-001-plano-de-emprego-e-portfolio.md`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A12"
+ },
+ {
+  "key": "A12-FINAL-001",
+  "title": "[DOSSIÊ] A12-FINAL-001 — Documento final A12",
+  "labels": [
+   "type:final-dossier",
+   "area:A12",
+   "approval:pendente"
+  ],
+  "body": "Documento final da macroárea `A12` (level=MACROAREA, status NOT_CREATED). Deriva dos artefatos desta macroárea.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-A12"
+ }
+]

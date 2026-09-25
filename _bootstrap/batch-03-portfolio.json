@@ -1,0 +1,977 @@
+[
+ {
+  "key": "EPIC-M2",
+  "title": "[EPIC PORTFÓLIO] M2 — Executar Blog",
+  "labels": [
+   "type:portfolio-epic"
+  ],
+  "body": "Epic de portfólio `M2` — Executar Blog (PRODUCT_INITIATIVE). Owner: A_DEFINIR.\nPasta: `portfolio/M2-executar-blog/`\n\n**Prioridade de execução declarada pelo usuário (primeiro epic).**\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "M2:TPL-CHARTER-001",
+  "title": "[DOC M2] CHARTER — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-CHARTER-001` (CHARTER)\n- **applicable_macroareas (literal da planilha):** [\"D0\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-BUSINESS-001",
+  "title": "[DOC M2] BUSINESS — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-BUSINESS-001` (BUSINESS)\n- **applicable_macroareas (literal da planilha):** [\"A00\", \"A01\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-PRD-001",
+  "title": "[DOC M2] PRD — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-PRD-001` (PRD)\n- **applicable_macroareas (literal da planilha):** [\"A02\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-UX-001",
+  "title": "[DOC M2] UX — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-UX-001` (UX)\n- **applicable_macroareas (literal da planilha):** [\"A02\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-DRP-001",
+  "title": "[DOC M2] DRP — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-DRP-001` (DRP)\n- **applicable_macroareas (literal da planilha):** [\"A03\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-FUNCTIONAL_REQ-001",
+  "title": "[DOC M2] FUNCTIONAL_REQUIREMENTS — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-FUNCTIONAL_REQ-001` (FUNCTIONAL_REQUIREMENTS)\n- **applicable_macroareas (literal da planilha):** [\"A03\", \"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-ACCEPTANCE_CRITERIA-001",
+  "title": "[DOC M2] ACCEPTANCE_CRITERIA — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-ACCEPTANCE_CRITERIA-001` (ACCEPTANCE_CRITERIA)\n- **applicable_macroareas (literal da planilha):** [\"A03\", \"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-NFR-001",
+  "title": "[DOC M2] NFR — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-NFR-001` (NFR)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-DATA_INTEGRATION-001",
+  "title": "[DOC M2] DATA_INTEGRATION_REQUIREMENTS — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-DATA_INTEGRATION-001` (DATA_INTEGRATION_REQUIREMENTS)\n- **applicable_macroareas (literal da planilha):** [\"A04\", \"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-ANALYTICS-001",
+  "title": "[DOC M2] ANALYTICS — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-ANALYTICS-001` (ANALYTICS)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-ADR-001",
+  "title": "[DOC M2] ADR — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-ADR-001` (ADR)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-SPEC-001",
+  "title": "[DOC M2] SPEC — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-SPEC-001` (SPEC)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-TEST-001",
+  "title": "[DOC M2] TEST — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-TEST-001` (TEST)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-RELEASE-001",
+  "title": "[DOC M2] RELEASE — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-RELEASE-001` (RELEASE)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-DEPLOY-001",
+  "title": "[DOC M2] DEPLOY — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-DEPLOY-001` (DEPLOY)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-RUNBOOK-001",
+  "title": "[DOC M2] RUNBOOK — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-RUNBOOK-001` (RUNBOOK)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-GTM-001",
+  "title": "[DOC M2] GTM — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-GTM-001` (GTM)\n- **applicable_macroareas (literal da planilha):** [\"A01\", \"A08\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-MEASUREMENT-001",
+  "title": "[DOC M2] MEASUREMENT — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-MEASUREMENT-001` (MEASUREMENT)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-LEARNING-001",
+  "title": "[DOC M2] LEARNING — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-LEARNING-001` (LEARNING)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2:TPL-FINAL_DOSSIER-001",
+  "title": "[DOC M2] FINAL_DOSSIER — Executar Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2`\n- **template_id:** `TPL-FINAL_DOSSIER-001` (FINAL_DOSSIER)\n- **applicable_macroareas (literal da planilha):** [\"A00\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "M2-FINAL-001",
+  "title": "[DOSSIÊ] M2-FINAL-001 — Dossiê final Executar Blog",
+  "labels": [
+   "type:final-dossier",
+   "approval:pendente"
+  ],
+  "body": "Dossiê final do portfólio `M2` (level=PORTFOLIO, status NOT_CREATED).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2"
+ },
+ {
+  "key": "EPIC-S0",
+  "title": "[EPIC PORTFÓLIO] S0 — Executar programa governança e operações.",
+  "labels": [
+   "type:portfolio-epic"
+  ],
+  "body": "Epic de portfólio `S0` — Executar programa governança e operações. (PROGRAM_OPS). Owner: A_DEFINIR.\nPasta: `portfolio/S0-executar-programa-governanca-e-operacoes/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "S0-FINAL-001",
+  "title": "[DOSSIÊ] S0-FINAL-001 — Dossiê final Executar programa governança e operações.",
+  "labels": [
+   "type:final-dossier",
+   "approval:pendente"
+  ],
+  "body": "Dossiê final do portfólio `S0` (level=PORTFOLIO, status NOT_CREATED).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-S0"
+ },
+ {
+  "key": "EPIC-M0",
+  "title": "[EPIC PORTFÓLIO] M0 — Executar Institucional",
+  "labels": [
+   "type:portfolio-epic"
+  ],
+  "body": "Epic de portfólio `M0` — Executar Institucional (PRODUCT_INITIATIVE). Owner: A_DEFINIR.\nPasta: `portfolio/M0-executar-institucional/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "M0:TPL-CHARTER-001",
+  "title": "[DOC M0] CHARTER — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-CHARTER-001` (CHARTER)\n- **applicable_macroareas (literal da planilha):** [\"D0\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-BUSINESS-001",
+  "title": "[DOC M0] BUSINESS — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-BUSINESS-001` (BUSINESS)\n- **applicable_macroareas (literal da planilha):** [\"A00\", \"A01\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-PRD-001",
+  "title": "[DOC M0] PRD — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-PRD-001` (PRD)\n- **applicable_macroareas (literal da planilha):** [\"A02\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-UX-001",
+  "title": "[DOC M0] UX — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-UX-001` (UX)\n- **applicable_macroareas (literal da planilha):** [\"A02\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-DRP-001",
+  "title": "[DOC M0] DRP — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-DRP-001` (DRP)\n- **applicable_macroareas (literal da planilha):** [\"A03\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-FUNCTIONAL_REQ-001",
+  "title": "[DOC M0] FUNCTIONAL_REQUIREMENTS — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-FUNCTIONAL_REQ-001` (FUNCTIONAL_REQUIREMENTS)\n- **applicable_macroareas (literal da planilha):** [\"A03\", \"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-ACCEPTANCE_CRITERIA-001",
+  "title": "[DOC M0] ACCEPTANCE_CRITERIA — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-ACCEPTANCE_CRITERIA-001` (ACCEPTANCE_CRITERIA)\n- **applicable_macroareas (literal da planilha):** [\"A03\", \"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-NFR-001",
+  "title": "[DOC M0] NFR — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-NFR-001` (NFR)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-DATA_INTEGRATION-001",
+  "title": "[DOC M0] DATA_INTEGRATION_REQUIREMENTS — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-DATA_INTEGRATION-001` (DATA_INTEGRATION_REQUIREMENTS)\n- **applicable_macroareas (literal da planilha):** [\"A04\", \"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-ANALYTICS-001",
+  "title": "[DOC M0] ANALYTICS — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-ANALYTICS-001` (ANALYTICS)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-ADR-001",
+  "title": "[DOC M0] ADR — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-ADR-001` (ADR)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-SPEC-001",
+  "title": "[DOC M0] SPEC — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-SPEC-001` (SPEC)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-TEST-001",
+  "title": "[DOC M0] TEST — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-TEST-001` (TEST)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-RELEASE-001",
+  "title": "[DOC M0] RELEASE — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-RELEASE-001` (RELEASE)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-DEPLOY-001",
+  "title": "[DOC M0] DEPLOY — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-DEPLOY-001` (DEPLOY)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-RUNBOOK-001",
+  "title": "[DOC M0] RUNBOOK — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-RUNBOOK-001` (RUNBOOK)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-GTM-001",
+  "title": "[DOC M0] GTM — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-GTM-001` (GTM)\n- **applicable_macroareas (literal da planilha):** [\"A01\", \"A08\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-MEASUREMENT-001",
+  "title": "[DOC M0] MEASUREMENT — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-MEASUREMENT-001` (MEASUREMENT)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-LEARNING-001",
+  "title": "[DOC M0] LEARNING — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-LEARNING-001` (LEARNING)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0:TPL-FINAL_DOSSIER-001",
+  "title": "[DOC M0] FINAL_DOSSIER — Executar Institucional",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M0`\n- **template_id:** `TPL-FINAL_DOSSIER-001` (FINAL_DOSSIER)\n- **applicable_macroareas (literal da planilha):** [\"A00\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "M0-FINAL-001",
+  "title": "[DOSSIÊ] M0-FINAL-001 — Dossiê final Executar Institucional",
+  "labels": [
+   "type:final-dossier",
+   "approval:pendente"
+  ],
+  "body": "Dossiê final do portfólio `M0` (level=PORTFOLIO, status NOT_CREATED).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M0"
+ },
+ {
+  "key": "EPIC-M1",
+  "title": "[EPIC PORTFÓLIO] M1 — Executar App",
+  "labels": [
+   "type:portfolio-epic"
+  ],
+  "body": "Epic de portfólio `M1` — Executar App (PRODUCT_INITIATIVE). Owner: A_DEFINIR.\nPasta: `portfolio/M1-executar-app/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "M1:TPL-CHARTER-001",
+  "title": "[DOC M1] CHARTER — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-CHARTER-001` (CHARTER)\n- **applicable_macroareas (literal da planilha):** [\"D0\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-BUSINESS-001",
+  "title": "[DOC M1] BUSINESS — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-BUSINESS-001` (BUSINESS)\n- **applicable_macroareas (literal da planilha):** [\"A00\", \"A01\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-PRD-001",
+  "title": "[DOC M1] PRD — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-PRD-001` (PRD)\n- **applicable_macroareas (literal da planilha):** [\"A02\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-UX-001",
+  "title": "[DOC M1] UX — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-UX-001` (UX)\n- **applicable_macroareas (literal da planilha):** [\"A02\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-DRP-001",
+  "title": "[DOC M1] DRP — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-DRP-001` (DRP)\n- **applicable_macroareas (literal da planilha):** [\"A03\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-FUNCTIONAL_REQ-001",
+  "title": "[DOC M1] FUNCTIONAL_REQUIREMENTS — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-FUNCTIONAL_REQ-001` (FUNCTIONAL_REQUIREMENTS)\n- **applicable_macroareas (literal da planilha):** [\"A03\", \"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-ACCEPTANCE_CRITERIA-001",
+  "title": "[DOC M1] ACCEPTANCE_CRITERIA — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-ACCEPTANCE_CRITERIA-001` (ACCEPTANCE_CRITERIA)\n- **applicable_macroareas (literal da planilha):** [\"A03\", \"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-NFR-001",
+  "title": "[DOC M1] NFR — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-NFR-001` (NFR)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-DATA_INTEGRATION-001",
+  "title": "[DOC M1] DATA_INTEGRATION_REQUIREMENTS — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-DATA_INTEGRATION-001` (DATA_INTEGRATION_REQUIREMENTS)\n- **applicable_macroareas (literal da planilha):** [\"A04\", \"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-ANALYTICS-001",
+  "title": "[DOC M1] ANALYTICS — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-ANALYTICS-001` (ANALYTICS)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-ADR-001",
+  "title": "[DOC M1] ADR — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-ADR-001` (ADR)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-SPEC-001",
+  "title": "[DOC M1] SPEC — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-SPEC-001` (SPEC)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-TEST-001",
+  "title": "[DOC M1] TEST — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-TEST-001` (TEST)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-RELEASE-001",
+  "title": "[DOC M1] RELEASE — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-RELEASE-001` (RELEASE)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-DEPLOY-001",
+  "title": "[DOC M1] DEPLOY — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-DEPLOY-001` (DEPLOY)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-RUNBOOK-001",
+  "title": "[DOC M1] RUNBOOK — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-RUNBOOK-001` (RUNBOOK)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-GTM-001",
+  "title": "[DOC M1] GTM — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-GTM-001` (GTM)\n- **applicable_macroareas (literal da planilha):** [\"A01\", \"A08\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-MEASUREMENT-001",
+  "title": "[DOC M1] MEASUREMENT — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-MEASUREMENT-001` (MEASUREMENT)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-LEARNING-001",
+  "title": "[DOC M1] LEARNING — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-LEARNING-001` (LEARNING)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1:TPL-FINAL_DOSSIER-001",
+  "title": "[DOC M1] FINAL_DOSSIER — Executar App",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M1`\n- **template_id:** `TPL-FINAL_DOSSIER-001` (FINAL_DOSSIER)\n- **applicable_macroareas (literal da planilha):** [\"A00\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "M1-FINAL-001",
+  "title": "[DOSSIÊ] M1-FINAL-001 — Dossiê final Executar App",
+  "labels": [
+   "type:final-dossier",
+   "approval:pendente"
+  ],
+  "body": "Dossiê final do portfólio `M1` (level=PORTFOLIO, status NOT_CREATED).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M1"
+ },
+ {
+  "key": "EPIC-M2.1",
+  "title": "[EPIC PORTFÓLIO] M2.1 — Risco cognitivo Blog",
+  "labels": [
+   "type:portfolio-epic"
+  ],
+  "body": "Epic de portfólio `M2.1` — Risco cognitivo Blog (PRODUCT_INITIATIVE). Owner: A_DEFINIR.\nPasta: `portfolio/M2.1-risco-cognitivo-blog/`\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "M2.1:TPL-CHARTER-001",
+  "title": "[DOC M2.1] CHARTER — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-CHARTER-001` (CHARTER)\n- **applicable_macroareas (literal da planilha):** [\"D0\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-BUSINESS-001",
+  "title": "[DOC M2.1] BUSINESS — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-BUSINESS-001` (BUSINESS)\n- **applicable_macroareas (literal da planilha):** [\"A00\", \"A01\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-PRD-001",
+  "title": "[DOC M2.1] PRD — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-PRD-001` (PRD)\n- **applicable_macroareas (literal da planilha):** [\"A02\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-UX-001",
+  "title": "[DOC M2.1] UX — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-UX-001` (UX)\n- **applicable_macroareas (literal da planilha):** [\"A02\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-DRP-001",
+  "title": "[DOC M2.1] DRP — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-DRP-001` (DRP)\n- **applicable_macroareas (literal da planilha):** [\"A03\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-FUNCTIONAL_REQ-001",
+  "title": "[DOC M2.1] FUNCTIONAL_REQUIREMENTS — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-FUNCTIONAL_REQ-001` (FUNCTIONAL_REQUIREMENTS)\n- **applicable_macroareas (literal da planilha):** [\"A03\", \"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-ACCEPTANCE_CRITERIA-001",
+  "title": "[DOC M2.1] ACCEPTANCE_CRITERIA — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-ACCEPTANCE_CRITERIA-001` (ACCEPTANCE_CRITERIA)\n- **applicable_macroareas (literal da planilha):** [\"A03\", \"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-NFR-001",
+  "title": "[DOC M2.1] NFR — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-NFR-001` (NFR)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-DATA_INTEGRATION-001",
+  "title": "[DOC M2.1] DATA_INTEGRATION_REQUIREMENTS — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-DATA_INTEGRATION-001` (DATA_INTEGRATION_REQUIREMENTS)\n- **applicable_macroareas (literal da planilha):** [\"A04\", \"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-ANALYTICS-001",
+  "title": "[DOC M2.1] ANALYTICS — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-ANALYTICS-001` (ANALYTICS)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-ADR-001",
+  "title": "[DOC M2.1] ADR — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-ADR-001` (ADR)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-SPEC-001",
+  "title": "[DOC M2.1] SPEC — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-SPEC-001` (SPEC)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-TEST-001",
+  "title": "[DOC M2.1] TEST — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-TEST-001` (TEST)\n- **applicable_macroareas (literal da planilha):** [\"A04\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-RELEASE-001",
+  "title": "[DOC M2.1] RELEASE — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-RELEASE-001` (RELEASE)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-DEPLOY-001",
+  "title": "[DOC M2.1] DEPLOY — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-DEPLOY-001` (DEPLOY)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-RUNBOOK-001",
+  "title": "[DOC M2.1] RUNBOOK — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-RUNBOOK-001` (RUNBOOK)\n- **applicable_macroareas (literal da planilha):** [\"A05\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-GTM-001",
+  "title": "[DOC M2.1] GTM — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-GTM-001` (GTM)\n- **applicable_macroareas (literal da planilha):** [\"A01\", \"A08\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-MEASUREMENT-001",
+  "title": "[DOC M2.1] MEASUREMENT — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-MEASUREMENT-001` (MEASUREMENT)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-LEARNING-001",
+  "title": "[DOC M2.1] LEARNING — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-LEARNING-001` (LEARNING)\n- **applicable_macroareas (literal da planilha):** [\"A06\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1:TPL-FINAL_DOSSIER-001",
+  "title": "[DOC M2.1] FINAL_DOSSIER — Risco cognitivo Blog",
+  "labels": [
+   "type:document",
+   "gate:tbd",
+   "approval:pendente"
+  ],
+  "body": "- **portfolio_id:** `M2.1`\n- **template_id:** `TPL-FINAL_DOSSIER-001` (FINAL_DOSSIER)\n- **applicable_macroareas (literal da planilha):** [\"A00\"]\n- **gate:** `gate:tbd` — mapeamento template↔gate inexistente na planilha; ver issue do gap `GAP-DEP-01` ({GAPDEP}).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ },
+ {
+  "key": "M2.1-FINAL-001",
+  "title": "[DOSSIÊ] M2.1-FINAL-001 — Dossiê final Risco cognitivo Blog",
+  "labels": [
+   "type:final-dossier",
+   "approval:pendente"
+  ],
+  "body": "Dossiê final do portfólio `M2.1` (level=PORTFOLIO, status NOT_CREATED).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EPIC-M2.1"
+ }
+]

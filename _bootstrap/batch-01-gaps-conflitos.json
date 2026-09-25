@@ -1,0 +1,226 @@
+[
+ {
+  "key": "NA-01",
+  "title": "[GAP] NA-01 — Validar com o owner de cada area os campos marcados PROPOSED (interpretacao logica de nego",
+  "labels": [
+   "type:gap",
+   "priority:alta",
+   "epistemic:gap"
+  ],
+  "body": "- **gap_id:** `NA-01`\n- **type:** NEXT_ACTION\n- **priority:** alta\n- **status (planilha):** OPEN\n- **source:** EXECUTAR_CHECKLIST_D01-D23_GRANULAR.yaml#next_actions_register\n\nValidar com o owner de cada area os campos marcados PROPOSED (interpretacao logica de negocio) e substituir por dado real.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "NA-02",
+  "title": "[GAP] NA-02 — Confirmar ou descartar os benchmarks EXTERNAL_EVIDENCE (LGPD, SaaS metrics, RACI, SLA, RTO",
+  "labels": [
+   "type:gap",
+   "priority:alta",
+   "epistemic:gap"
+  ],
+  "body": "- **gap_id:** `NA-02`\n- **type:** NEXT_ACTION\n- **priority:** alta\n- **status (planilha):** OPEN\n- **source:** EXECUTAR_CHECKLIST_D01-D23_GRANULAR.yaml#next_actions_register\n\nConfirmar ou descartar os benchmarks EXTERNAL_EVIDENCE (LGPD, SaaS metrics, RACI, SLA, RTO/RPO, WCAG, data governance, portfolio) com dados proprios do ecossistema.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "NA-03",
+  "title": "[GAP] NA-03 — Executar PF-24 (reconciliacao cruzada) preenchendo depends_on/blocks entre areas.",
+  "labels": [
+   "type:gap",
+   "priority:alta",
+   "epistemic:gap"
+  ],
+  "body": "- **gap_id:** `NA-03`\n- **type:** NEXT_ACTION\n- **priority:** alta\n- **status (planilha):** OPEN\n- **source:** EXECUTAR_CHECKLIST_D01-D23_GRANULAR.yaml#next_actions_register\n\nExecutar PF-24 (reconciliacao cruzada) preenchendo depends_on/blocks entre areas.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "NA-04",
+  "title": "[GAP] NA-04 — Resolver CONFLICT_REGISTER (11 itens), comecando por contagem de documentos (37 vs 46) e i",
+  "labels": [
+   "type:gap",
+   "priority:alta",
+   "epistemic:gap"
+  ],
+  "body": "- **gap_id:** `NA-04`\n- **type:** NEXT_ACTION\n- **priority:** alta\n- **status (planilha):** OPEN\n- **source:** EXECUTAR_CHECKLIST_D01-D23_GRANULAR.yaml#next_actions_register\n\nResolver CONFLICT_REGISTER (11 itens), comecando por contagem de documentos (37 vs 46) e identidade de 'Vera' (produto/agente vs pessoa fisica).\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "NA-05",
+  "title": "[GAP] NA-05 — Ler campo a campo os pacotes de skill/SDK do Workflow.zip e os blocos B03/B05/B06 do GOV-S",
+  "labels": [
+   "type:gap",
+   "priority:media",
+   "epistemic:gap"
+  ],
+  "body": "- **gap_id:** `NA-05`\n- **type:** NEXT_ACTION\n- **priority:** media\n- **status (planilha):** OPEN\n- **source:** EXECUTAR_CHECKLIST_D01-D23_GRANULAR.yaml#next_actions_register\n\nLer campo a campo os pacotes de skill/SDK do Workflow.zip e os blocos B03/B05/B06 do GOV-SPEC ainda nao lidos linha a linha, para promover mais campos PROPOSED/EXTERNAL para FOUND/DIRECT.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "UAR-01",
+  "title": "[GAP] UAR-01 — Qual numero de documentos prevalece: 37 (Handoff.md) ou 46 (GOVERNANCA)?",
+  "labels": [
+   "type:gap",
+   "priority:alta",
+   "epistemic:gap",
+   "requires-human-decision"
+  ],
+  "body": "- **gap_id:** `UAR-01`\n- **type:** USER_ACTION_REQUIRED\n- **priority:** alta\n- **status (planilha):** OPEN\n- **source:** EXECUTAR_CHECKLIST_D01-D23_GRANULAR.yaml#user_action_required\n\nQual numero de documentos prevalece: 37 (Handoff.md) ou 46 (GOVERNANCA)?\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "UAR-02",
+  "title": "[GAP] UAR-02 — O plano GTM de lancamento em 07/09/2026 ja foi executado? Com qual resultado? Se nao, qual",
+  "labels": [
+   "type:gap",
+   "priority:alta",
+   "epistemic:gap",
+   "requires-human-decision"
+  ],
+  "body": "- **gap_id:** `UAR-02`\n- **type:** USER_ACTION_REQUIRED\n- **priority:** alta\n- **status (planilha):** OPEN\n- **source:** EXECUTAR_CHECKLIST_D01-D23_GRANULAR.yaml#user_action_required\n\nO plano GTM de lancamento em 07/09/2026 ja foi executado? Com qual resultado? Se nao, qual a nova data?\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "UAR-03",
+  "title": "[GAP] UAR-03 — Vera e uma pessoa real da equipe (com pendencia de INSS registrada) ou apenas o nome do ag",
+  "labels": [
+   "type:gap",
+   "priority:alta",
+   "epistemic:gap",
+   "requires-human-decision"
+  ],
+  "body": "- **gap_id:** `UAR-03`\n- **type:** USER_ACTION_REQUIRED\n- **priority:** alta\n- **status (planilha):** OPEN\n- **source:** EXECUTAR_CHECKLIST_D01-D23_GRANULAR.yaml#user_action_required\n\nVera e uma pessoa real da equipe (com pendencia de INSS registrada) ou apenas o nome do agente/produto? Se pessoa real, qual seu papel formal?\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "UAR-04",
+  "title": "[GAP] UAR-04 — Todos os 1.013 campos PROPOSED neste YAML sao recomendacoes genericas de pratica de mercad",
+  "labels": [
+   "type:gap",
+   "priority:alta",
+   "epistemic:gap",
+   "requires-human-decision"
+  ],
+  "body": "- **gap_id:** `UAR-04`\n- **type:** USER_ACTION_REQUIRED\n- **priority:** alta\n- **status (planilha):** OPEN\n- **source:** EXECUTAR_CHECKLIST_D01-D23_GRANULAR.yaml#user_action_required\n\nTodos os 1.013 campos PROPOSED neste YAML sao recomendacoes genericas de pratica de mercado, nao fatos deste ecossistema. Autoriza tratar cada um deles como base para trabalho subsequente, ou prefere que eu priorize revisao humana antes de qualquer uso operacional desses campos?\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "GAP-DEP-01",
+  "title": "[GAP] GAP-DEP-01 — Campos depends_on/blocks entre areas continuam nao preenchidos (PF-24 nao executado em pro",
+  "labels": [
+   "type:gap",
+   "priority:alta",
+   "epistemic:gap"
+  ],
+  "body": "- **gap_id:** `GAP-DEP-01`\n- **type:** STRUCTURAL\n- **priority:** alta\n- **status (planilha):** OPEN\n- **source:** validation_report\n\nCampos depends_on/blocks entre areas continuam nao preenchidos (PF-24 nao executado em profundidade); proximo passo registrado em NEXT_ACTIONS_REGISTER.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D22-DEC-CFL-01",
+  "title": "[CONFLITO] D22-DEC-CFL-01 — Contagem de documentos: 37 (Handoff) vs 46 (GOVERNANCA) — Handoff.md (EXECUTAR-D",
+  "labels": [
+   "type:conflict",
+   "requires-human-decision",
+   "epistemic:conflict"
+  ],
+  "body": "- **conflict_id:** `D22-DEC-CFL-01`\n- **domain_id:** D06/D22\n- **status (planilha):** ABERTO\n\n**Issue:** Contagem de documentos: 37 (Handoff) vs 46 (GOVERNANCA) — Handoff.md (EXECUTAR-DOC-PREFILL-001) define escopo de 37 documentos (23 macro + 14 especializados); GOVERNANCA (Drive) declara '46 documentos registrados no índice documental' sem enumerá-los.\n\n**Regra de resolução:** Precedencia conforme regra do EXECUTAR-DOC-PREFILL-001: fonte mais recente e de maior autoridade vence; sem isso, permanece CONFLICT.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D22-DEC-CFL-02",
+  "title": "[CONFLITO] D22-DEC-CFL-02 — Janela de lançamento GTM 07/09/2026 expirada sem verificação — Plano GTM escrito",
+  "labels": [
+   "type:conflict",
+   "requires-human-decision",
+   "epistemic:conflict"
+  ],
+  "body": "- **conflict_id:** `D22-DEC-CFL-02`\n- **domain_id:** D07/D13/D14\n- **status (planilha):** ABERTO\n\n**Issue:** Janela de lançamento GTM 07/09/2026 expirada sem verificação — Plano GTM escrito em 25/08/2026 para lançamento em 07/09/2026; na data desta extração (22/09/2026) o cronograma está vencido e seu estado real não foi verificado.\n\n**Regra de resolução:** Precedencia conforme regra do EXECUTAR-DOC-PREFILL-001: fonte mais recente e de maior autoridade vence; sem isso, permanece CONFLICT.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D22-DEC-CFL-03",
+  "title": "[CONFLITO] D22-DEC-CFL-03 — Ancoragem de preço: piloto R$700 vs benchmark de mercado R$2.500-4.000 — Modelo ",
+  "labels": [
+   "type:conflict",
+   "requires-human-decision",
+   "epistemic:conflict"
+  ],
+  "body": "- **conflict_id:** `D22-DEC-CFL-03`\n- **domain_id:** D14\n- **status (planilha):** ABERTO\n\n**Issue:** Ancoragem de preço: piloto R$700 vs benchmark de mercado R$2.500-4.000 — Modelo anterior registrava R$700 por projeto de uma semana; benchmark de mercado mostra R$2.500/15 dias e R$4.000/30 dias para mapeamento puro; consultoria a R$300/hora.\n\n**Regra de resolução:** Precedencia conforme regra do EXECUTAR-DOC-PREFILL-001: fonte mais recente e de maior autoridade vence; sem isso, permanece CONFLICT.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D22-DEC-CFL-04",
+  "title": "[CONFLITO] D22-DEC-CFL-04 — Nomenclatura de área D16 divergente — GOVERNANCA usa 'Mídias Sociais e Distribui",
+  "labels": [
+   "type:conflict",
+   "requires-human-decision",
+   "epistemic:conflict"
+  ],
+  "body": "- **conflict_id:** `D22-DEC-CFL-04`\n- **domain_id:** D16\n- **status (planilha):** ABERTO\n\n**Issue:** Nomenclatura de área D16 divergente — GOVERNANCA usa 'Mídias Sociais e Distribuição Digital'; estrutura de pastas do Drive usa 'Mídias Sociais e Estratégias'. Handoff.md já registra ambas como aliases.\n\n**Regra de resolução:** Precedencia conforme regra do EXECUTAR-DOC-PREFILL-001: fonte mais recente e de maior autoridade vence; sem isso, permanece CONFLICT.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D22-DEC-CFL-05",
+  "title": "[CONFLITO] D22-DEC-CFL-05 — Nomenclatura de área D18 divergente — 'Contratos e Esquemas' (GOVERNANCA/Handoff",
+  "labels": [
+   "type:conflict",
+   "requires-human-decision",
+   "epistemic:conflict"
+  ],
+  "body": "- **conflict_id:** `D22-DEC-CFL-05`\n- **domain_id:** D18\n- **status (planilha):** ABERTO\n\n**Issue:** Nomenclatura de área D18 divergente — 'Contratos e Esquemas' (GOVERNANCA/Handoff) vs 'Contratos e Schemas' (estrutura de pastas do Drive). Handoff.md já registra ambas como aliases.\n\n**Regra de resolução:** Precedencia conforme regra do EXECUTAR-DOC-PREFILL-001: fonte mais recente e de maior autoridade vence; sem isso, permanece CONFLICT.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D22-DEC-GOVSPEC-A01",
+  "title": "[CONFLITO] D22-DEC-GOVSPEC-A01 — Matriz de 16 áreas e GOV-DOM-006 usam numeração diferente para vários domínios (",
+  "labels": [
+   "type:conflict",
+   "requires-human-decision",
+   "epistemic:conflict"
+  ],
+  "body": "- **conflict_id:** `D22-DEC-GOVSPEC-A01`\n- **domain_id:** D06/D07\n- **status (planilha):** ABERTO\n\n**Issue:** Matriz de 16 áreas e GOV-DOM-006 usam numeração diferente para vários domínios ( — Matriz de 16 áreas e GOV-DOM-006 usam numeração diferente para vários domínios (ex.: D02 é Jurídico numa e Dados na outra).\n\n**Regra de resolução:** Precedencia conforme regra do EXECUTAR-DOC-PREFILL-001: fonte mais recente e de maior autoridade vence; sem isso, permanece CONFLICT.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D22-DEC-GOVSPEC-A02",
+  "title": "[CONFLITO] D22-DEC-GOVSPEC-A02 — Duas estruturas de endereço concorrentes: D01.01-IDE-001 e domínio->área->subáre",
+  "labels": [
+   "type:conflict",
+   "requires-human-decision",
+   "epistemic:conflict"
+  ],
+  "body": "- **conflict_id:** `D22-DEC-GOVSPEC-A02`\n- **domain_id:** D06/D07\n- **status (planilha):** ABERTO\n\n**Issue:** Duas estruturas de endereço concorrentes: D01.01-IDE-001 e domínio->área->subáre — Duas estruturas de endereço concorrentes: D01.01-IDE-001 e domínio->área->subárea->objeto.\n\n**Regra de resolução:** Precedencia conforme regra do EXECUTAR-DOC-PREFILL-001: fonte mais recente e de maior autoridade vence; sem isso, permanece CONFLICT.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D22-DEC-GOVSPEC-A05",
+  "title": "[CONFLITO] D22-DEC-GOVSPEC-A05 — Painel declara 39 peças de conteúdo mas a soma própria resulta em 45-47 incluind",
+  "labels": [
+   "type:conflict",
+   "requires-human-decision",
+   "epistemic:conflict"
+  ],
+  "body": "- **conflict_id:** `D22-DEC-GOVSPEC-A05`\n- **domain_id:** D06/D07\n- **status (planilha):** ABERTO\n\n**Issue:** Painel declara 39 peças de conteúdo mas a soma própria resulta em 45-47 incluind — Painel declara 39 peças de conteúdo mas a soma própria resulta em 45-47 incluindo os três ebooks.\n\n**Regra de resolução:** Precedencia conforme regra do EXECUTAR-DOC-PREFILL-001: fonte mais recente e de maior autoridade vence; sem isso, permanece CONFLICT.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D22-DEC-GOVSPEC-A07",
+  "title": "[CONFLITO] D22-DEC-GOVSPEC-A07 — Artigo: 1.900-2.500 palavras num trecho vs 1.800-2.400 noutro. — Artigo: 1.900-2",
+  "labels": [
+   "type:conflict",
+   "requires-human-decision",
+   "epistemic:conflict"
+  ],
+  "body": "- **conflict_id:** `D22-DEC-GOVSPEC-A07`\n- **domain_id:** D06/D07\n- **status (planilha):** ABERTO\n\n**Issue:** Artigo: 1.900-2.500 palavras num trecho vs 1.800-2.400 noutro. — Artigo: 1.900-2.500 palavras num trecho vs 1.800-2.400 noutro.\n\n**Regra de resolução:** Precedencia conforme regra do EXECUTAR-DOC-PREFILL-001: fonte mais recente e de maior autoridade vence; sem isso, permanece CONFLICT.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ },
+ {
+  "key": "D22-DEC-GOVSPEC-A16",
+  "title": "[CONFLITO] D22-DEC-GOVSPEC-A16 — Runbook de 19 tarefas, referência a tarefas 01-22 e outro registro de dez tarefa",
+  "labels": [
+   "type:conflict",
+   "requires-human-decision",
+   "epistemic:conflict"
+  ],
+  "body": "- **conflict_id:** `D22-DEC-GOVSPEC-A16`\n- **domain_id:** D06/D07\n- **status (planilha):** ABERTO\n\n**Issue:** Runbook de 19 tarefas, referência a tarefas 01-22 e outro registro de dez tarefa — Runbook de 19 tarefas, referência a tarefas 01-22 e outro registro de dez tarefas.\n\n**Regra de resolução:** Precedencia conforme regra do EXECUTAR-DOC-PREFILL-001: fonte mais recente e de maior autoridade vence; sem isso, permanece CONFLICT.\n\n---\nFonte: `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` (Release 1, fonte primária). GitHub = espelho estrutural (Release 2).\nFechar issue ≠ aprovar: aprovação só via label `approval:aprovado` por ação humana.",
+  "parent": "EXECUTAR-FINAL-001"
+ }
+]
