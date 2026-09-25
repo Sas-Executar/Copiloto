@@ -16,7 +16,7 @@ Renderers are visual profiles, not semantic schemas.
 - `scorecard` — KPI/OKR structured review.
 - `workbook` — guided prompts and fillable sections.
 - `memo` — executive narrative document.
-- `email` — sendable business communication.
+- `email` — sendable business communication. Status report por e-mail: HTML com CSS inline gerado dos tokens ou PDF anexo — ver `120-email-html.md`.
 - `register` — structured risk/decision/issue log.
 - `procedure` — stepwise SOP layout.
 - `spec` — requirements and acceptance criteria.

@@ -1,103 +1,116 @@
 #!/usr/bin/env python3
-from pathlib import Path
+"""Status report (EXECUTAR_STATUS_REPORT_V1): JSON canônico -> HTML de impressão e/ou e-mail HTML.
+
+Os dois saem de templates imutáveis com placeholders em chaves duplas:
+  assets/templates/status-report-v1.html        impressão A4 / navegador (tokens.css + report.css)
+  assets/templates/status-report-v1.email.html  e-mail (gerado por build_email.py, CSS inline)
+Placeholder comum recebe texto escapado; STYLE e os terminados em _HTML recebem fragmentos montados aqui a partir
+de texto escapado. O Copiloto Operacional (executar-Blog/apps/copiloto) aplica a mesma regra em
+TypeScript — o teste de paridade de lá compara a saída com este script.
+
+Uso: render_report.py report.json saida.html [--email saida.email.html]
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
 from html import escape
-import json, sys
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TOKENS_CSS = (ROOT / "assets" / "tokens" / "tokens.css").read_text(encoding="utf-8")
-CSS = TOKENS_CSS + "\n" + (ROOT / "assets" / "report.css").read_text(encoding="utf-8")
+TEMPLATE = ROOT / "assets" / "templates" / "status-report-v1.html"
+TEMPLATE_EMAIL = ROOT / "assets" / "templates" / "status-report-v1.email.html"
+PLACEHOLDER = re.compile(r"{{([A-Z0-9_]+)}}")
+PROPS = ["context", "problem", "process", "progress", "step_1", "step_2", "step_3", "risk", "prevention", "delivery"]
 
-def pct(v):
+
+def pct(v) -> str:
     if v is None:
         return "—"
-    if float(v).is_integer():
-        return f"{int(v)}%"
-    return f"{v:g}%"
+    return f"{int(v)}%" if float(v).is_integer() else f"{v:g}%"
 
-def cycle(cur, total):
+
+def cycle(cur, total) -> str:
     return "—" if cur is None or total is None else f"{cur:02d} / {total:02d}"
 
-def tag_html(items, cls):
-    return "".join(f'<span class="{cls}">{escape(str(x))}</span>' for x in items)
 
-def main():
-    if len(sys.argv) != 3:
-        raise SystemExit("usage: render_report.py report.json output.html")
-    data = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
-    m, p, d, t, n, props = data["meta"], data["progress"], data["depth"], data["triptych"], data["now"], data["properties"]
+def estilo() -> str:
+    return (ROOT / "assets" / "tokens" / "tokens.css").read_text(encoding="utf-8") + "\n" + (ROOT / "assets" / "report.css").read_text(encoding="utf-8")
 
-    prop_labels = [
-        ("context","contexto",False),("problem","problema",True),("process","processo",False),
-        ("progress","progresso",True),("step_1","passo_1",False),("step_2","passo_2",False),
-        ("step_3","passo_3",False),("risk","risco",True),("prevention","prevencao",False),("delivery","entrega",False)
-    ]
-    prop_rows = "\n".join(
-        f'<tr><td class="key mono{" accent" if accent else ""}">{label}</td><td>{escape(props[key])}</td></tr>'
-        for key,label,accent in prop_labels
-    )
 
-    tri = []
-    for key,label in [("yesterday","ONTEM"),("today","HOJE"),("tomorrow","AMANHÃ")]:
-        b=t[key]
-        current = ' class="current"' if key=="today" else ""
-        tri.append(
-            f'<td{current}><div class="tri-top"><span>{label}</span><b>{pct(b["percent"])}</b></div>'
-            f'<div class="tri-title">{escape(b["title"])}</div><div class="tri-state">{escape(b["state"])}</div></td>'
-        )
+def tags_html(itens, cls: str) -> str:
+    return "".join(f'<span class="{cls}">{escape(str(x))}</span>' for x in itens) or f'<span class="{cls}">—</span>'
 
-    width = max(0, min(100, p["overall_percent"] or 0))
-    page = f'''<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{escape(m["title"])}</title>
-<style>{CSS}</style>
-</head>
-<body>
-<main class="sheet">
-<header class="header mono">
-<div class="kicker">{escape(m["kicker"])}</div>
-<div class="title">{escape(m["title"])}</div>
-<div class="meta">schema: {escape(m["schema"])} &nbsp;&nbsp; status: {escape(m["status"])} &nbsp;&nbsp; data: {escape(str(m["date"] or "não identificada"))}</div>
-</header>
-<section class="section">
-<div class="section-label mono">PROGRESSO / PROJETO</div>
-<table class="dashboard-table" role="presentation"><tr>
-<td style="width:50%"><div class="hero">{pct(p["overall_percent"])}</div><div class="hero-label">concluído</div></td>
-<td class="stat" style="width:25%"><strong>{cycle(p["cycle_current"],p["cycle_total"])}</strong><span>ciclo atual</span></td>
-<td class="stat" style="width:25%"><strong>{pct(p["today_percent"])}</strong><span>hoje</span></td>
-</tr></table>
-<div class="progress-track"><div class="progress-fill" style="width:{width}%"></div></div>
-<div class="depth-wrap"><table class="depth-table" role="presentation"><tr>
-<td><div class="depth-name mono">Projeto</div><div class="depth-val">{escape(d["project"])}</div></td>
-<td><div class="depth-name mono">Ciclo</div><div class="depth-val">{escape(d["cycle"])}</div></td>
-<td class="depth-current"><div class="depth-name mono">Hoje</div><div class="depth-val">{escape(d["today"])}</div></td>
-<td><div class="depth-name mono">Tarefa</div><div class="depth-val">{escape(d["task"])}</div></td>
-<td><div class="depth-name mono">Ação</div><div class="depth-val">{escape(d["action"])}</div></td>
-</tr></table></div>
-<div class="triptych-wrap"><table class="triptych-table" role="presentation"><tr>{''.join(tri)}</tr></table></div>
-<div class="now"><div class="now-row"><div>
-<div class="section-label mono now-label">AGORA</div>
-<div class="now-title">{escape(n["title"])}</div>
-<div class="now-meta">{escape(n["meta"])}</div>
-</div><span class="chip">{escape(n["chip"])}</span></div></div>
-</section>
-<section class="section">
-<div class="section-label mono">STATUS / PROPERTIES</div>
-<table class="properties" role="presentation">{prop_rows}</table>
-<div class="tags">
-<div class="tag-label mono">FOCO</div>{tag_html(data["tags"]["focus"],"tag-purple")}
-<div class="tag-label mono">ESTADO</div>{tag_html(data["tags"]["state"],"tag-purple")}
-<div class="tag-label mono">ORIGEM</div>{tag_html(data["tags"]["origin"],"tag-grey")}
-</div>
-</section>
-<footer class="footer mono">{escape(m["schema"])} · leitura: header → progresso → agora → properties → tags</footer>
-</main>
-</body>
-</html>'''
-    Path(sys.argv[2]).write_text(page, encoding="utf-8")
-    print(f"WROTE: {sys.argv[2]}")
+
+def placeholders(data: dict) -> dict[str, str]:
+    """Texto dos placeholders (sem escape). Chaves *_HTML e STYLE já vêm como HTML seguro."""
+    m, p, d, t, n, props, tags = data["meta"], data["progress"], data["depth"], data["triptych"], data["now"], data["properties"], data["tags"]
+    out = {
+        "TITLE": m["title"], "KICKER": m["kicker"], "SCHEMA": m["schema"], "STATUS": m["status"],
+        "DATE": m["date"] or "não identificada",
+        "PCT_OVERALL": pct(p["overall_percent"]), "CYCLE": cycle(p["cycle_current"], p["cycle_total"]),
+        "PCT_TODAY": pct(p["today_percent"]),
+        "PROGRESS_WIDTH": str(round(max(0, min(100, p["overall_percent"] or 0)))),
+        "DEPTH_PROJECT": d["project"], "DEPTH_CYCLE": d["cycle"], "DEPTH_TODAY": d["today"],
+        "DEPTH_TASK": d["task"], "DEPTH_ACTION": d["action"],
+        "NOW_TITLE": n["title"], "NOW_META": n["meta"], "NOW_CHIP": n["chip"],
+        "TRACE": data.get("trace") or f"fontes: {m['source_count']}",
+        "PREHEADER": f"{pct(p['overall_percent'])} concluído · agora: {n['title']}",
+    }
+    for chave, rotulo in (("yesterday", "YESTERDAY"), ("today", "TODAY"), ("tomorrow", "TOMORROW")):
+        out[f"TRI_{rotulo}_PCT"] = pct(t[chave]["percent"])
+        out[f"TRI_{rotulo}_TITLE"] = t[chave]["title"]
+        out[f"TRI_{rotulo}_STATE"] = t[chave]["state"]
+    for k in PROPS:
+        out[f"PROP_{k.upper()}"] = props[k]
+    out["TAGS_FOCUS_HTML"] = tags_html(tags["focus"], "tag-brand")
+    out["TAGS_STATE_HTML"] = tags_html(tags["state"], "tag-brand")
+    out["TAGS_ORIGIN_HTML"] = tags_html(tags["origin"], "tag-neutral")
+    return out
+
+
+def preencher(template: str, valores: dict[str, str]) -> str:
+    faltando = sorted(set(PLACEHOLDER.findall(template)) - set(valores))
+    if faltando:
+        raise ValueError(f"placeholders sem valor: {faltando}")
+
+    def troca(mt):
+        k = mt.group(1)
+        v = str(valores[k])
+        return v if k == "STYLE" or k.endswith("_HTML") else escape(v, quote=True)
+
+    return PLACEHOLDER.sub(troca, template)
+
+
+def render(data: dict) -> str:
+    valores = placeholders(data) | {"STYLE": estilo()}
+    return preencher(TEMPLATE.read_text(encoding="utf-8"), valores)
+
+
+def render_email(data: dict) -> str:
+    return preencher(TEMPLATE_EMAIL.read_text(encoding="utf-8"), placeholders(data))
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("entrada", type=Path)
+    ap.add_argument("saida", type=Path)
+    ap.add_argument("--email", type=Path, help="também grava a versão e-mail HTML")
+    a = ap.parse_args()
+    data = json.loads(a.entrada.read_text(encoding="utf-8"))
+    try:
+        a.saida.write_text(render(data), encoding="utf-8")
+        print(f"WROTE: {a.saida}")
+        if a.email:
+            a.email.write_text(render_email(data), encoding="utf-8")
+            print(f"WROTE: {a.email}")
+    except ValueError as e:
+        print(str(e), file=sys.stderr)
+        return 2
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

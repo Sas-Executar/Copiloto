@@ -1,5 +1,5 @@
 /*
-  Gerado a partir de assets/tokens/tokens.json via `python3 scripts/tokens.py --css`.
+  Gerado a partir de assets/tokens/tokens.json via `python3 scripts/tokens.py --escrever-css`.
   Nao editar a mao.
   Fonte: EXECUTAR-REPORT-PRINT-DS-001 v1.0 (references/200-executive-report-print-contract.md).
 */
@@ -31,6 +31,8 @@
   --exec-color-data-fill:#00BF63;
   --exec-color-data-fill-alt:#1F93FF;
   --exec-color-data-track:#F0F0F0;
+  --exec-color-state-warning:#B45309;
+  --exec-color-state-error:#DC2626;
   --bg:#FFFFFF;
   --fg:#4B4A4A;
   --fg-strong:#4B4A4A;
@@ -73,6 +75,8 @@
   --exec-stroke-strong:0.8mm;
   --exec-stroke-selected:1.2mm;
   --exec-font-stack:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --exec-font-sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --exec-font-mono:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;
   --exec-font-caption:2.4mm;
   --exec-font-label:2.8mm;
   --exec-font-body:3.2mm;

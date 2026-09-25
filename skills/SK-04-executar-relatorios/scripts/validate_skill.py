@@ -73,11 +73,44 @@ for rel in [
     "scripts/validate_mapa.py",
     "scripts/tokens.py",
     "assets/report.css",
+    "assets/templates/status-report-v1.html",
+    "assets/templates/status-report-v1.email.src.html",
+    "assets/templates/status-report-v1.email.html",
+    "scripts/build_email.py",
+    "references/120-email-html.md",
     "manifest.json",
     "VERSION",
 ]:
     if not (ROOT / rel).exists():
         errors.append(f"required resource missing: {rel}")
+
+# Relatórios impressos e e-mail bebem só dos tokens (EXECUTAR-REPORT-PRINT-DS-001):
+# nenhum hex fora do bloco TOKENS gerado, nenhuma LACUNA consumida, e-mail gerado em dia.
+import re as _re
+import subprocess as _sp
+import sys as _sys
+sys_path = str(ROOT / "scripts")
+_sys.path.insert(0, sys_path)
+from tokens import Tokens as _Tokens  # noqa: E402
+
+_t = _Tokens.load()
+_lacunas = {_t._nome_css(n) for n in _t.lacunas() if n in _t.alias}
+_bloco = _re.compile(r"/\* TOKENS:INICIO \*/.*?/\* TOKENS:FIM \*/", _re.S)
+for rel in [
+    "assets/report.css",
+    "assets/templates/status-report-v1.html",
+    "assets/templates/status-report-v1.email.src.html",
+    "assets/templates/status-report-prisma-a4-v4.html",
+]:
+    fonte = (ROOT / rel).read_text(encoding="utf-8")
+    fora = _bloco.sub("", fonte)
+    hexes = sorted(set(_re.findall(r"#[0-9A-Fa-f]{6}\b|#[0-9A-Fa-f]{3}\b(?![0-9A-Fa-f-])", fora)))
+    if hexes:
+        errors.append(f"{rel}: hex fora do bloco de tokens: {hexes}")
+    for nome in sorted(set(_re.findall(r"var\(--([a-z0-9-]+)\)", fora)) & _lacunas):
+        errors.append(f"{rel}: consome token LACUNA --{nome}")
+if _sp.run([_sys.executable, str(ROOT / "scripts" / "build_email.py"), "--checar"], capture_output=True).returncode:
+    errors.append("assets/templates/*.email.html desatualizado: rode scripts/build_email.py")
 
 if errors:
     raise SystemExit("\n".join("ERROR: "+e for e in errors))

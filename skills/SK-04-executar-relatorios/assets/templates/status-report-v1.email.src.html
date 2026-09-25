@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+  FONTE do e-mail HTML do status report (EXECUTAR_STATUS_REPORT_V1) — perfil "email".
+  Não é enviado como está: scripts/build_email.py resolve cada var(--exec-*) com o valor de
+  assets/tokens/tokens.json e grava status-report-v1.email.html (CSS 100% inline, sem var(),
+  sem fonte externa, tabelas de 600 px). Mesmos placeholders do template de impressão.
+  Regras: references/120-email-html.md.
+-->
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>{{TITLE}}</title>
+</head>
+<body style="margin:0;padding:0;background:var(--exec-color-surface-sunken);-webkit-text-size-adjust:100%;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:var(--exec-color-surface-sunken);">{{PREHEADER}}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="var(--exec-color-surface-sunken)" style="background:var(--exec-color-surface-sunken);">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="var(--exec-color-surface-page)" style="width:100%;max-width:600px;background:var(--exec-color-surface-page);border:1px solid var(--exec-color-rule-default);font-family:var(--exec-font-sans);color:var(--exec-color-ink-body);">
+<tr><td style="padding:18px 22px;background:var(--exec-color-surface-sunken);border-bottom:3px solid var(--exec-color-rule-brand);">
+<div style="font-family:var(--exec-font-mono);font-size:12px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:var(--exec-color-brand-strong);">{{KICKER}}</div>
+<div style="font-size:22px;line-height:1.2;font-weight:700;margin-top:6px;color:var(--exec-color-ink-title);">{{TITLE}}</div>
+<div style="font-family:var(--exec-font-mono);font-size:11px;line-height:1.5;margin-top:8px;color:var(--exec-color-ink-secondary-strong);">status: {{STATUS}} · data: {{DATE}}</div>
+</td></tr>
+<tr><td style="padding:18px 20px;">
+<div style="font-family:var(--exec-font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--exec-color-ink-secondary-strong);margin-bottom:10px;">Progresso / projeto</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="50%" valign="bottom"><div style="font-size:44px;line-height:1;font-weight:700;color:var(--exec-color-ink-title);">{{PCT_OVERALL}}</div><div style="font-size:12px;margin-top:5px;color:var(--exec-color-ink-secondary-strong);">concluído</div></td>
+<td width="25%" valign="bottom" align="right"><div style="font-size:18px;font-weight:700;color:var(--exec-color-ink-title);">{{CYCLE}}</div><div style="font-size:11px;color:var(--exec-color-ink-secondary-strong);">ciclo atual</div></td>
+<td width="25%" valign="bottom" align="right"><div style="font-size:18px;font-weight:700;color:var(--exec-color-ink-title);">{{PCT_TODAY}}</div><div style="font-size:11px;color:var(--exec-color-ink-secondary-strong);">hoje</div></td>
+</tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:16px;"><tr>
+<td height="6" bgcolor="var(--exec-color-data-track)" style="background:var(--exec-color-data-track);font-size:0;line-height:0;"><table role="presentation" width="{{PROGRESS_WIDTH}}%" cellpadding="0" cellspacing="0" border="0"><tr><td height="6" bgcolor="var(--exec-color-data-fill)" style="background:var(--exec-color-data-fill);font-size:0;line-height:0;">&nbsp;</td></tr></table></td>
+</tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:16px;border:1px solid var(--exec-color-rule-subtle);"><tr>
+<td width="33%" valign="top" style="padding:12px;border-right:1px solid var(--exec-color-rule-subtle);"><div style="font-size:11px;color:var(--exec-color-ink-secondary-strong);">ONTEM · <b style="color:var(--exec-color-ink-title);">{{TRI_YESTERDAY_PCT}}</b></div><div style="font-size:14px;font-weight:600;line-height:1.35;margin-top:8px;color:var(--exec-color-ink-title);">{{TRI_YESTERDAY_TITLE}}</div><div style="font-size:11px;margin-top:8px;color:var(--exec-color-ink-secondary-strong);">{{TRI_YESTERDAY_STATE}}</div></td>
+<td width="34%" valign="top" bgcolor="var(--exec-color-accent-soft-alt)" style="padding:12px;background:var(--exec-color-accent-soft-alt);border-right:1px solid var(--exec-color-rule-subtle);"><div style="font-size:11px;color:var(--exec-color-brand-strong);">HOJE · <b>{{TRI_TODAY_PCT}}</b></div><div style="font-size:14px;font-weight:600;line-height:1.35;margin-top:8px;color:var(--exec-color-ink-title);">{{TRI_TODAY_TITLE}}</div><div style="font-size:11px;font-weight:600;margin-top:8px;color:var(--exec-color-brand-strong);">{{TRI_TODAY_STATE}}</div></td>
+<td width="33%" valign="top" style="padding:12px;"><div style="font-size:11px;color:var(--exec-color-ink-secondary-strong);">AMANHÃ · <b style="color:var(--exec-color-ink-title);">{{TRI_TOMORROW_PCT}}</b></div><div style="font-size:14px;font-weight:600;line-height:1.35;margin-top:8px;color:var(--exec-color-ink-title);">{{TRI_TOMORROW_TITLE}}</div><div style="font-size:11px;margin-top:8px;color:var(--exec-color-ink-secondary-strong);">{{TRI_TOMORROW_STATE}}</div></td>
+</tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:16px;border-top:2px solid var(--exec-color-rule-brand);"><tr>
+<td valign="top" style="padding-top:14px;"><div style="font-family:var(--exec-font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--exec-color-brand-strong);">Agora</div><div style="font-size:18px;font-weight:700;line-height:1.25;margin-top:6px;color:var(--exec-color-ink-title);">{{NOW_TITLE}}</div><div style="font-size:12px;margin-top:4px;color:var(--exec-color-ink-secondary-strong);">{{NOW_META}}</div></td>
+<td valign="top" align="right" style="padding-top:14px;"><span style="display:inline-block;padding:5px 10px;border-radius:999px;border:1px solid var(--exec-color-rule-brand);background:var(--exec-color-brand-soft);color:var(--exec-color-brand-strong);font-size:12px;font-weight:600;white-space:nowrap;">{{NOW_CHIP}}</span></td>
+</tr></table>
+</td></tr>
+<tr><td style="padding:18px 20px;border-top:1px solid var(--exec-color-rule-subtle);">
+<div style="font-family:var(--exec-font-mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--exec-color-ink-secondary-strong);margin-bottom:6px;">Status</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:15px;line-height:1.45;">
+<tr><td width="110" valign="top" style="padding:10px 10px 10px 0;border-bottom:1px solid var(--exec-color-rule-subtle);font-family:var(--exec-font-mono);font-size:12px;font-weight:700;color:var(--exec-color-brand-strong);">problema</td><td style="padding:10px 0;border-bottom:1px solid var(--exec-color-rule-subtle);color:var(--exec-color-ink-body);">{{PROP_PROBLEM}}</td></tr>
+<tr><td width="110" valign="top" style="padding:10px 10px 10px 0;border-bottom:1px solid var(--exec-color-rule-subtle);font-family:var(--exec-font-mono);font-size:12px;font-weight:700;color:var(--exec-color-brand-strong);">progresso</td><td style="padding:10px 0;border-bottom:1px solid var(--exec-color-rule-subtle);color:var(--exec-color-ink-body);">{{PROP_PROGRESS}}</td></tr>
+<tr><td width="110" valign="top" style="padding:10px 10px 10px 0;border-bottom:1px solid var(--exec-color-rule-subtle);font-family:var(--exec-font-mono);font-size:12px;font-weight:700;color:var(--exec-color-ink-secondary-strong);">próximos</td><td style="padding:10px 0;border-bottom:1px solid var(--exec-color-rule-subtle);color:var(--exec-color-ink-body);">1. {{PROP_STEP_1}}<br>2. {{PROP_STEP_2}}<br>3. {{PROP_STEP_3}}</td></tr>
+<tr><td width="110" valign="top" style="padding:10px 10px 10px 0;font-family:var(--exec-font-mono);font-size:12px;font-weight:700;color:var(--exec-color-brand-strong);">risco</td><td style="padding:10px 0;color:var(--exec-color-ink-body);">{{PROP_RISK}}</td></tr>
+</table>
+</td></tr>
+<tr><td style="padding:14px 20px 18px;border-top:1px solid var(--exec-color-rule-subtle);font-family:var(--exec-font-mono);font-size:11px;line-height:1.5;color:var(--exec-color-ink-secondary-strong);">{{SCHEMA}} · {{TRACE}}</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>

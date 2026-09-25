@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "epic_number": "001",
+    "epic_state": "Existing",
+    "eyebrow_top": "MAPA-OS · INDICE",
+    "period_short": "Corte 2026-09-10"
+  },
+  "epic": {
+    "progress_pct": 100,
+    "eyebrow": "GOVERNANCA",
+    "title": "Indice de Governanca — Skills EXECUTAR",
+    "description": "9 skills proprietarias EXECUTAR indexadas em 6 macroareas AKW, com IDs rastreaveis Mxx-Pxx-Sxx. Estado sustentado: existing (sem evidencia de teste ou publicacao).",
+    "intent": {
+      "label": "INTENCAO",
+      "title": "Mapa estrutural, nao cronograma",
+      "text": "Face 02 representa cortes do indice por macroarea, nao dias do calendario. Nenhuma data de execucao foi declarada pelas fontes."
+    }
+  },
+  "kpis": [
+    {
+      "label": "Skills indexadas",
+      "value": "9",
+      "caption": "familia EXECUTAR"
+    },
+    {
+      "label": "Macroareas",
+      "value": "6/17",
+      "caption": "cobertura AKW"
+    },
+    {
+      "label": "Evid. teste",
+      "value": "0/9",
+      "caption": "estado sustentado: existing"
+    },
+    {
+      "label": "Entrega do pacote",
+      "value": "100%",
+      "caption": "zip + index + csv"
+    }
+  ],
+  "calendar": {
+    "eyebrow": "INDICE",
+    "title": "Cortes por Macroarea",
+    "week_id": "IDX01",
+    "period": "Snapshot 2026-09-10",
+    "days": [
+      {
+        "number": "01",
+        "weekday": "M02",
+        "date": "EXST",
+        "title": "Gestão de Plugins Cowork",
+        "focus": "2 skill(s) — estado existing, sem evidencia de teste/publicacao",
+        "tracks": [
+          "executar-skill",
+          "gerador-skill-"
+        ]
+      },
+      {
+        "number": "02",
+        "weekday": "M05",
+        "date": "EXST",
+        "title": "Design",
+        "focus": "1 skill(s) — estado existing, sem evidencia de teste/publicacao",
+        "tracks": [
+          "executar-desig"
+        ]
+      },
+      {
+        "number": "03",
+        "weekday": "M07",
+        "date": "EXST",
+        "title": "Busca e Conhecimento Empresarial",
+        "focus": "1 skill(s) — estado existing, sem evidencia de teste/publicacao",
+        "tracks": [
+          "executar-fluxo"
+        ]
+      },
+      {
+        "number": "04",
+        "weekday": "M12",
+        "date": "EXST",
+        "title": "Operações",
+        "focus": "1 skill(s) — estado existing, sem evidencia de teste/publicacao",
+        "tracks": [
+          "plano-operacio"
+        ]
+      },
+      {
+        "number": "05",
+        "weekday": "M14",
+        "date": "EXST",
+        "title": "Gestão de Produto",
+        "focus": "1 skill(s) — estado existing, sem evidencia de teste/publicacao",
+        "tracks": [
+          "executar-arvor"
+        ]
+      },
+      {
+        "number": "06",
+        "weekday": "M15",
+        "date": "EXST",
+        "title": "Produtividade Pessoal e Gestão de Tarefas",
+        "focus": "1 skill(s) — estado existing, sem evidencia de teste/publicacao",
+        "tracks": [
+          "executar-calen"
+        ]
+      },
+      {
+        "number": "07",
+        "weekday": "M17",
+        "date": "EXST",
+        "title": "Pequenos Negócios",
+        "focus": "2 skill(s) — estado existing, sem evidencia de teste/publicacao",
+        "tracks": [
+          "deskgo-busines",
+          "gerar-workbook"
+        ]
+      }
+    ]
+  },
+  "deliverables": {
+    "eyebrow": "ENTREGAVEIS",
+    "title": "Pacote executar-skills-directory",
+    "meta": "9 skills · 6 macroareas",
+    "hero": {
+      "tag": "PACOTE PRINCIPAL",
+      "title": "executar-skills-directory.zip",
+      "description": "Diretorio completo com MASTER_INDEX.md, MASTER_INDEX.csv, READMEs por macroarea e SKILL.md original de cada uma das 9 skills.",
+      "result_label": "Estado",
+      "result_value": "Entregue (complete)"
+    },
+    "items": [
+      {
+        "title": "MASTER_INDEX.md",
+        "description": "Indice tabular completo com IDs Mxx-Pxx-Sxx",
+        "status": "Entregue"
+      },
+      {
+        "title": "MASTER_INDEX.csv",
+        "description": "Mesmo indice em formato planilha",
+        "status": "Entregue"
+      },
+      {
+        "title": "9x SKILL.md",
+        "description": "Conteudo original integral de cada skill copiado",
+        "status": "Entregue"
+      },
+      {
+        "title": "mapa-os-executar-skills.json",
+        "description": "Mapa-OS validado (schema PASS) desta familia",
+        "status": "Validado"
+      }
+    ],
+    "next": {
+      "label": "Proximo passo",
+      "value": "Def. criterio verif."
+    },
+    "trace": "SRC-INDEX-001, SRC-STRUCT-003 — OPS-MAPA-EXECUTAR-SKILLS-001"
+  }
+}

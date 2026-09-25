@@ -43,9 +43,14 @@ PARES_CONTRASTE = [
     ("ink-title", "surface-page", "titulo", 4.5),
     ("ink-placeholder", "surface-page", "placeholder", 4.5),
     ("ink-muted", "surface-page", "rotulo decorativo", 3.0),
-    ("brand", "surface-page", "texto de marca", 4.5),
+    # brand (#00BF63) é só preenchimento (barra, régua, ponto); texto de marca usa brand-strong.
+    ("brand-strong", "surface-page", "texto de marca", 4.5),
+    ("brand-strong", "brand-soft", "texto de marca sobre chip", 4.5),
+    ("brand-strong", "accent-soft-alt", "texto de marca sobre destaque", 4.5),
+    ("ink-secondary-strong", "surface-page", "rotulo de dado", 4.5),
+    ("ink-secondary-strong", "surface-sunken", "rotulo sobre cabecalho", 4.5),
     ("ink-inverse", "surface-inverse", "texto sobre capa escura", 4.5),
-    ("ink-inverse", "brand", "texto sobre azul", 4.5),
+    ("ink-inverse", "brand-strong", "texto sobre marca", 4.5),
     ("rule-strong", "surface-page", "contorno de checkbox/campo", 3.0),
 ]
 # Nomes de token, sem o prefixo `exec-color-` (esse prefixo só existe quando o
@@ -230,12 +235,22 @@ class Tokens:
         return out
 
 
+CABECALHO_CSS = """/*
+  Gerado a partir de assets/tokens/tokens.json via `python3 scripts/tokens.py --escrever-css`.
+  Nao editar a mao.
+  Fonte: EXECUTAR-REPORT-PRINT-DS-001 v1.0 (references/200-executive-report-print-contract.md).
+*/
+"""
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--tokens", type=Path, default=DEFAULT_PATH)
     p.add_argument("--tema", default=None, help="playbook | swiss | editorial")
     p.add_argument("--listar-temas", action="store_true")
     p.add_argument("--css", action="store_true")
+    p.add_argument("--escrever-css", action="store_true",
+                   help="regrava assets/tokens/tokens.css a partir do tokens.json (único jeito de mudar o .css)")
     p.add_argument("--lacunas", action="store_true")
     p.add_argument("--contraste", action="store_true")
     p.add_argument("--sincronizar", nargs="+", type=Path, default=None,
@@ -266,6 +281,10 @@ def main() -> int:
 
     if args.css:
         print(t.css_block())
+    if args.escrever_css:
+        destino = ASSETS / "tokens.css"
+        destino.write_text(CABECALHO_CSS + t.css_block() + "\n", encoding="utf-8")
+        print(f"escrito: {destino}")
     if args.lacunas:
         for n in t.lacunas():
             print(f"LACUNA  {n}  — {t.base(n)}")
@@ -277,7 +296,7 @@ def main() -> int:
             print(f"{marca} {r['razao']:>6}:1 (min {r['minimo']}) {r['uso']}: {r['frente']} sobre {r['fundo']}")
         if falhas:
             return 1
-    if not (args.css or args.lacunas or args.contraste):
+    if not (args.css or args.escrever_css or args.lacunas or args.contraste or args.sincronizar):
         p.print_help()
     return 0
 

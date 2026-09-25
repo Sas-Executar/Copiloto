@@ -66,7 +66,7 @@ nunca invente o valor.
 
 | O pedido fala de… | Capacidade | Leia antes |
 |---|---|---|
-| status report, converter documento/texto em relatório, sintetizar como report, progresso/riscos/ações de um projeto | Status report | `references/00-operating-contract.md`, `references/20-report-schema.md`, `references/30-information-mapping.md` |
+| status report, converter documento/texto em relatório, sintetizar como report, progresso/riscos/ações de um projeto, report por e-mail (HTML/PDF) | Status report | `references/00-operating-contract.md`, `references/20-report-schema.md`, `references/30-information-mapping.md`, `references/120-email-html.md` |
 | relatório executivo A4 para impressão/PDF, "one-pager para diretoria", diagnóstico → recomendação → roadmap, matriz evidência-implicação-ação, capa própria, cabeçalho/rodapé paginado | Relatório executivo (impressão) | `references/200-executive-report-print-contract.md`, `assets/templates/executive-report-a4.html` |
 | memo, proposta, SOP, RAID log, RACI, OKR, business case, postmortem, e-mail operacional, brief, ADR, PRD/FRD, kanban, roadmap, retro, canvas — qualquer artefato de negócio fora do status report padrão | Pacote de templates de negócio | `references/100-business-template-routing.md`, `references/110-renderer-profiles.md`, `templates/catalog.json` |
 | Mapa-OS, mapa operacional, centro de comando, retomada, Agora/Próximo/Depois, plano semanal Prisma, status EXECUTAR, ou os atalhos 00/01/02 | Mapa-OS / PRISM | `references/mapa-os/architecture-executar.md`, `references/mapa-os/mapa-os-contract.md`, `references/mapa-os/activation-index.md` |
@@ -91,8 +91,13 @@ Fluxo: ingerir (IDs estáveis `S01`, `S02`…) → normalizar
 (`scripts/normalize_text.py`) → extrair fatos classificados → mapear no
 schema → comprimir preservando incerteza → montar JSON canônico
 (`schemas/report.schema.json`, validar com `scripts/validate_report.py`) →
-renderizar (`scripts/render_report.py`, usa `assets/report.css`) →
+renderizar (`scripts/render_report.py saida.html [--email saida.email.html]`,
+template `assets/templates/status-report-v1.html` + `tokens.css` + `report.css`) →
 validar saída final (`references/70-quality-gates.md`).
+
+Envio por e-mail (HTML no corpo ou PDF anexo, à escolha): perfil `email` em
+`references/120-email-html.md`. O `.email.html` é gerado dos tokens por
+`scripts/build_email.py` — nunca à mão, nunca com `var()` nem hex solto.
 
 Ordem de leitura na saída HTML: `header → progresso → profundidade →
 ontem/hoje/amanhã → agora → properties → tags → footer`.
