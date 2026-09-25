@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "title": "Campanha de lançamento",
+    "kicker": "EXECUTAR / STATUS REPORT",
+    "schema": "EXECUTAR_STATUS_REPORT_V1",
+    "status": "ativo",
+    "date": "2026-08-26",
+    "source_count": 1
+  },
+  "progress": {
+    "overall_percent": 22,
+    "cycle_current": 3,
+    "cycle_total": 8,
+    "today_percent": 11
+  },
+  "depth": {
+    "project": "22%",
+    "cycle": "33%",
+    "today": "11%",
+    "task": "33%",
+    "action": "agora"
+  },
+  "triptych": {
+    "yesterday": {
+      "title": "Direção estratégica fechada",
+      "state": "concluído",
+      "percent": 100
+    },
+    "today": {
+      "title": "Landing e peças produzidas",
+      "state": "em andamento",
+      "percent": 11
+    },
+    "tomorrow": {
+      "title": "Campanha validada e publicada",
+      "state": "planejado",
+      "percent": 0
+    }
+  },
+  "now": {
+    "title": "Revisar headline",
+    "meta": "Hoje · Preparar conteúdo · aproximadamente 15 minutos",
+    "chip": "próxima ação"
+  },
+  "properties": {
+    "context": "Consolidar código maduro dos repositórios-fonte no canônico sem reimplementar capacidades já existentes.",
+    "problem": "O canônico tem a fundação SaaS, mas ainda não incorporou vários motores maduros de domínio, agente, pré-plan, scanner e execução.",
+    "process": "Comparar cada capacidade e decidir objetivamente o que portar, adaptar, fundir ou descartar.",
+    "progress": "Ter uma sequência clara de PRs para incorporar primeiro o núcleo reutilizável e depois integrações e canais.",
+    "step_1": "Portar contracts, interpreter determinístico, ingest, evidence, methodology, verifier, policy, fractal e project-domain.",
+    "step_2": "Integrar o núcleo ao Vercel AI SDK, MCP authority, Clerk e UnitOfWork local antes de Aurora.",
+    "step_3": "Incorporar gateway, MCP tools, WhatsApp, projections, QR e ativos exclusivos do Scanner.",
+    "risk": "Misturar regras maduras com infraestrutura antiga pode gerar acoplamento, falhas multi-tenant e divergência de estado.",
+    "prevention": "Migrar por contratos e testes, mantendo adapters de infraestrutura separados.",
+    "delivery": "Um único canônico com domínio, pré-plan, IA, MCP, evidências, QR, scanner e canais compartilhando o mesmo estado."
+  },
+  "tags": {
+    "focus": [
+      "executar",
+      "scanner",
+      "sprint"
+    ],
+    "state": [
+      "ciclo-03",
+      "hoje-11"
+    ],
+    "origin": [
+      "executar"
+    ]
+  },
+  "trace": "fonte: MAP-REPORT-STATUS-001 (IDX 08) · regenerado sobre tokens EXECUTAR-REPORT-PRINT-DS-001",
+  "provenance": {
+    "sources": [
+      {
+        "id": "S01",
+        "name": "MAP-REPORT-STATUS-001.html (IDX 08)",
+        "type": "html"
+      }
+    ],
+    "field_map": {
+      "properties.context": [
+        {
+          "source_id": "S01",
+          "evidence": "Consolidar código maduro dos repositórios-fonte no canônico sem reimplementar capacidades já existentes."
+        }
+      ],
+      "properties.problem": [
+        {
+          "source_id": "S01",
+          "evidence": "O canônico tem a fundação SaaS, mas ainda não incorporou vários motores maduros de domínio, agente, pré-plan, scanner e execução."
+        }
+      ],
+      "properties.process": [
+        {
+          "source_id": "S01",
+          "evidence": "Comparar cada capacidade e decidir objetivamente o que portar, adaptar, fundir ou descartar."
+        }
+      ],
+      "properties.progress": [
+        {
+          "source_id": "S01",
+          "evidence": "Ter uma sequência clara de PRs para incorporar primeiro o núcleo reutilizável e depois integrações e canais."
+        }
+      ],
+      "properties.step_1": [
+        {
+          "source_id": "S01",
+          "evidence": "Portar contracts, interpreter determinístico, ingest, evidence, methodology, verifier, policy, fractal e project-domain."
+        }
+      ],
+      "properties.step_2": [
+        {
+          "source_id": "S01",
+          "evidence": "Integrar o núcleo ao Vercel AI SDK, MCP authority, Clerk e UnitOfWork local antes de Aurora."
+        }
+      ],
+      "properties.step_3": [
+        {
+          "source_id": "S01",
+          "evidence": "Incorporar gateway, MCP tools, WhatsApp, projections, QR e ativos exclusivos do Scanner."
+        }
+      ],
+      "properties.risk": [
+        {
+          "source_id": "S01",
+          "evidence": "Misturar regras maduras com infraestrutura antiga pode gerar acoplamento, falhas multi-tenant e divergência de estado."
+        }
+      ],
+      "properties.prevention": [
+        {
+          "source_id": "S01",
+          "evidence": "Migrar por contratos e testes, mantendo adapters de infraestrutura separados."
+        }
+      ],
+      "properties.delivery": [
+        {
+          "source_id": "S01",
+          "evidence": "Um único canônico com domínio, pré-plan, IA, MCP, evidências, QR, scanner e canais compartilhando o mesmo estado."
+        }
+      ],
+      "now.title": [
+        {
+          "source_id": "S01",
+          "evidence": "AGORA / PRÓXIMA AÇÃO: Revisar headline"
+        }
+      ],
+      "progress.overall_percent": [
+        {
+          "source_id": "S01",
+          "evidence": "PROGRESSO / PROJETO: 22% concluído; 03 / 08 ciclo atual; 11% hoje"
+        }
+      ]
+    }
+  },
+  "quality": {
+    "conflicts": [
+      "O título e a tríade falam da campanha de lançamento, mas as propriedades A–D descrevem a consolidação do código SaaS canônico. Mantido como está na fonte; decidir qual relatório é o correto antes de circular."
+    ],
+    "warnings": [
+      "Schema de origem EXECUTAR_SYNTHESIS_V2 convertido para EXECUTAR_STATUS_REPORT_V1 sem alterar valores.",
+      "Data de origem '26 Aug 2026' normalizada para 2026-08-26."
+    ],
+    "missing_fields": []
+  }
+}

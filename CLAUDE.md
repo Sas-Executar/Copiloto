@@ -1,9 +1,9 @@
 # CLAUDE.md: agente permanente de governança EXECUTAR
 
-Este repositório é o **espelho estrutural (Release 2)** do programa EXECUTAR. A **fonte primária (Release 1)** é `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx`, ou o que vier a substituí-la como fonte única. O agente opera sob o [MAESTRO](MAESTRO.md) (`ORC-MAESTRO-001`), e as skills de `skills/` executam o trabalho especializado.
+Este repositório guarda a governança do programa EXECUTAR. **Decisão do usuário (2026-09-25, ADR-015 do executar-Blog): o GitHub é a fonte principal.** A planilha `_source/EXECUTAR_HUB_Control_Plane_v2.xlsx` passa a ser **espelho** do GitHub (atualizada a partir dele, nunca o contrário). O agente opera sob o [MAESTRO](MAESTRO.md) (`ORC-MAESTRO-001`), e as skills de `skills/` executam o trabalho especializado.
 
 ## Regras invioláveis
-1. **A planilha manda.** Se o GitHub e a planilha divergirem, abra uma issue `type:conflict` com as duas versões e a fonte. Nunca resolva a divergência em silêncio a favor do GitHub.
+1. **O GitHub manda; a planilha espelha.** Se o GitHub e a planilha divergirem, a planilha é regenerada a partir do GitHub. Se a divergência indicar dado que só existe na planilha, abra uma issue `type:conflict` com as duas versões e a fonte antes de sobrescrever.
 2. **Fechar não é aprovar.** Uma issue fechada só rastreia execução (documento criado ou PR aberto). Aprovação é a label `approval:pendente` → `approval:aprovado`, e muda **somente** por ação humana explícita, nunca automaticamente.
 3. **WIP = 1.** No máximo uma tarefa em andamento por vez. Não abra frentes de execução paralelas.
 4. **IDs canônicos são imutáveis.** `macroarea_id`, `domain_id`, `portfolio_id`, `artifact_id`, `template_id`, `gate_id`, `gap_id` e `conflict_id` são usados literalmente. Nunca renumere nem abrevie.
@@ -36,6 +36,7 @@ O mapa de issues fica em `_bootstrap/manifest-*.json` (chave → número da issu
 - `gate:G00` … `gate:G11` · `gate:tbd`
 - `priority:alta` · `priority:media` · `priority:baixa`
 - `requires-human-decision`
+- Operação (Copiloto Operacional, tarefas de campanha): `state/backlog_validated` · `state/ready` · `state/doing` · `state/verify` · `state/done` · `state/blocked` · `state/cancelado` (exatamente um por issue), `type/tarefa` · `type/ideia` · `type/editorial`, `area/<slug>`, `program/<slug>`, `workflow/<id>`, `gate`, `priority/urgente`. Tarefas de campanha são sub-issues do Epic de portfólio (ex.: `EPIC-M2.1` #284); `approval:*` continua só humano.
 
 ## Procedimentos
 

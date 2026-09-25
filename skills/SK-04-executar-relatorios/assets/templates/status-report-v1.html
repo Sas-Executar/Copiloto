@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+  TEMPLATE IMUTÁVEL: status report EXECUTAR_STATUS_REPORT_V1 (impressão A4 / navegador).
+  Preenchido por scripts/render_report.py (e pelo Copiloto Operacional no Worker, mesma regra):
+  Placeholder em chaves duplas recebe texto escapado; STYLE e os terminados em _HTML recebem fragmentos já escapados.
+  Estilo = assets/tokens/tokens.css + assets/report.css. Nenhum hex aqui.
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}}</title>
+<style>{{STYLE}}</style>
+</head>
+<body>
+<main class="sheet">
+<header class="header">
+<div class="kicker mono">{{KICKER}}</div>
+<div class="title">{{TITLE}}</div>
+<div class="meta mono">schema: {{SCHEMA}} &nbsp;&nbsp; status: {{STATUS}} &nbsp;&nbsp; data: {{DATE}}</div>
+</header>
+<section class="section">
+<div class="section-label mono">PROGRESSO / PROJETO</div>
+<table class="dashboard-table" role="presentation"><tr>
+<td style="width:50%"><div class="hero">{{PCT_OVERALL}}</div><div class="hero-label">concluído</div></td>
+<td class="stat" style="width:25%"><strong>{{CYCLE}}</strong><span>ciclo atual</span></td>
+<td class="stat" style="width:25%"><strong>{{PCT_TODAY}}</strong><span>hoje</span></td>
+</tr></table>
+<div class="progress-track" role="img" aria-label="Progresso do projeto: {{PCT_OVERALL}}"><div class="progress-fill" style="width:{{PROGRESS_WIDTH}}%"></div></div>
+<div class="depth-wrap"><table class="depth-table" role="presentation"><tr>
+<td><div class="depth-name mono">Projeto</div><div class="depth-val">{{DEPTH_PROJECT}}</div></td>
+<td><div class="depth-name mono">Ciclo</div><div class="depth-val">{{DEPTH_CYCLE}}</div></td>
+<td class="depth-current"><div class="depth-name mono">Hoje</div><div class="depth-val">{{DEPTH_TODAY}}</div></td>
+<td><div class="depth-name mono">Tarefa</div><div class="depth-val">{{DEPTH_TASK}}</div></td>
+<td><div class="depth-name mono">Ação</div><div class="depth-val">{{DEPTH_ACTION}}</div></td>
+</tr></table></div>
+<div class="triptych-wrap"><table class="triptych-table" role="presentation"><tr>
+<td><div class="tri-top"><span>ONTEM</span><b>{{TRI_YESTERDAY_PCT}}</b></div><div class="tri-title">{{TRI_YESTERDAY_TITLE}}</div><div class="tri-state">{{TRI_YESTERDAY_STATE}}</div></td>
+<td class="current"><div class="tri-top"><span>HOJE</span><b>{{TRI_TODAY_PCT}}</b></div><div class="tri-title">{{TRI_TODAY_TITLE}}</div><div class="tri-state">{{TRI_TODAY_STATE}}</div></td>
+<td><div class="tri-top"><span>AMANHÃ</span><b>{{TRI_TOMORROW_PCT}}</b></div><div class="tri-title">{{TRI_TOMORROW_TITLE}}</div><div class="tri-state">{{TRI_TOMORROW_STATE}}</div></td>
+</tr></table></div>
+<div class="now"><div class="now-row"><div>
+<div class="section-label mono now-label">AGORA</div>
+<div class="now-title">{{NOW_TITLE}}</div>
+<div class="now-meta">{{NOW_META}}</div>
+</div><span class="chip">{{NOW_CHIP}}</span></div></div>
+</section>
+<section class="section">
+<div class="section-label mono">STATUS / PROPERTIES</div>
+<table class="properties" role="presentation">
+<tr><td class="key mono">contexto</td><td>{{PROP_CONTEXT}}</td></tr>
+<tr><td class="key mono accent">problema</td><td>{{PROP_PROBLEM}}</td></tr>
+<tr><td class="key mono">processo</td><td>{{PROP_PROCESS}}</td></tr>
+<tr><td class="key mono accent">progresso</td><td>{{PROP_PROGRESS}}</td></tr>
+<tr><td class="key mono">passo_1</td><td>{{PROP_STEP_1}}</td></tr>
+<tr><td class="key mono">passo_2</td><td>{{PROP_STEP_2}}</td></tr>
+<tr><td class="key mono">passo_3</td><td>{{PROP_STEP_3}}</td></tr>
+<tr><td class="key mono accent">risco</td><td>{{PROP_RISK}}</td></tr>
+<tr><td class="key mono">prevencao</td><td>{{PROP_PREVENTION}}</td></tr>
+<tr><td class="key mono">entrega</td><td>{{PROP_DELIVERY}}</td></tr>
+</table>
+<div class="tags">
+<div class="tag-label mono">FOCO</div>{{TAGS_FOCUS_HTML}}
+<div class="tag-label mono">ESTADO</div>{{TAGS_STATE_HTML}}
+<div class="tag-label mono">ORIGEM</div>{{TAGS_ORIGIN_HTML}}
+</div>
+</section>
+<footer class="footer mono">{{SCHEMA}} · leitura: header → progresso → agora → properties → tags · {{TRACE}}</footer>
+</main>
+</body>
+</html>

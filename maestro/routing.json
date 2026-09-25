@@ -1,7 +1,8 @@
 {
   "orchestrator_id": "ORC-MAESTRO-001",
   "version": "1.0.0",
-  "canonical_source": "HUB-CP-002",
+  "canonical_source": "GITHUB",
+  "mirror": "HUB-CP-002",
   "wip_limit": 1,
   "routes": [
     {"skill_id": "SK-01", "skill": "copiloto-executar", "path": "skills/SK-01-copiloto-executar",
@@ -19,7 +20,11 @@
     {"skill_id": "SK-04", "skill": "executar-relatorios", "path": "skills/SK-04-executar-relatorios",
      "triggers": ["status report", "relatório executivo", "memo", "proposta", "SOP", "RAID", "RACI", "OKR", "Mapa-OS", "Prisma", "workbook", "Desk&Go"],
      "inputs": ["texto/documento fonte", "payload PRISM"], "outputs": ["JSON canônico", "HTML A4 de impressão", "SVG workbook"],
-     "macroareas": ["A10", "A00"], "handoff_to": []}
+     "macroareas": ["A10", "A00"], "handoff_to": []},
+    {"skill_id": "RT-01", "skill": "copiloto-operacional", "path": "https://github.com/Sas-Executar/executar-Blog/tree/main/apps/copiloto",
+     "triggers": ["/hoje", "/amanha", "/urgente", "/fila", "/%", "/feito", "/ideia", "/status-report", "/campanha", "/criar-rotina", "/criar-runbook", "/criar-workflow", "campanha", "runbook", "workflow", "report por e-mail"],
+     "inputs": ["e-mail de comando (Outlook)", "ops/workflows/*.yaml", "issues do GitHub"], "outputs": ["issue/transição no GitHub", "resposta por e-mail", "status report HTML ou PDF"],
+     "macroareas": ["A09", "A08", "A05"], "handoff_to": ["SK-04"]}
   ],
   "fallback": {"action": "USER_ACTION_REQUIRED", "reason": "intenção sem rota inequívoca"}
 }

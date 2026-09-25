@@ -20,9 +20,10 @@ O Maestro é a **camada única de coordenação** das skills do Copiloto. Nenhum
 | SK-02 | [plano-operacional-rastreavel](skills/SK-02-plano-operacional-rastreavel/) | Plano mensal com motor de evidência e ISO | A09, A00 |
 | SK-03 | [obsidian-editorial-pipeline](skills/SK-03-obsidian-editorial-pipeline/) | Produção editorial SOP-KP-001 | A08, A10 |
 | SK-04 | [executar-relatorios](skills/SK-04-executar-relatorios/) | Relatórios, templates, Mapa-OS/PRISM, workbook | A10, A00 |
+| RT-01 | [Copiloto Operacional](https://github.com/Sas-Executar/executar-Blog/tree/main/apps/copiloto) (runtime) | Comandos `/` por e-mail, campanhas (runbook com gates), rotinas, reports por e-mail HTML/PDF | A09, A08, A05 |
 
 ## Regras invioláveis
-1. **Fonte única.** O estado vive no HUB (planilha) e no `EXECUTAR_CONTROL_CENTER`. Nenhuma skill cria plano, fila, sprint, gate ou progresso paralelo.
+1. **Fonte única.** O estado operacional vive no **GitHub** (issues com `state/*` + bloco `task-spec`; ADR-015 do executar-Blog, decisão do usuário de 2026-09-25). O HUB (planilha) e o `EXECUTAR_CONTROL_CENTER` são **espelhos** do GitHub, reconstruíveis. Nenhuma skill cria plano, fila, sprint, gate ou progresso paralelo.
 2. **WIP = 1.** Só uma skill fica ativa por vez no caminho crítico.
 3. **Handoff obrigatório.** Toda saída de skill devolve `status`, `entregáveis`, `evidência`, `pendências` e `próxima ação`.
 4. **Sem inferência silenciosa.** O que for desconhecido vira `A DEFINIR`; divergências viram `CONFLICT`, com a fonte registrada.
@@ -44,13 +45,17 @@ flowchart LR
   S1 -->|estado + evidência| S4[SK-04 Relatórios / PRISM]
   S3 -->|job concluído| S4
   M -->|relatório / template| S4
+  M -->|/comando por e-mail, campanha, rotina| RT[RT-01 Copiloto Operacional]
+  RT -->|renderiza com| S4
+  RT --> G[(GitHub SoR)]
+  G -.espelho.-> H
   S4 --> H[(HUB Control Plane)]
   S1 --> H
 ```
 
 ## Precedência de conflitos
 1. Decisão do usuário registrada (`APPROVED_BY_USER`)
-2. HUB Control Plane (`HUB-CP-002`)
+2. GitHub (issues e `ops/**` versionados) — System of Record; o HUB Control Plane (`HUB-CP-002`) espelha
 3. Contratos da skill (`SKILL.md` + `references/contracts`)
 4. Documentos de referência (`docs/`, fonte mais recente e de maior autoridade vence, conforme `EXECUTAR-DOC-PREFILL-001`)
 5. Sem precedência clara → `CONFLICT`: bloqueia só a ação afetada e escala para o usuário.

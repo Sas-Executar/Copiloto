@@ -261,3 +261,32 @@ pendente do usuário, não um bug de integração — ver
 `workbook-deskgo-5-pecas/with_skill/outputs/run-log.txt` no workspace de
 avaliação para as três opções levantadas. Nenhuma peça foi gerada; o
 gerador recusou corretamente entregar artefato incompleto/ilegível.
+
+## 2026-09-25 — relatórios impressos e e-mail sobre os tokens (Copiloto Operacional)
+
+Os relatórios impressos em circulação (IDX 02 Prisma A4 V4, IDX 03 formulário
+da semana, IDX 08 MAP-REPORT-STATUS-001) não seguiam o contrato
+EXECUTAR-REPORT-PRINT-DS-001: hex fixo, fontes Geist/Arial/Helvetica e, no
+próprio `report.css`, três aliases LACUNA (`surface-inverse`,
+`ink-inverse-muted`, `ink-muted-alt`) — o cabeçalho saía com texto branco
+sobre fundo indefinido (título invisível). Correções:
+
+- `tokens.json`: aliases `exec-font-sans`/`exec-font-mono` (IBM Plex, §3) e
+  `state-warning`/`state-error` (raw já existentes). `tokens.css` agora só se
+  escreve por `tokens.py --escrever-css`.
+- `report.css`: só aliases definidos; `brand` vira só preenchimento e texto de
+  marca usa `brand-strong` (5,43:1); rótulos usam `ink-secondary-strong`
+  (5,99:1). Pares novos em `PARES_CONTRASTE`.
+- Status report passou a template imutável com placeholders
+  (`status-report-v1.html`), como o Prisma V4 — o Worker do Copiloto
+  Operacional aplica o mesmo template (paridade testada lá).
+- Perfil e-mail real: `status-report-v1.email.src.html` → `build_email.py` →
+  `status-report-v1.email.html` (tabelas 600 px, CSS inline resolvido dos
+  tokens). Regras em `references/120-email-html.md`.
+- Prisma V4: `:root` de cores trocado por bloco `TOKENS:INICIO/FIM`
+  sincronizado, fontes IBM Plex, `#f00` de depuração → `state-error`.
+- `validate_skill.py`: falha com hex fora do bloco de tokens, consumo de
+  LACUNA ou e-mail desatualizado.
+- Pendentes (decisão do usuário, inalterados): `ink-placeholder` 3,03:1 e
+  `rule-strong` 1,73:1 (workbook); `executive-report-a4.html` mantém a paleta
+  raw porque é o arquivo de implementação de onde o contrato foi medido.

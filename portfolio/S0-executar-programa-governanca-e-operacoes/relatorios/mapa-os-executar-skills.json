@@ -1,0 +1,459 @@
+{
+  "document": {
+    "id": "OPS-MAPA-EXECUTAR-SKILLS-001",
+    "version": "1.0",
+    "generated_at": "2026-09-10T12:00:00Z",
+    "source_refs": [
+      "SRC-INDEX-001",
+      "SRC-INDEX-002",
+      "SRC-STRUCT-003",
+      "SRC-TAXO-004"
+    ]
+  },
+  "project": {
+    "id": "PRJ-EXECUTAR-SKILLS",
+    "title": "Diretório de Governança — Skills EXECUTAR",
+    "state": "active",
+    "owner": null
+  },
+  "position": {
+    "mode": "MAPA",
+    "project_id": "PRJ-EXECUTAR-SKILLS",
+    "delivery_id": "DLV-PACOTE-ZIP",
+    "workflow_id": null,
+    "action_id": null
+  },
+  "three_p_n": {
+    "problem": "As 9 skills EXECUTAR estão empacotadas e indexadas, mas nenhuma tem evidência registrada de execução testada, verificação ou publicação formal — o estado 'existing' é o mais alto que as fontes sustentam.",
+    "process": "Índice de governança rastreável (AKW-Mxx-Pxx-Sxx) mantém hierarquia Projeto→Entrega→Fluxo→Ação; promoção de estado exige evidência explícita por skill.",
+    "progress": "9/9 skills copiadas, indexadas e entregues em pacote (100% da entrega DLV-PACOTE-ZIP); 0/9 skills com evidência de teste ou publicação registrada.",
+    "next": [
+      "Definir, por skill, o critério de verificação (ex.: rodar um caso real) e registrar a evidência correspondente."
+    ]
+  },
+  "items": [
+    {
+      "id": "PRJ-EXECUTAR-SKILLS",
+      "level": "project",
+      "title": "Diretório de Governança — Skills EXECUTAR",
+      "state": "active",
+      "parent_id": null,
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Todas as skills EXECUTAR empacotadas, indexadas com IDs rastreáveis, publicadas e com evidência de uso validado.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-001"
+      ],
+      "source_refs": [
+        "SRC-INDEX-001"
+      ]
+    },
+    {
+      "id": "DLV-PACOTE-ZIP",
+      "level": "delivery",
+      "title": "Pacote executar-skills-directory.zip entregue",
+      "state": "complete",
+      "parent_id": "PRJ-EXECUTAR-SKILLS",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Zip com MASTER_INDEX.md, MASTER_INDEX.csv, READMEs e 9 SKILL.md gerado e disponibilizado ao usuário.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-001",
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-INDEX-001",
+        "SRC-STRUCT-003"
+      ]
+    },
+    {
+      "id": "FLW-AKW-M02",
+      "level": "workflow",
+      "title": "Cobertura AKW-M02 — Gestão de Plugins Cowork",
+      "state": "existing",
+      "parent_id": "DLV-PACOTE-ZIP",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Todas as skills desta macroárea publicadas e testadas em uso real.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-INDEX-001"
+      ]
+    },
+    {
+      "id": "FLW-AKW-M05",
+      "level": "workflow",
+      "title": "Cobertura AKW-M05 — Design",
+      "state": "existing",
+      "parent_id": "DLV-PACOTE-ZIP",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Todas as skills desta macroárea publicadas e testadas em uso real.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-INDEX-001"
+      ]
+    },
+    {
+      "id": "FLW-AKW-M07",
+      "level": "workflow",
+      "title": "Cobertura AKW-M07 — Busca e Conhecimento Empresarial",
+      "state": "existing",
+      "parent_id": "DLV-PACOTE-ZIP",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Todas as skills desta macroárea publicadas e testadas em uso real.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-INDEX-001"
+      ]
+    },
+    {
+      "id": "FLW-AKW-M12",
+      "level": "workflow",
+      "title": "Cobertura AKW-M12 — Operações",
+      "state": "existing",
+      "parent_id": "DLV-PACOTE-ZIP",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Todas as skills desta macroárea publicadas e testadas em uso real.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-INDEX-001"
+      ]
+    },
+    {
+      "id": "FLW-AKW-M14",
+      "level": "workflow",
+      "title": "Cobertura AKW-M14 — Gestão de Produto",
+      "state": "existing",
+      "parent_id": "DLV-PACOTE-ZIP",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Todas as skills desta macroárea publicadas e testadas em uso real.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-INDEX-001"
+      ]
+    },
+    {
+      "id": "FLW-AKW-M15",
+      "level": "workflow",
+      "title": "Cobertura AKW-M15 — Produtividade Pessoal e Gestão de Tarefas",
+      "state": "existing",
+      "parent_id": "DLV-PACOTE-ZIP",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Todas as skills desta macroárea publicadas e testadas em uso real.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-INDEX-001"
+      ]
+    },
+    {
+      "id": "FLW-AKW-M17",
+      "level": "workflow",
+      "title": "Cobertura AKW-M17 — Pequenos Negócios",
+      "state": "existing",
+      "parent_id": "DLV-PACOTE-ZIP",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Todas as skills desta macroárea publicadas e testadas em uso real.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-INDEX-001"
+      ]
+    },
+    {
+      "id": "AKW-M02-P01-S01",
+      "level": "action",
+      "title": "executar-skill-creator",
+      "state": "existing",
+      "parent_id": "FLW-AKW-M02",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Skill executada com sucesso em caso real e resultado verificado pelo usuário.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-STRUCT-003"
+      ]
+    },
+    {
+      "id": "AKW-M02-P01-S02",
+      "level": "action",
+      "title": "gerador-skill-directory",
+      "state": "existing",
+      "parent_id": "FLW-AKW-M02",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Skill executada com sucesso em caso real e resultado verificado pelo usuário.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-STRUCT-003"
+      ]
+    },
+    {
+      "id": "AKW-M05-P01-S01",
+      "level": "action",
+      "title": "executar-design",
+      "state": "existing",
+      "parent_id": "FLW-AKW-M05",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Skill executada com sucesso em caso real e resultado verificado pelo usuário.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-STRUCT-003"
+      ]
+    },
+    {
+      "id": "AKW-M07-P01-S01",
+      "level": "action",
+      "title": "executar-fluxo-documental-notion",
+      "state": "existing",
+      "parent_id": "FLW-AKW-M07",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Skill executada com sucesso em caso real e resultado verificado pelo usuário.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-STRUCT-003"
+      ]
+    },
+    {
+      "id": "AKW-M12-P01-S01",
+      "level": "action",
+      "title": "plano-operacional-rastreavel",
+      "state": "existing",
+      "parent_id": "FLW-AKW-M12",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Skill executada com sucesso em caso real e resultado verificado pelo usuário.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-STRUCT-003"
+      ]
+    },
+    {
+      "id": "AKW-M14-P01-S01",
+      "level": "action",
+      "title": "executar-arvore-roadmap",
+      "state": "existing",
+      "parent_id": "FLW-AKW-M14",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Skill executada com sucesso em caso real e resultado verificado pelo usuário.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-STRUCT-003"
+      ]
+    },
+    {
+      "id": "AKW-M15-P01-S01",
+      "level": "action",
+      "title": "executar-calendar",
+      "state": "existing",
+      "parent_id": "FLW-AKW-M15",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Skill executada com sucesso em caso real e resultado verificado pelo usuário.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-STRUCT-003"
+      ]
+    },
+    {
+      "id": "AKW-M17-P01-S01",
+      "level": "action",
+      "title": "deskgo-business-workbook",
+      "state": "existing",
+      "parent_id": "FLW-AKW-M17",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Skill executada com sucesso em caso real e resultado verificado pelo usuário.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-STRUCT-003"
+      ]
+    },
+    {
+      "id": "AKW-M17-P01-S02",
+      "level": "action",
+      "title": "gerar-workbook-deskgo",
+      "state": "existing",
+      "parent_id": "FLW-AKW-M17",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Skill executada com sucesso em caso real e resultado verificado pelo usuário.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [
+        "EVID-002"
+      ],
+      "source_refs": [
+        "SRC-STRUCT-003"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EVID-001",
+      "epistemic_class": "D_INTERNO",
+      "description": "Zip executar-skills-directory.zip gerado e entregue via present_files nesta conversa.",
+      "source_ref": "SRC-INDEX-001",
+      "supports": [
+        "PRJ-EXECUTAR-SKILLS",
+        "DLV-PACOTE-ZIP"
+      ]
+    },
+    {
+      "evidence_id": "EVID-002",
+      "epistemic_class": "A_OBSERVADO",
+      "description": "find confirmou 9 arquivos SKILL.md presentes na estrutura copiada, um por skill EXECUTAR.",
+      "source_ref": "SRC-STRUCT-003",
+      "supports": [
+        "FLW-AKW-M02",
+        "FLW-AKW-M05",
+        "FLW-AKW-M07",
+        "FLW-AKW-M12",
+        "FLW-AKW-M14",
+        "FLW-AKW-M15",
+        "FLW-AKW-M17",
+        "AKW-M02-P01-S01",
+        "AKW-M02-P01-S02",
+        "AKW-M05-P01-S01",
+        "AKW-M07-P01-S01",
+        "AKW-M12-P01-S01",
+        "AKW-M14-P01-S01",
+        "AKW-M15-P01-S01",
+        "AKW-M17-P01-S01",
+        "AKW-M17-P01-S02"
+      ]
+    }
+  ],
+  "horizons": {
+    "now": [],
+    "next": [
+      "AKW-M02-P01-S01",
+      "AKW-M02-P01-S02",
+      "AKW-M05-P01-S01",
+      "AKW-M07-P01-S01",
+      "AKW-M12-P01-S01",
+      "AKW-M14-P01-S01",
+      "AKW-M15-P01-S01",
+      "AKW-M17-P01-S01",
+      "AKW-M17-P01-S02"
+    ],
+    "later": []
+  },
+  "next_action": null,
+  "issues": [
+    {
+      "issue_id": "ISS-001",
+      "type": "gap",
+      "description": "Nenhuma fonte de tipo 'status' ou 'evidence' declara teste/verificação/publicação de qualquer uma das 9 skills EXECUTAR. Estado máximo sustentado é 'existing'.",
+      "severity": "warning",
+      "source_refs": [
+        "SRC-INDEX-001",
+        "SRC-STRUCT-003"
+      ],
+      "resolution": null
+    },
+    {
+      "issue_id": "ISS-002",
+      "type": "authority",
+      "description": "As 9 ações (skills) estão igualmente elegíveis sem regra de precedência fornecida pelo usuário — empate sem critério de desempate, retorna EXIGE_HUMANO conforme contrato de elegibilidade.",
+      "severity": "blocking",
+      "source_refs": [
+        "SRC-INDEX-001"
+      ],
+      "resolution": null
+    },
+    {
+      "issue_id": "ISS-003",
+      "type": "gap",
+      "description": "Projeção prisma_7d solicitada pelo usuário exige calendário de 7 dias (schemas/prism-report.schema.json). As fontes não contêm cronograma diário para as 9 skills. Registrada a lacuna; projeção emitida é mapa_operacional até que o usuário autorize um plano semanal.",
+      "severity": "info",
+      "source_refs": [
+        "SRC-TAXO-004"
+      ],
+      "resolution": "Reinterpretado: Face 02 do Prisma passou a representar 7 cortes do indice por macroarea (6 ocupadas + 1 sintese), nao um cronograma de execucao. Nenhuma data foi inventada; slots usam codigos de macroarea e estado (EXST), nao datas de calendario."
+    }
+  ],
+  "projection": {
+    "type": "prisma_7d",
+    "artifact_path": "mapa-os-executar-skills-prisma.html",
+    "state": "rendered"
+  },
+  "validation": {
+    "schema_valid": true,
+    "wip_valid": true,
+    "dependencies_valid": true,
+    "evidence_valid": true,
+    "result": "PASS"
+  }
+}
