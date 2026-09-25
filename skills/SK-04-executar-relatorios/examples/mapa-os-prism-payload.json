@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "epic_number": "01",
+    "epic_state": "Ativa",
+    "eyebrow_top": "Centro de Comando · Semana 36",
+    "period_short": "31 AGO — 06 SET"
+  },
+  "epic": {
+    "progress_pct": 42,
+    "eyebrow": "Épica semanal",
+    "title": "Consolidar o sistema documental, editorial e operacional.",
+    "description": "Estruturar as áreas críticas do produto, concluir o pacote editorial e preparar os artefatos necessários para a próxima fase de implantação.",
+    "intent": {
+      "label": "Intenção",
+      "title": "Transformar documentação dispersa em um pacote executável.",
+      "text": "Reduzir lacunas, fechar dependências e produzir uma referência única para decisão e execução."
+    }
+  },
+  "kpis": [
+    {
+      "label": "Dias",
+      "value": "7",
+      "caption": "ciclo completo"
+    },
+    {
+      "label": "Trilhas",
+      "value": "3",
+      "caption": "doc · editorial · social"
+    },
+    {
+      "label": "Carga / dia",
+      "value": "5h45",
+      "caption": "execução focada"
+    },
+    {
+      "label": "Progresso",
+      "value": "42%",
+      "caption": "estado geral"
+    }
+  ],
+  "calendar": {
+    "eyebrow": "Execução",
+    "title": "Plano de 7 dias",
+    "week_id": "W36",
+    "period": "31 AGO — 06 SET",
+    "days": [
+      {
+        "number": "01",
+        "weekday": "SEG",
+        "date": "31 AGO",
+        "title": "Fundação documental",
+        "focus": "Áreas 8–10 e abertura dos três artigos.",
+        "tracks": [
+          "DOC",
+          "EDITORIAL"
+        ]
+      },
+      {
+        "number": "02",
+        "weekday": "TER",
+        "date": "01 SET",
+        "title": "Negócio + GTM",
+        "focus": "Estruturar produto e avançar o Artigo 01.",
+        "tracks": [
+          "DOC",
+          "EDITORIAL"
+        ]
+      },
+      {
+        "number": "03",
+        "weekday": "QUA",
+        "date": "02 SET",
+        "title": "Publicação",
+        "focus": "Publicar Área 11 e fechar o Artigo 01.",
+        "tracks": [
+          "DOC",
+          "EDITORIAL"
+        ]
+      },
+      {
+        "number": "04",
+        "weekday": "QUI",
+        "date": "03 SET",
+        "title": "Governança",
+        "focus": "Cobrir Áreas 12–17 e construir o núcleo do Artigo 02.",
+        "tracks": [
+          "DOC",
+          "EDITORIAL"
+        ]
+      },
+      {
+        "number": "05",
+        "weekday": "SEX",
+        "date": "04 SET",
+        "title": "Deploy + segurança",
+        "focus": "Fechar Áreas 5–7 e concluir o Artigo 02.",
+        "tracks": [
+          "DOC",
+          "EDITORIAL"
+        ]
+      },
+      {
+        "number": "06",
+        "weekday": "SÁB",
+        "date": "05 SET",
+        "title": "Arquitetura",
+        "focus": "Documentar Áreas 3–4 e concluir o Artigo 03.",
+        "tracks": [
+          "DOC",
+          "EDITORIAL"
+        ]
+      },
+      {
+        "number": "07",
+        "weekday": "DOM",
+        "date": "06 SET",
+        "title": "Implantação + revisão final",
+        "focus": "Consolidar o plano de implantação e revisar o pacote de ponta a ponta.",
+        "tracks": [
+          "MILESTONE",
+          "DOC",
+          "EDITORIAL"
+        ]
+      }
+    ]
+  },
+  "deliverables": {
+    "eyebrow": "Resultado",
+    "title": "Entregáveis da semana",
+    "meta": "4 saídas + 1 milestone",
+    "hero": {
+      "tag": "Entregável principal",
+      "title": "Plano de implantação consolidado.",
+      "description": "Síntese que conecta arquitetura, governança, operação e critérios de transição para transformar o trabalho da semana em uma próxima etapa executável.",
+      "result_label": "Estado alvo",
+      "result_value": "Pronto para transição"
+    },
+    "items": [
+      {
+        "title": "Sistema documental",
+        "description": "Áreas 3–17 revisadas, organizadas e conectadas.",
+        "status": "Pronto para revisão"
+      },
+      {
+        "title": "Pacote editorial",
+        "description": "Artigos 01–03 estruturados e fechados para publicação.",
+        "status": "3 artigos"
+      },
+      {
+        "title": "Operação social",
+        "description": "Rotina semanal e pontos de distribuição definidos.",
+        "status": "Rotina ativa"
+      },
+      {
+        "title": "Milestone",
+        "description": "Semana encerrada com transição explícita para implantação.",
+        "status": "Next → implantação"
+      }
+    ],
+    "next": {
+      "label": "Próximo estado",
+      "value": "Implantação"
+    },
+    "trace": "Centro de Comando · plano semanal · validar dados antes de distribuir"
+  }
+}

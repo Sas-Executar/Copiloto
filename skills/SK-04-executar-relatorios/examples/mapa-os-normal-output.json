@@ -1,0 +1,133 @@
+{
+  "document": {
+    "id": "OPS-MAPA-001",
+    "version": "1.0",
+    "generated_at": "2026-09-04T12:00:00Z",
+    "source_refs": ["SRC-PLAN-001", "SRC-EVID-001"]
+  },
+  "project": {
+    "id": "PRJ-001",
+    "title": "Publicar oferta inicial",
+    "state": "active",
+    "owner": null
+  },
+  "position": {
+    "mode": "EXECUTAR",
+    "project_id": "PRJ-001",
+    "delivery_id": "DLV-001",
+    "workflow_id": "FLW-001",
+    "action_id": "ACT-002"
+  },
+  "three_p_n": {
+    "problem": "A oferta existe, mas ainda não foi verificada no canal público.",
+    "process": "Validar dependências, preservar evidência e executar uma ação por vez.",
+    "progress": "Estrutura implementada; verificação pública pendente.",
+    "next": ["Executar o cenário público e registrar o resultado."]
+  },
+  "items": [
+    {
+      "id": "PRJ-001",
+      "level": "project",
+      "title": "Publicar oferta inicial",
+      "state": "active",
+      "parent_id": null,
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Oferta publicada e verificada.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [],
+      "source_refs": ["SRC-PLAN-001"]
+    },
+    {
+      "id": "DLV-001",
+      "level": "delivery",
+      "title": "Oferta disponível ao público",
+      "state": "active",
+      "parent_id": "PRJ-001",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Página acessível e teste público aprovado.",
+      "original_due": "2026-09-05",
+      "current_forecast": "2026-09-06",
+      "evidence_refs": [],
+      "source_refs": ["SRC-PLAN-001"]
+    },
+    {
+      "id": "FLW-001",
+      "level": "workflow",
+      "title": "Publicação e verificação",
+      "state": "active",
+      "parent_id": "DLV-001",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Implementação e verificação concluídas.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [],
+      "source_refs": ["SRC-PLAN-001"]
+    },
+    {
+      "id": "ACT-001",
+      "level": "action",
+      "title": "Implementar página",
+      "state": "implemented",
+      "parent_id": "FLW-001",
+      "dependencies": [],
+      "blocked": false,
+      "completion_criterion": "Página compilada.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": ["EVID-001"],
+      "source_refs": ["SRC-EVID-001"]
+    },
+    {
+      "id": "ACT-002",
+      "level": "action",
+      "title": "Verificar acesso público",
+      "state": "active",
+      "parent_id": "FLW-001",
+      "dependencies": ["ACT-001"],
+      "blocked": false,
+      "completion_criterion": "Cenário público passa sem bloqueio crítico.",
+      "original_due": null,
+      "current_forecast": null,
+      "evidence_refs": [],
+      "source_refs": ["SRC-PLAN-001"]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EVID-001",
+      "epistemic_class": "D_INTERNO",
+      "description": "Registro de compilação concluída.",
+      "source_ref": "SRC-EVID-001",
+      "supports": ["ACT-001"]
+    }
+  ],
+  "horizons": {
+    "now": ["ACT-002"],
+    "next": [],
+    "later": []
+  },
+  "next_action": {
+    "action_id": "ACT-002",
+    "instruction": "Executar o cenário de acesso público.",
+    "completion_criterion": "Cenário passa sem bloqueio crítico.",
+    "evidence_required": ["Registro do teste funcional"],
+    "authority": "DETERMINISTICO"
+  },
+  "issues": [],
+  "projection": {
+    "type": "mapa_operacional",
+    "artifact_path": null,
+    "state": "validated"
+  },
+  "validation": {
+    "schema_valid": true,
+    "wip_valid": true,
+    "dependencies_valid": true,
+    "evidence_valid": true,
+    "result": "PASS"
+  }
+}

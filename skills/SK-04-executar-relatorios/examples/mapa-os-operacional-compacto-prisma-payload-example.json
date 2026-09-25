@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "epic_number": "HUB",
+    "epic_state": "Mapeada",
+    "eyebrow_top": "Centro de Comando · EXECUTAR HUB",
+    "period_short": "v2 · 23 SET 2026"
+  },
+  "epic": {
+    "progress_pct": 0,
+    "eyebrow": "VISÃO GERAL",
+    "title": "Mapa Operacional do EXECUTAR HUB",
+    "description": "Visão executiva da estrutura completa da planilha: macroáreas, domínios, documentos, campos, portfólio, controles e pontos de atenção.",
+    "intent": {
+      "label": "COMO LER",
+      "title": "Da visão executiva até o campo de resposta",
+      "text": "13 macroáreas, 24 domínios, 37 documentos e 1.125 campos — nenhum preenchido ainda. Use este mapa para navegar antes de abrir a planilha."
+    }
+  },
+  "kpis": [
+    { "label": "Macroáreas", "value": "13", "caption": "frentes do programa" },
+    { "label": "Domínios", "value": "24", "caption": "D0 + D01 a D23" },
+    { "label": "Documentos", "value": "37", "caption": "entregáveis mapeados" },
+    { "label": "Campos", "value": "1.125", "caption": "0 preenchidos" }
+  ],
+  "calendar": {
+    "eyebrow": "NAVEGAÇÃO",
+    "title": "Mapa Operacional",
+    "week_id": "ÁREAS",
+    "period": "13 macro · 24 domínios",
+    "days": [
+      {
+        "number": "01", "weekday": "ÁREA", "date": "A00,A01",
+        "title": "Governança e Negócio",
+        "focus": "Base do programa e entrada no mercado: direção, governança, jurídico, finanças e vendas.",
+        "tracks": ["A00", "A01"]
+      },
+      {
+        "number": "02", "weekday": "ÁREA", "date": "A02-A04",
+        "title": "Produto e Engenharia",
+        "focus": "Produto, experiência e engenharia: requisitos, design, arquitetura técnica e implementação.",
+        "tracks": ["A02", "A03", "A04"]
+      },
+      {
+        "number": "03", "weekday": "ÁREA", "date": "A05,A07",
+        "title": "Operação Corporativa",
+        "focus": "Operação contínua e suporte corporativo: plataforma, segurança, pessoas e capacidade.",
+        "tracks": ["A05", "A07"]
+      },
+      {
+        "number": "04", "weekday": "ÁREA", "date": "A06",
+        "title": "Dados e Conhecimento",
+        "focus": "Dados, conhecimento corporativo, pesquisa, identidades e evidências.",
+        "tracks": ["A06"]
+      },
+      {
+        "number": "05", "weekday": "ÁREA", "date": "A08,A09",
+        "title": "Conteúdo e Execução",
+        "focus": "Conteúdo, comunicação, crescimento e planejamento da execução do trabalho.",
+        "tracks": ["A08", "A09"]
+      },
+      {
+        "number": "06", "weekday": "ÁREA", "date": "A10,A11",
+        "title": "Documentação, Ferramentas e Ativos",
+        "focus": "Documentação, governança do conhecimento, ferramentas de IA e ativos reutilizáveis.",
+        "tracks": ["A10", "A11"]
+      },
+      {
+        "number": "07", "weekday": "ÁREA", "date": "A12",
+        "title": "Stakeholders e Ecossistema",
+        "focus": "Relações externas, emprego e portfólio do ecossistema.",
+        "tracks": ["A12"]
+      }
+    ]
+  },
+  "deliverables": {
+    "eyebrow": "COMO OPERAR",
+    "title": "Como usar a planilha",
+    "meta": "13 áreas · 37 documentos",
+    "hero": {
+      "tag": "COMO USAR",
+      "title": "Preencha, consulte, rastreie",
+      "description": "Preencha nos formulários (01_Formulario_A00–A12). Consulte nas visões (02–09). Rastreie nos registros (10–24).",
+      "result_label": "Camadas de uso",
+      "result_value": "3 camadas · 37 abas"
+    },
+    "items": [
+      { "title": "Entrada humana", "description": "Abas 01_Formulario_A00 a A12 — única superfície editável (coluna Resposta).", "status": "0/1.125 preenchidos" },
+      { "title": "Visões executivas", "description": "Abas 02 a 09 — leitura consolidada de programa, macroáreas, portfólio e documentos.", "status": "Somente leitura" },
+      { "title": "Registros estruturais", "description": "Abas 10 a 24 — cadastro normalizado: campos, dependências, gates, decisões, gaps.", "status": "Fonte estrutural" },
+      { "title": "Pontos de atenção", "description": "Decisões propostas, lacunas abertas, conflitos de fonte e dependências não registradas.", "status": "Exige validação" }
+    ],
+    "next": { "label": "ATENÇÃO", "value": "10 conflitos · 9 pendências" },
+    "trace": "Fonte: EXECUTAR_HUB_Control_Plane_v2.xlsx (Drive) · abas 00,02–24 · lida em 23/09/2026."
+  }
+}

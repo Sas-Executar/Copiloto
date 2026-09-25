@@ -1,0 +1,17 @@
+{
+  "pack_id": "TP-EXEMPLO",
+  "cycle_title": "Exemplo de ciclo (título de trabalho, opcional)",
+  "produto_esperado": null,
+  "asset_plan": {
+    "artigo_mae": 1,
+    "video_mae": 1,
+    "carrossel": 2,
+    "imagem_estatica": 6,
+    "video_vertical": 1,
+    "stories": 4,
+    "newsletter": 1,
+    "ebook": 0,
+    "infografico": 1,
+    "cta_ferramenta": 2
+  }
+}

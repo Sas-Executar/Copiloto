@@ -1,0 +1,900 @@
+{
+  "pack": "EXECUTAR Business Template Pack",
+  "version": "1.0.0",
+  "template_count": 75,
+  "categories": [
+    "customer",
+    "emails",
+    "execution",
+    "reports",
+    "strategy",
+    "workbooks",
+    "writing"
+  ],
+  "templates": [
+    {
+      "category": "strategy",
+      "slug": "business-model-canvas",
+      "title": "Business Model Canvas",
+      "purpose": "Organizar modelo de negócio ou iniciativa em blocos estratégicos.",
+      "visual": "canvas",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/strategy/business-model-canvas.md"
+    },
+    {
+      "category": "strategy",
+      "slug": "lean-canvas",
+      "title": "Lean Canvas",
+      "purpose": "Sintetizar problema, solução, vantagem e economics de uma iniciativa.",
+      "visual": "canvas",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/strategy/lean-canvas.md"
+    },
+    {
+      "category": "strategy",
+      "slug": "value-proposition-canvas",
+      "title": "Value Proposition Canvas",
+      "purpose": "Relacionar jobs, pains e gains aos produtos e serviços.",
+      "visual": "canvas",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/strategy/value-proposition-canvas.md"
+    },
+    {
+      "category": "strategy",
+      "slug": "swot",
+      "title": "SWOT",
+      "purpose": "Estruturar forças, fraquezas, oportunidades e ameaças.",
+      "visual": "matrix",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/strategy/swot.md"
+    },
+    {
+      "category": "strategy",
+      "slug": "okr",
+      "title": "OKR",
+      "purpose": "Converter estratégia em objetivos e resultados-chave mensuráveis.",
+      "visual": "scorecard",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/strategy/okr.md"
+    },
+    {
+      "category": "strategy",
+      "slug": "decision-matrix",
+      "title": "Decision Matrix",
+      "purpose": "Comparar alternativas por critérios explícitos.",
+      "visual": "matrix",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/strategy/decision-matrix.md"
+    },
+    {
+      "category": "strategy",
+      "slug": "business-case",
+      "title": "Business Case",
+      "purpose": "Formalizar justificativa, opções, valor, custo e riscos de uma decisão.",
+      "visual": "executive",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/strategy/business-case.md"
+    },
+    {
+      "category": "strategy",
+      "slug": "strategy-one-pager",
+      "title": "Strategy One-Pager",
+      "purpose": "Condensar direção estratégica em uma única página.",
+      "visual": "one-page",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/strategy/strategy-one-pager.md"
+    },
+    {
+      "category": "strategy",
+      "slug": "portfolio-map",
+      "title": "Portfolio Map",
+      "purpose": "Posicionar iniciativas por valor, esforço, risco e horizonte.",
+      "visual": "matrix",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/strategy/portfolio-map.md"
+    },
+    {
+      "category": "strategy",
+      "slug": "north-star",
+      "title": "North Star Framework",
+      "purpose": "Definir métrica norte e drivers operacionais.",
+      "visual": "scorecard",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/strategy/north-star.md"
+    },
+    {
+      "category": "execution",
+      "slug": "sprint-plan",
+      "title": "Sprint Plan",
+      "purpose": "Planejar sprint com objetivo, backlog, capacidade e Definition of Done.",
+      "visual": "board",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/sprint-plan.md"
+    },
+    {
+      "category": "execution",
+      "slug": "now-next-later",
+      "title": "Now / Next / Later",
+      "purpose": "Organizar prioridades por horizonte sem falsa precisão de datas.",
+      "visual": "roadmap",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/now-next-later.md"
+    },
+    {
+      "category": "execution",
+      "slug": "gantt",
+      "title": "Gantt",
+      "purpose": "Representar entregáveis, fases, dependências e marcos em tempo.",
+      "visual": "gantt",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/gantt.md"
+    },
+    {
+      "category": "execution",
+      "slug": "roadmap",
+      "title": "Roadmap",
+      "purpose": "Representar evolução por horizontes, outcomes e gates.",
+      "visual": "roadmap",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/roadmap.md"
+    },
+    {
+      "category": "execution",
+      "slug": "kanban",
+      "title": "Kanban",
+      "purpose": "Visualizar fluxo de trabalho e WIP por estado.",
+      "visual": "kanban",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/kanban.md"
+    },
+    {
+      "category": "execution",
+      "slug": "backlog-prioritization",
+      "title": "Backlog Prioritization",
+      "purpose": "Ordenar backlog por valor, urgência, risco e esforço.",
+      "visual": "table",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/backlog-prioritization.md"
+    },
+    {
+      "category": "execution",
+      "slug": "raid-log",
+      "title": "RAID Log",
+      "purpose": "Registrar risks, assumptions, issues e dependencies.",
+      "visual": "register",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/raid-log.md"
+    },
+    {
+      "category": "execution",
+      "slug": "raci",
+      "title": "RACI",
+      "purpose": "Definir responsabilidade e autoridade por atividade.",
+      "visual": "matrix",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/raci.md"
+    },
+    {
+      "category": "execution",
+      "slug": "dependency-map",
+      "title": "Dependency Map",
+      "purpose": "Mapear dependências entre entregáveis e gargalos.",
+      "visual": "map",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/dependency-map.md"
+    },
+    {
+      "category": "execution",
+      "slug": "milestone-plan",
+      "title": "Milestone Plan",
+      "purpose": "Planejar marcos, critérios de entrada e saída.",
+      "visual": "timeline",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/milestone-plan.md"
+    },
+    {
+      "category": "execution",
+      "slug": "daily-plan",
+      "title": "Daily Execution Plan",
+      "purpose": "Definir foco operacional do dia com mínima carga cognitiva.",
+      "visual": "execution",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/daily-plan.md"
+    },
+    {
+      "category": "execution",
+      "slug": "weekly-plan",
+      "title": "Weekly Plan",
+      "purpose": "Organizar outcomes, entregáveis e riscos da semana.",
+      "visual": "planner",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/weekly-plan.md"
+    },
+    {
+      "category": "execution",
+      "slug": "retrospective",
+      "title": "Sprint Retrospective",
+      "purpose": "Extrair aprendizado e ações de melhoria após ciclo.",
+      "visual": "workshop",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/retrospective.md"
+    },
+    {
+      "category": "execution",
+      "slug": "decision-log",
+      "title": "Decision Log",
+      "purpose": "Registrar decisões, contexto, alternativas e consequências.",
+      "visual": "register",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/execution/decision-log.md"
+    },
+    {
+      "category": "customer",
+      "slug": "customer-journey",
+      "title": "Customer Journey Map",
+      "purpose": "Mapear etapas, objetivos, ações, emoções e fricções do cliente.",
+      "visual": "journey",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/customer/customer-journey.md"
+    },
+    {
+      "category": "customer",
+      "slug": "service-blueprint",
+      "title": "Service Blueprint",
+      "purpose": "Relacionar experiência do cliente a frontstage, backstage e suporte.",
+      "visual": "blueprint",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/customer/service-blueprint.md"
+    },
+    {
+      "category": "customer",
+      "slug": "mirror-map",
+      "title": "Mirror Map",
+      "purpose": "Comparar a experiência externa do cliente com a realidade interna da operação.",
+      "visual": "mirror",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/customer/mirror-map.md"
+    },
+    {
+      "category": "customer",
+      "slug": "empathy-map",
+      "title": "Empathy Map",
+      "purpose": "Organizar sinais sobre o que o cliente pensa, sente, vê, diz e faz.",
+      "visual": "canvas",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/customer/empathy-map.md"
+    },
+    {
+      "category": "customer",
+      "slug": "jobs-to-be-done",
+      "title": "Jobs To Be Done",
+      "purpose": "Definir job funcional, emocional e social e forças de mudança.",
+      "visual": "canvas",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/customer/jobs-to-be-done.md"
+    },
+    {
+      "category": "customer",
+      "slug": "persona",
+      "title": "Persona",
+      "purpose": "Consolidar perfil operacional baseado em evidências, não ficção.",
+      "visual": "profile",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/customer/persona.md"
+    },
+    {
+      "category": "customer",
+      "slug": "funnel",
+      "title": "Customer Funnel",
+      "purpose": "Mapear aquisição, ativação, conversão, retenção e expansão.",
+      "visual": "funnel",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/customer/funnel.md"
+    },
+    {
+      "category": "customer",
+      "slug": "voice-of-customer",
+      "title": "Voice of Customer",
+      "purpose": "Sintetizar evidências, temas, tensões e linguagem do cliente.",
+      "visual": "report",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/customer/voice-of-customer.md"
+    },
+    {
+      "category": "workbooks",
+      "slug": "strategy-workbook",
+      "title": "Strategy Workbook",
+      "purpose": "Guiar definição de problema, escolha estratégica e execução.",
+      "visual": "workbook",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/workbooks/strategy-workbook.md"
+    },
+    {
+      "category": "workbooks",
+      "slug": "discovery-workbook",
+      "title": "Discovery Workbook",
+      "purpose": "Estruturar exploração de problema, hipóteses e aprendizado.",
+      "visual": "workbook",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/workbooks/discovery-workbook.md"
+    },
+    {
+      "category": "workbooks",
+      "slug": "project-kickoff-workbook",
+      "title": "Project Kickoff Workbook",
+      "purpose": "Alinhar objetivo, escopo, papéis, riscos e plano inicial.",
+      "visual": "workbook",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/workbooks/project-kickoff-workbook.md"
+    },
+    {
+      "category": "workbooks",
+      "slug": "risk-workbook",
+      "title": "Risk Workbook",
+      "purpose": "Identificar, avaliar e tratar riscos com evidência.",
+      "visual": "workbook",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/workbooks/risk-workbook.md"
+    },
+    {
+      "category": "workbooks",
+      "slug": "experiment-workbook",
+      "title": "Experiment Workbook",
+      "purpose": "Planejar e analisar experimento com hipótese e critério decisório.",
+      "visual": "workbook",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/workbooks/experiment-workbook.md"
+    },
+    {
+      "category": "workbooks",
+      "slug": "gtm-workbook",
+      "title": "GTM Workbook",
+      "purpose": "Estruturar estratégia go-to-market, mensagem, canais e lançamento.",
+      "visual": "workbook",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/workbooks/gtm-workbook.md"
+    },
+    {
+      "category": "workbooks",
+      "slug": "meeting-workbook",
+      "title": "Meeting Workbook",
+      "purpose": "Preparar, executar e fechar reunião com decisões e ações.",
+      "visual": "workbook",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/workbooks/meeting-workbook.md"
+    },
+    {
+      "category": "workbooks",
+      "slug": "launch-workbook",
+      "title": "Launch Workbook",
+      "purpose": "Controlar readiness, entregáveis, gates, canais e pós-lançamento.",
+      "visual": "workbook",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/workbooks/launch-workbook.md"
+    },
+    {
+      "category": "reports",
+      "slug": "executive-status-report",
+      "title": "Executive Status Report",
+      "purpose": "Comunicar estado executivo, progresso, riscos e próximas ações.",
+      "visual": "editorial",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/reports/executive-status-report.md"
+    },
+    {
+      "category": "reports",
+      "slug": "project-status-report",
+      "title": "Project Status Report",
+      "purpose": "Detalhar progresso por escopo, prazo, risco e dependências.",
+      "visual": "dashboard",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/reports/project-status-report.md"
+    },
+    {
+      "category": "reports",
+      "slug": "business-review",
+      "title": "Business Review",
+      "purpose": "Revisar desempenho, KPIs, causas e prioridades.",
+      "visual": "review",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/reports/business-review.md"
+    },
+    {
+      "category": "reports",
+      "slug": "risk-report",
+      "title": "Risk Report",
+      "purpose": "Consolidar exposição, controles, tendências e decisões de risco.",
+      "visual": "risk",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/reports/risk-report.md"
+    },
+    {
+      "category": "reports",
+      "slug": "incident-postmortem",
+      "title": "Incident Postmortem",
+      "purpose": "Documentar incidente, impacto, causa e prevenção.",
+      "visual": "postmortem",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/reports/incident-postmortem.md"
+    },
+    {
+      "category": "reports",
+      "slug": "experiment-analysis",
+      "title": "Experiment Analysis",
+      "purpose": "Apresentar hipótese, método, resultados e decisão.",
+      "visual": "analysis",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/reports/experiment-analysis.md"
+    },
+    {
+      "category": "reports",
+      "slug": "research-summary",
+      "title": "Research Summary",
+      "purpose": "Sintetizar pesquisa com evidências, limites e implicações.",
+      "visual": "editorial",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/reports/research-summary.md"
+    },
+    {
+      "category": "reports",
+      "slug": "change-report",
+      "title": "Change Report",
+      "purpose": "Registrar mudança de plano, motivo, impacto e novo baseline.",
+      "visual": "change",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/reports/change-report.md"
+    },
+    {
+      "category": "reports",
+      "slug": "kpi-review",
+      "title": "KPI Review",
+      "purpose": "Revisar métricas, tendências, causas e ações.",
+      "visual": "scorecard",
+      "outputs": [
+        "markdown",
+        "html"
+      ],
+      "path": "templates/reports/kpi-review.md"
+    },
+    {
+      "category": "writing",
+      "slug": "executive-summary",
+      "title": "Executive Summary Generator",
+      "purpose": "Gerar síntese executiva curta, factual e orientada à decisão.",
+      "visual": "text",
+      "outputs": [
+        "markdown",
+        "docx-ready"
+      ],
+      "path": "templates/writing/executive-summary.md"
+    },
+    {
+      "category": "writing",
+      "slug": "executive-memo",
+      "title": "Executive Memo",
+      "purpose": "Gerar memo corporativo estruturado para decisão.",
+      "visual": "memo",
+      "outputs": [
+        "markdown",
+        "docx-ready"
+      ],
+      "path": "templates/writing/executive-memo.md"
+    },
+    {
+      "category": "writing",
+      "slug": "brief",
+      "title": "Business Brief",
+      "purpose": "Gerar brief conciso para projeto, campanha, produto ou iniciativa.",
+      "visual": "brief",
+      "outputs": [
+        "markdown",
+        "docx-ready"
+      ],
+      "path": "templates/writing/brief.md"
+    },
+    {
+      "category": "writing",
+      "slug": "proposal",
+      "title": "Business Proposal",
+      "purpose": "Gerar proposta executiva com problema, abordagem, valor e próximos passos.",
+      "visual": "proposal",
+      "outputs": [
+        "markdown",
+        "docx-ready"
+      ],
+      "path": "templates/writing/proposal.md"
+    },
+    {
+      "category": "writing",
+      "slug": "prd-frd-spec",
+      "title": "PRD / FRD / Specs",
+      "purpose": "Converter decisões em requisitos de produto, funcionais e técnicos.",
+      "visual": "spec",
+      "outputs": [
+        "markdown",
+        "json"
+      ],
+      "path": "templates/writing/prd-frd-spec.md"
+    },
+    {
+      "category": "writing",
+      "slug": "sop",
+      "title": "Standard Operating Procedure",
+      "purpose": "Transformar processo em procedimento operacional repetível.",
+      "visual": "procedure",
+      "outputs": [
+        "markdown",
+        "docx-ready"
+      ],
+      "path": "templates/writing/sop.md"
+    },
+    {
+      "category": "writing",
+      "slug": "policy",
+      "title": "Corporate Policy",
+      "purpose": "Formalizar política, autoridade, escopo e controles.",
+      "visual": "policy",
+      "outputs": [
+        "markdown",
+        "docx-ready"
+      ],
+      "path": "templates/writing/policy.md"
+    },
+    {
+      "category": "writing",
+      "slug": "adr",
+      "title": "Architecture Decision Record",
+      "purpose": "Registrar decisão técnica e trade-offs.",
+      "visual": "record",
+      "outputs": [
+        "markdown"
+      ],
+      "path": "templates/writing/adr.md"
+    },
+    {
+      "category": "writing",
+      "slug": "meeting-minutes",
+      "title": "Meeting Minutes",
+      "purpose": "Gerar ata executiva focada em decisões e ações.",
+      "visual": "minutes",
+      "outputs": [
+        "markdown",
+        "docx-ready"
+      ],
+      "path": "templates/writing/meeting-minutes.md"
+    },
+    {
+      "category": "writing",
+      "slug": "action-plan",
+      "title": "Action Plan",
+      "purpose": "Converter diagnóstico em plano sequencial e verificável.",
+      "visual": "plan",
+      "outputs": [
+        "markdown",
+        "json"
+      ],
+      "path": "templates/writing/action-plan.md"
+    },
+    {
+      "category": "writing",
+      "slug": "narrative-update",
+      "title": "Narrative Update",
+      "purpose": "Gerar atualização narrativa para liderança sem formato de dashboard.",
+      "visual": "narrative",
+      "outputs": [
+        "markdown",
+        "docx-ready"
+      ],
+      "path": "templates/writing/narrative-update.md"
+    },
+    {
+      "category": "emails",
+      "slug": "status-update-email",
+      "title": "Status Update Email",
+      "purpose": "Atualizar stakeholders sobre estado, progresso, risco e próximos passos.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/status-update-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "executive-summary-email",
+      "title": "Executive Summary Email",
+      "purpose": "Enviar síntese curta para liderança.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/executive-summary-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "meeting-followup-email",
+      "title": "Meeting Follow-up Email",
+      "purpose": "Fechar reunião com decisões, ações e responsabilidades.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/meeting-followup-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "escalation-email",
+      "title": "Escalation Email",
+      "purpose": "Escalar bloqueio com fatos, impacto e decisão requerida.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/escalation-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "risk-alert-email",
+      "title": "Risk Alert Email",
+      "purpose": "Alertar sobre risco material e mitigação proposta.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/risk-alert-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "approval-request-email",
+      "title": "Approval Request Email",
+      "purpose": "Solicitar aprovação com contexto suficiente para decisão.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/approval-request-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "decision-request-email",
+      "title": "Decision Request Email",
+      "purpose": "Solicitar decisão entre alternativas explícitas.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/decision-request-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "handoff-email",
+      "title": "Handoff Email",
+      "purpose": "Transferir responsabilidade sem perda de contexto.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/handoff-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "kickoff-email",
+      "title": "Kickoff Email",
+      "purpose": "Alinhar início de iniciativa, escopo e próximos passos.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/kickoff-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "launch-announcement-email",
+      "title": "Launch Announcement Email",
+      "purpose": "Comunicar lançamento com valor, disponibilidade e ação esperada.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/launch-announcement-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "incident-notice-email",
+      "title": "Incident Notice Email",
+      "purpose": "Comunicar incidente de forma factual e responsável.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/incident-notice-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "customer-followup-email",
+      "title": "Customer Follow-up Email",
+      "purpose": "Retomar conversa com cliente e registrar próximo passo.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/customer-followup-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "vendor-request-email",
+      "title": "Vendor Request Email",
+      "purpose": "Solicitar informação, proposta ou ação a fornecedor.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/vendor-request-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "deadline-reminder-email",
+      "title": "Deadline Reminder Email",
+      "purpose": "Reforçar prazo e dependências sem ambiguidade.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/deadline-reminder-email.md"
+    },
+    {
+      "category": "emails",
+      "slug": "weekly-digest-email",
+      "title": "Weekly Digest Email",
+      "purpose": "Resumir a semana para stakeholders.",
+      "visual": "email",
+      "outputs": [
+        "email"
+      ],
+      "path": "templates/emails/weekly-digest-email.md"
+    }
+  ]
+}

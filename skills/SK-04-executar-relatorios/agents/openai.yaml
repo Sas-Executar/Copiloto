@@ -1,0 +1,14 @@
+interface:
+  display_name: EXECUTAR Mapa-OS
+  short_description: Transforma fontes em posição e projeções operacionais
+  default_prompt: Use $executar-mapa-os. Envie 00 para ver o menu, 01 para criar um
+    Mapa-OS semanal em Prisma A4 ou 02 para testar um exemplo preenchido.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

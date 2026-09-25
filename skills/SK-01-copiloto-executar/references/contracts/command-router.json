@@ -1,0 +1,52 @@
+{
+  "id": "ROUTER-COP-001",
+  "routes": {
+    "/bomdia": {
+      "module": "AGENTE-Copiloto-007",
+      "read": [
+        "TODAY",
+        "QUEUE",
+        "WORKFLOWS",
+        "BLOCKERS",
+        "CONFIG"
+      ]
+    },
+    "/agora": {
+      "module": "AGENTE-Copiloto-007",
+      "read": [
+        "TODAY"
+      ]
+    },
+    "/estado": {
+      "module": "AGENTE-Copiloto-007",
+      "read": [
+        "TODAY",
+        "WORKFLOWS",
+        "BLOCKERS"
+      ]
+    },
+    "/fechardia": {
+      "module": "AGENTE-Copiloto-007",
+      "read": [
+        "TODAY",
+        "EVIDENCE",
+        "DAILY_LOG"
+      ],
+      "write": [
+        "EVIDENCE",
+        "DAILY_LOG",
+        "TODAY"
+      ]
+    },
+    "/replanejamento": {
+      "module": "ORQ-COP-001",
+      "read": [
+        "WORKFLOWS",
+        "QUEUE",
+        "BLOCKERS",
+        "CONFIG"
+      ],
+      "scope": "subgrafo_afetado"
+    }
+  }
+}

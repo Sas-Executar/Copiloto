@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Editorial Cycle State (V2.3)",
+  "description": "Progresso contínuo (não quantizado): percent = 100 * etapas_habilitadas_concluidas / etapas_habilitadas. 100% só é EMPACOTADO depois do empacotamento validado.",
+  "type": "object",
+  "required": ["job_id", "pack_id", "state", "steps", "wip_limit"],
+  "properties": {
+    "job_id": { "type": "string" },
+    "pack_id": { "type": "string" },
+    "cycle_title": {
+      "type": "string",
+      "description": "Título/tema de trabalho do ciclo, usado para personalizar os ganchos de cada etapa. Se ausente, usa pack_id."
+    },
+    "state": {
+      "enum": ["PLANEJANDO", "EM_ANDAMENTO", "PRONTO_PARA_EMPACOTAR", "EMPACOTADO"]
+    },
+    "percent": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Percentual real e contínuo — não os degraus artificiais 0/33/66/99/100 da V2.2."
+    },
+    "wip_limit": { "const": 1 },
+    "produto_esperado": {
+      "type": ["boolean", "null"],
+      "description": "Decisão explícita do Bloco D. null = ainda não decidido (nunca inferir)."
+    },
+    "packaged": {
+      "type": "boolean",
+      "description": "true somente depois de build_production_zip.py concluir com sucesso."
+    },
+    "package_evidence": { "type": "array" },
+    "handoff_accepted": { "type": "boolean" },
+    "handoff_evidence": { "type": "array" },
+    "steps": { "type": "array" }
+  }
+}

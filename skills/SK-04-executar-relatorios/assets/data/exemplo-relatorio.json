@@ -1,0 +1,103 @@
+{
+  "_nota": "Dados de exemplo com casos de borda de propósito: valor ausente, zero (que é dado, não ausência), texto longo, célula de tabela sem valor, campo para preencher à mão, e as três situações de caixa de marcar. Um exemplo só com o caminho feliz não prova nada.",
+
+  "tema": "executar",
+
+  "meta": {
+    "id": "REL-CICLO-07",
+    "serie": "EXECUTAR PLAYBOOK",
+    "titulo": "Relatório de ciclo · operação solo",
+    "subtitulo": "Sétimo ciclo do portfólio híbrido: o que fechou, o que travou e o que muda no próximo.",
+    "cliente": "Operação própria",
+    "periodo": "01 a 28 de setembro",
+    "responsavel": null,
+    "confidencialidade": "Uso interno",
+    "versao": "1.0"
+  },
+
+  "resumo_executivo": [
+    "O ciclo fechou seis das dez entregas planejadas. As quatro que não fecharam têm a mesma causa declarada: dependência de terceiro sem data acordada, e não falta de tempo do operador.",
+    "A oferta digital passou a responder por quase metade da receita do ciclo sem custo variável adicional, o que muda a ordem de prioridade do próximo roadmap. A oferta física continua sustentando margem, mas exige presença física que compete diretamente com o tempo de produção do digital.",
+    "A decisão que este relatório pede é uma só: manter as três naturezas de oferta no próximo ciclo, ou suspender a física por um trimestre para liberar a agenda."
+  ],
+
+  "pendencias": [
+    { "id": "pend-01", "texto": "Fechar data com o fornecedor da oferta física", "estado": "off" },
+    { "id": "pend-02", "texto": "Publicar a página de preço da oferta digital", "estado": "on" },
+    { "id": "pend-03", "texto": "Revisar contrato de serviço recorrente", "estado": "na", "nota": "Não se aplica: nenhum contrato venceu neste ciclo." }
+  ],
+
+  "secoes": [
+    {
+      "titulo": "Indicadores do ciclo",
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "Três indicadores acompanham o ciclo. O primeiro é o único com série histórica suficiente para comparação; os outros dois começaram a ser medidos neste ciclo e ainda não têm base." },
+        { "tipo": "kpi", "id": "kpi-conversao", "rotulo": "TAXA DE CONVERSÃO", "valor": "33%",
+          "metodo": "Visitantes que chegaram ao checkout dividido por visitantes únicos, janela de 28 dias, sem deduplicação por dispositivo." },
+        { "tipo": "kpi", "id": "kpi-recorrencia", "rotulo": "RECEITA RECORRENTE", "valor": "R$ 0,00",
+          "metodo": "Zero por decisão: a oferta digital abriu gratuita no primeiro ciclo e a cobrança começa no oitavo." },
+        { "tipo": "kpi", "id": "kpi-margem-fisica", "rotulo": "MARGEM DA OFERTA FÍSICA", "valor": null,
+          "metodo": "O cálculo depende do custo de frete fechado do fornecedor, ainda não recebido." },
+        { "tipo": "barra", "rotulo": "ENTREGAS FECHADAS NO CICLO", "percentual": 60,
+          "nota": "Seis de dez. As quatro abertas foram devolvidas ao backlog com a causa registrada." },
+        { "tipo": "medidor", "rotulo": "PARTICIPAÇÃO NA RECEITA POR NATUREZA DE OFERTA", "series": [
+          { "nome": "Digital", "percentual": 47, "valor": "47%" },
+          { "nome": "Serviço", "percentual": 34, "valor": "34%", "destaque": false },
+          { "nome": "Física", "percentual": 19, "valor": "19%", "destaque": false }
+        ]}
+      ]
+    },
+    {
+      "titulo": "Entregas e causas de atraso",
+      "blocos": [
+        { "tipo": "tabela", "legenda": "Célula sem valor significa que o dado não foi coletado; não confunda com zero.",
+          "colunas": ["Entrega", "Natureza", "Dias planejados", "Dias reais", "Causa do desvio"],
+          "linhas": [
+            ["Página de preço", "Digital", 3, 2, "Fechou antes: escopo menor que o estimado"],
+            ["Aula gravada 01", "Digital", 5, 5, "Sem desvio"],
+            ["Aula gravada 02", "Digital", 5, 9, "Regravação por falha de áudio"],
+            ["Onboarding do cliente A", "Serviço", 4, 4, "Sem desvio"],
+            ["Onboarding do cliente B", "Serviço", 4, null, "Não iniciada: cliente adiou"],
+            ["Lote de produção", "Física", 10, null, "Bloqueada: fornecedor sem data"],
+            ["Revisão de embalagem", "Física", 2, 2, "Sem desvio"]
+          ]
+        },
+        { "tipo": "destaque", "rotulo": "PADRÃO QUE APARECEU",
+          "texto": "Todo desvio acima de três dias veio de dependência externa. Nenhum veio de estimativa errada do operador, o que aponta para gestão de dependência e não para melhoria de estimativa." }
+      ]
+    },
+    {
+      "titulo": "Cronograma do próximo ciclo",
+      "blocos": [
+        { "tipo": "cronograma", "rotulo": "OITO SEMANAS", "raias": [
+          { "nome": "Cobrança do digital", "inicio": 0, "duracao": 25 },
+          { "nome": "Serviço recorrente", "inicio": 12, "duracao": 45 },
+          { "nome": "Decisão sobre a física", "inicio": 50, "duracao": 15 },
+          { "nome": "Revisão de portfólio", "inicio": 72, "duracao": 28 }
+        ]},
+        { "tipo": "lista", "itens": [
+          "A cobrança do digital abre na semana 1 e não depende de terceiro.",
+          "A decisão sobre a oferta física entra depois de seis semanas de dado novo, não antes.",
+          "A revisão de portfólio fecha o ciclo com os três indicadores recalculados."
+        ]}
+      ]
+    },
+    {
+      "titulo": "Decisão e registro",
+      "blocos": [
+        { "tipo": "paragrafo", "texto": "Este bloco existe para ser preenchido na leitura, não antes dela. A decisão escrita à mão aqui é o que autoriza o próximo ciclo a começar." },
+        { "tipo": "campo", "id": "decisao-tomada", "rotulo": "DECISÃO TOMADA", "para_preencher": true },
+        { "tipo": "campo", "id": "data-decisao", "rotulo": "DATA", "para_preencher": true },
+        { "tipo": "campo", "id": "proxima-revisao", "rotulo": "PRÓXIMA REVISÃO", "valor": null },
+        { "tipo": "checklist", "rotulo": "CRITÉRIOS DE ACEITE DESTE RELATÓRIO", "itens": [
+          { "id": "ac-01", "texto": "Todo indicador tem a regra de cálculo escrita em linha separada", "estado": "on" },
+          { "id": "ac-02", "texto": "Toda célula sem valor está marcada como ausência, não como zero", "estado": "on" },
+          { "id": "ac-03", "texto": "Toda entrega atrasada tem causa declarada", "estado": "on" },
+          { "id": "ac-04", "texto": "A decisão do ciclo foi registrada com data", "estado": "off" },
+          { "id": "ac-05", "texto": "Conversão para CMYK conferida na gráfica", "estado": "na",
+            "nota": "Não se aplica: este ciclo circula apenas em PDF." }
+        ]}
+      ]
+    }
+  ]
+}

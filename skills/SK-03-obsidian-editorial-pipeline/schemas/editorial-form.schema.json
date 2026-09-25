@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Editorial Cycle Form (V2.3 — entrada mínima)",
+  "description": "Entrada inicial de um ciclo. NÃO carrega problem_id, tese, evidências, artigo ou assets — esses nascem dentro da trilha (SOP-KP-001). Só pack_id é obrigatório.",
+  "type": "object",
+  "required": ["pack_id"],
+  "properties": {
+    "pack_id": {
+      "type": "string",
+      "description": "Identificador do pack/ciclo (ex.: 'TP-002'). Único dado obrigatório na criação."
+    },
+    "cycle_id": {
+      "type": ["string", "null"],
+      "description": "ID técnico opcional do job; se ausente, é derivado de pack_id."
+    },
+    "cycle_title": {
+      "type": ["string", "null"],
+      "description": "Título de trabalho opcional, só para exibição enquanto o problema (S02) e a tese (S05) não estão definidos."
+    },
+    "produto_esperado": {
+      "type": ["boolean", "null"],
+      "description": "Decisão antecipada e OPCIONAL sobre o Bloco D (produto/solução). Deixe null (padrão) para decidir dentro da trilha, em S17 — nunca presumir."
+    },
+    "asset_plan": {
+      "type": ["object", "null"],
+      "description": "Overrides opcionais das quantidades default por tipo de asset (Bloco F). Uma quantidade 0 desabilita a etapa correspondente.",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "extensions": {
+      "type": ["object", "null"],
+      "description": "Qualquer campo adicional que o operador já conheça e queira preservar; não é usado pelo motor de estado."
+    }
+  },
+  "additionalProperties": false
+}

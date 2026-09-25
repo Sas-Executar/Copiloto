@@ -1,0 +1,133 @@
+{
+  "suite_id": "TEST-COP-001",
+  "version": "1.0",
+  "language": "pt-BR",
+  "cases": [
+    {
+      "id": "TC-BOMDIA-001",
+      "command": "/bomdia",
+      "given": {
+        "previous_task_status": "VERIFY",
+        "previous_task_has_dod": true,
+        "previous_task_has_evidence": true,
+        "previous_task_verified": true,
+        "next_ready_task": "EXE-PRD-001"
+      },
+      "expect": {
+        "route_module": "AGENTE-Copiloto-007",
+        "must_read": [
+          "TODAY",
+          "QUEUE",
+          "WORKFLOWS",
+          "BLOCKERS",
+          "CONFIG"
+        ],
+        "must_not_read_by_default": [
+          "memoria_detalhada",
+          "dag_completa",
+          "legado"
+        ],
+        "previous_transition": "VERIFY->DONE",
+        "next_focus": "EXE-PRD-001",
+        "response_style": "curta_acionavel"
+      }
+    },
+    {
+      "id": "TC-AGORA-001",
+      "command": "/agora",
+      "given": {
+        "current_task": "EXE-PRD-001",
+        "status": "DOING"
+      },
+      "expect": {
+        "route_module": "AGENTE-Copiloto-007",
+        "must_read": [
+          "TODAY"
+        ],
+        "must_return": [
+          "ID",
+          "acao",
+          "tempo",
+          "DoD",
+          "evidencia",
+          "proxima_acao"
+        ],
+        "must_not_replan": true
+      }
+    },
+    {
+      "id": "TC-FECHAR-001",
+      "command": "/fechardia",
+      "given": {
+        "object_id": "EXE-PRD-001",
+        "result": "parcial",
+        "has_evidence": false,
+        "finished": false
+      },
+      "expect": {
+        "must_not_set_done": true,
+        "must_record": [
+          "progresso",
+          "resume_from",
+          "DAILY_LOG"
+        ],
+        "next_day_priority": "same_object_when_applicable"
+      }
+    },
+    {
+      "id": "TC-BLOQUEIO-001",
+      "command": "/bloqueio",
+      "given": {
+        "object_id": "EXE-PRD-001",
+        "blocking": true,
+        "description": "dependencia externa indisponivel"
+      },
+      "expect": {
+        "state": "BLOCKED",
+        "must_record": [
+          "BLOCKERS",
+          "DAILY_LOG"
+        ],
+        "alternative_task_rule": "somente READY e sem violar caminho critico/dependencias"
+      }
+    },
+    {
+      "id": "TC-REPLAN-001",
+      "command": "/replanejamento",
+      "given": {
+        "changed_dependency": "DEP-014",
+        "affected_objects": [
+          "EXE-PRD-001",
+          "EXE-NORM-001"
+        ]
+      },
+      "expect": {
+        "route_module": "ORQ-COP-001",
+        "must_recalculate": "subgrafo_afetado",
+        "must_not_recalculate": "dag_inteira_sem_necessidade",
+        "must_validate": [
+          "dependencias",
+          "capacidade",
+          "WIP",
+          "gates",
+          "READY"
+        ]
+      }
+    },
+    {
+      "id": "TC-DONE-GUARD-001",
+      "command": "/fechardia",
+      "given": {
+        "object_id": "OPS-STORE-001",
+        "result": "concluido",
+        "has_dod": true,
+        "has_evidence": false,
+        "verified": true
+      },
+      "expect": {
+        "must_reject_transition": "VERIFY->DONE",
+        "reason": "evidencia_ausente"
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Fixture de regressão: cada defeito aqui existe para provar que uma checagem
+  dispara. Se este arquivo passar no validador, o validador quebrou.
+
+  Defeitos plantados:
+    TK001  cor literal em atributo de apresentação (fill no rect da página) —
+           mantido como hex literal de propósito: é o próprio defeito testado
+    TK002  var(-.-exec-color-inexistente) usada sem declaração
+    TK003  unidade px-image vazando para o artefato
+    TXT001 sentinela de rascunho no conteúdo
+    GEO001 geometria fora do A4 do contrato
+    PH001  campo sem data-state
+    PH003  campo vazio sem a classe de placeholder
+    PH004  campo vazio sem o texto sentinela
+    PH005  campo preenchido contendo o sentinela de placeholder
+    PH008  data-field duplicado
+    CB002  data-state de caixa inválido
+    CB003  caixa menor que o mínimo imprimível
+    CB005  traço fino demais
+    CB006  caixa sem rótulo
+    CB008  caixa já marcada em caderno branco
+    CB010  caixa sem exec-check__box
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="200mm" height="280mm" viewBox="0 0 200 280">
+  <title>Fixture quebrada</title>
+  <style>
+    /* AGUARDANDO CONTRATO DE TOKENS — valores A DEFINIR, exceto o defeito TK001 abaixo. */
+    :root{ --exec-color-ink-body: #4B4A4A; --exec-color-rule-strong: #C5C5C5; }
+    text { font-family: Helvetica, Arial, sans-serif; font-size: 3.2px; fill: var(--exec-color-ink-body); }
+    .exec-field__box { fill:none; stroke: var(--exec-color-rule-strong); }
+    .exec-check__box { fill:none; stroke: var(--exec-color-rule-strong); }
+    .exec-check__mark { fill:none; stroke: var(--exec-color-inexistente); }
+  </style>
+
+  <rect width="200" height="280" fill="#FFFFFF"/> <!-- TK001: defeito intencional, não é decisão de marca -->
+
+  <text x="10" y="12">Largura da coluna: 588 px-image</text>
+  <text x="10" y="18">Redigir a síntese executiva. TODO</text>
+
+  <g class="exec-field" data-field="proposito">
+    <text x="10" y="30">campo sem estado declarado</text>
+  </g>
+
+  <g class="exec-field" data-field="publico" data-state="empty">
+    <text x="10" y="40">campo vazio sem classe nem sentinela</text>
+  </g>
+
+  <g class="exec-field" data-field="proposito" data-state="filled">
+    <text x="10" y="50">— pendente</text>
+  </g>
+
+  <g class="exec-check" data-check="ac-01" data-state="talvez" data-label="estado inventado">
+    <rect x="10" y="60" width="4" height="4" class="exec-check__box" stroke-width="0.35"/>
+    <text x="16" y="63">estado inventado</text>
+  </g>
+
+  <g class="exec-check" data-check="ac-02" data-state="off" data-label="caixa pequena e de traço fino">
+    <rect x="10" y="70" width="2" height="2" class="exec-check__box" stroke-width="0.1"/>
+    <text x="16" y="73">caixa pequena e de traço fino</text>
+  </g>
+
+  <g class="exec-check" data-check="ac-03" data-state="on" data-label="">
+    <rect x="10" y="80" width="4" height="4" class="exec-check__box" stroke-width="0.35"/>
+    <path class="exec-check__mark" d="M10.9 82.1l1.1 1.2 2.1-2.6"/>
+  </g>
+
+  <g class="exec-check" data-check="ac-04" data-state="off" data-label="sem caixa desenhada">
+    <text x="16" y="93">sem caixa desenhada</text>
+  </g>
+</svg>

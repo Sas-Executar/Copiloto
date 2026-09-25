@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Campanha de lançamento</title>
+<style>
+/*
+  Gerado a partir de assets/tokens/tokens.json — não editar à mão.
+  Para atualizar: edite tokens.json e rode scripts/tokens.py --sincronizar (ou regenere este arquivo).
+  Fonte: EXECUTAR-REPORT-PRINT-DS-001 v1.0 (references/200-executive-report-print-contract.md).
+*/
+:root{
+  --exec-color-brand: #00BF63;
+  --exec-color-brand-strong: #007A45;
+  --exec-color-brand-soft: #F3FAF6;
+  --exec-color-accent-soft: #F3F6FA;
+  --exec-color-accent-soft-alt: #E4EDF6;
+  --exec-color-accent-soft-strong: #CFE2F4;
+  --exec-color-ink-title: #4B4A4A;
+  --exec-color-ink-body: #4B4A4A;
+  --exec-color-ink-secondary: #7C7B7B;
+  --exec-color-ink-secondary-strong: #646363;
+  --exec-color-ink-muted: #959494;
+  /* --exec-color-ink-muted-alt: A DEFINIR — LACUNA, ver tokens.json:alias.ink-muted-alt */
+  --exec-color-ink-placeholder: #959494;
+  --exec-color-ink-data: #4B4A4A;
+  --exec-color-ink-inverse: #FFFFFF;
+  /* --exec-color-ink-inverse-muted: A DEFINIR — LACUNA, ver tokens.json:alias.ink-inverse-muted */
+  --exec-color-rule-subtle: #EAEAEA;
+  --exec-color-rule-default: #E4E4E4;
+  --exec-color-rule-strong: #C5C5C5;
+  --exec-color-rule-brand: #00BF63;
+  --exec-color-surface-shell: #FFFFFF;
+  --exec-color-surface-page: #FFFFFF;
+  --exec-color-surface-raised: #FFFFFF;
+  --exec-color-surface-sunken: #F6F6F6;
+  --exec-color-surface-sunken-alt: #F0F0F0;
+  --exec-color-surface-cool: #FCFCFD;
+  /* --exec-color-surface-inverse: A DEFINIR — LACUNA, ver tokens.json:alias.surface-inverse */
+  --exec-color-data-fill: #00BF63;
+  --exec-color-data-fill-alt: #1F93FF;
+  --exec-color-data-track: #F0F0F0;
+  /* --exec-color-data-neutral: A DEFINIR — LACUNA, ver tokens.json:alias.data-neutral */
+  /* --exec-color-accent-blue: A DEFINIR — LACUNA, ver tokens.json:alias.accent-blue */
+  /* --exec-color-accent-green: A DEFINIR — LACUNA, ver tokens.json:alias.accent-green */
+  /* --exec-color-accent-lavender: A DEFINIR — LACUNA, ver tokens.json:alias.accent-lavender */
+  /* --exec-color-accent-peach: A DEFINIR — LACUNA, ver tokens.json:alias.accent-peach */
+  /* --exec-color-accent-violet: A DEFINIR — LACUNA, ver tokens.json:alias.accent-violet */
+}
+
+/* Namespace PRISM (status-report-prisma-a4-v4.html usa estes nomes sem prefixo, não --exec-color-*) */
+:root{
+  --bg: #FFFFFF;
+  --fg: #4B4A4A;
+  --fg-strong: #4B4A4A;
+  --muted: #7C7B7B;
+  --faint: #959494;
+  --line: #E4E4E4;
+  --line-strong: #C5C5C5;
+  --soft: #F6F6F6;
+  --soft-2: #F0F0F0;
+  --accent: #00BF63;
+  --accent-ink: #007A45;
+  --accent-soft: #F3FAF6;
+  --status-positive: #00BF63;
+  --status-positive-soft: #F3FAF6;
+}
+
+</style>
+<style>html,body{margin:0;padding:0;background:var(--exec-color-surface-shell);color:var(--exec-color-ink-title);}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;padding:24px 12px 64px;}
+.sheet{max-width:760px;margin:0 auto;background:var(--exec-color-surface-page);border:1px solid var(--exec-color-rule-default);}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;}
+.header{background:var(--exec-color-ink-title);color:var(--exec-color-surface-page);padding:18px 22px;}
+.kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--exec-color-ink-inverse-muted);}
+.title{font-size:22px;font-weight:700;margin-top:6px;line-height:1.15;}
+.meta{font-size:11px;color:var(--exec-color-ink-muted);margin-top:8px;line-height:1.5;}
+.section{padding:18px 20px;border-top:1px solid var(--exec-color-rule-subtle);}
+.section:first-of-type{border-top:none;}
+.section-label{font-size:11px;color:var(--exec-color-ink-secondary);letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;}
+.dashboard-table,.depth-table,.triptych-table,.properties{width:100%;border-collapse:collapse;table-layout:fixed;}
+.dashboard-table td{vertical-align:bottom;padding:0;}
+.hero{font-size:44px;line-height:1;font-weight:700;letter-spacing:-.04em;}
+.hero-label{font-size:12px;color:var(--exec-color-ink-secondary);margin-top:5px;}
+.stat{text-align:right;vertical-align:bottom;}
+.stat strong{display:block;font-size:18px;line-height:1.15;}
+.stat span{font-size:11px;color:var(--exec-color-ink-secondary);}
+.progress-track{height:6px;background:var(--exec-color-surface-sunken);margin-top:16px;overflow:hidden;}
+.progress-fill{height:6px;background:var(--exec-color-brand);}
+.depth-wrap{border-top:1px solid var(--exec-color-rule-subtle);border-bottom:1px solid var(--exec-color-rule-subtle);margin-top:16px;}
+.depth-table td{padding:11px 8px;text-align:center;border-right:1px solid var(--exec-color-rule-subtle);}
+.depth-table td:last-child{border-right:none;}
+.depth-name{font-size:10px;color:var(--exec-color-ink-secondary);text-transform:uppercase;letter-spacing:.05em;}
+.depth-val{font-size:13px;font-weight:700;margin-top:3px;}
+.depth-current{background:var(--exec-color-accent-soft);}
+.depth-current .depth-name,.depth-current .depth-val{color:var(--exec-color-brand);}
+.triptych-wrap{margin-top:16px;border:1px solid var(--exec-color-rule-subtle);}
+.triptych-table td{padding:14px 14px 16px;vertical-align:top;border-right:1px solid var(--exec-color-rule-subtle);}
+.triptych-table td:last-child{border-right:none;}
+.triptych-table td.current{background:var(--exec-color-accent-soft-alt);}
+.tri-top{font-size:11px;color:var(--exec-color-ink-secondary);display:flex;justify-content:space-between;gap:10px;}
+.tri-top b{font-weight:700;color:var(--exec-color-ink-title);}
+.current .tri-top,.current .tri-top b{color:var(--exec-color-brand);}
+.tri-title{font-size:14px;line-height:1.35;font-weight:600;margin-top:12px;min-height:38px;}
+.tri-state{font-size:11px;color:var(--exec-color-ink-secondary);margin-top:14px;}
+.current .tri-state{color:var(--exec-color-brand);font-weight:600;}
+.now{margin-top:16px;border-top:2px solid var(--exec-color-ink-title);padding-top:14px;}
+.now-row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;}
+.now-label{margin-bottom:6px;color:var(--exec-color-brand);}
+.now-title{font-size:18px;font-weight:700;line-height:1.25;}
+.now-meta{font-size:12px;color:var(--exec-color-ink-secondary);margin-top:4px;}
+.chip{display:inline-block;background:var(--exec-color-accent-soft-strong);color:var(--exec-color-brand-strong);border-radius:999px;padding:5px 10px;font-size:12px;font-weight:600;white-space:nowrap;}
+.properties td{padding:12px 0;border-bottom:1px solid var(--exec-color-rule-subtle);vertical-align:top;font-size:15px;line-height:1.45;}
+.properties tr:last-child td{border-bottom:none;}
+.properties .key{width:132px;padding-right:12px;font-size:12px;font-weight:700;color:var(--exec-color-ink-secondary-strong);}
+.properties .key.accent{color:var(--exec-color-brand);}
+.tags{padding-top:16px;border-top:2px solid var(--exec-color-ink-title);margin-top:18px;}
+.tag-label{font-size:11px;color:var(--exec-color-ink-secondary);margin:10px 0 8px;}
+.tag-label:first-child{margin-top:0;}
+.tag-purple,.tag-grey{display:inline-block;border-radius:999px;padding:5px 10px;margin:0 6px 6px 0;font-size:12px;font-weight:600;}
+.tag-purple{background:var(--exec-color-accent-soft-strong);color:var(--exec-color-brand-strong);}
+.tag-grey{background:var(--exec-color-surface-sunken-alt);color:var(--exec-color-ink-body);}
+.footer{padding:14px 20px 18px;border-top:1px solid var(--exec-color-rule-subtle);font-size:11px;color:var(--exec-color-ink-muted-alt);line-height:1.5;}
+
+@media(max-width:560px){
+  body{padding:0;background:var(--exec-color-surface-page);}
+  .sheet{border:none;}
+  .header{padding:16px;}
+  .section{padding:16px;}
+  .hero{font-size:38px;}
+  .properties .key{width:104px;font-size:11px;}
+  .properties td{font-size:14px;}
+  .triptych-table td{padding:12px 10px;}
+  .tri-title{font-size:13px;}
+  .depth-table td{padding:9px 4px;}
+}
+
+@page{size:A4;margin:12mm;}
+
+@media print{
+  html,body{background:var(--exec-color-surface-page);}
+  body{padding:0;}
+  .sheet{width:100%;max-width:none;border:0;}
+  .section,.now,.triptych-wrap,.depth-wrap{break-inside:avoid;}
+  .header{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+</style>
+</head>
+<body>
+<main class="sheet">
+<header class="header mono">
+<div class="kicker">EXECUTAR / STATUS REPORT</div>
+<div class="title">Campanha de lançamento</div>
+<div class="meta">schema: EXECUTAR_STATUS_REPORT_V1 &nbsp;&nbsp; status: ativo &nbsp;&nbsp; data: 2026-08-28</div>
+</header>
+<section class="section">
+<div class="section-label mono">PROGRESSO / PROJETO</div>
+<table class="dashboard-table" role="presentation"><tr>
+<td style="width:50%"><div class="hero">26%</div><div class="hero-label">concluído</div></td>
+<td class="stat" style="width:25%"><strong>03 / 08</strong><span>ciclo atual</span></td>
+<td class="stat" style="width:25%"><strong>33%</strong><span>hoje</span></td>
+</tr></table>
+<div class="progress-track"><div class="progress-fill" style="width:26%"></div></div>
+<div class="depth-wrap"><table class="depth-table" role="presentation"><tr>
+<td><div class="depth-name mono">Projeto</div><div class="depth-val">26%</div></td>
+<td><div class="depth-name mono">Ciclo</div><div class="depth-val">03/08</div></td>
+<td class="depth-current"><div class="depth-name mono">Hoje</div><div class="depth-val">33%</div></td>
+<td><div class="depth-name mono">Tarefa</div><div class="depth-val">em andamento</div></td>
+<td><div class="depth-name mono">Ação</div><div class="depth-val">agora</div></td>
+</tr></table></div>
+<div class="triptych-wrap"><table class="triptych-table" role="presentation"><tr><td><div class="tri-top"><span>ONTEM</span><b>100%</b></div><div class="tri-title">Direção estratégica concluída</div><div class="tri-state">concluído</div></td><td class="current"><div class="tri-top"><span>HOJE</span><b>33%</b></div><div class="tri-title">Landing e peças editoriais</div><div class="tri-state">em andamento</div></td><td><div class="tri-top"><span>AMANHÃ</span><b>0%</b></div><div class="tri-title">Campanha validada e publicada</div><div class="tri-state">planejado</div></td></tr></table></div>
+<div class="now"><div class="now-row"><div>
+<div class="section-label mono now-label">AGORA</div>
+<div class="now-title">Revisar a headline da landing page</div>
+<div class="now-meta">Hoje · próxima ação explicitada na fonte</div>
+</div><span class="chip">próxima ação</span></div></div>
+</section>
+<section class="section">
+<div class="section-label mono">STATUS / PROPERTIES</div>
+<table class="properties" role="presentation"><tr><td class="key mono">contexto</td><td>Consolidar a primeira campanha editorial antes de ampliar o produto.</td></tr>
+<tr><td class="key mono accent">problema</td><td>O material está distribuído em documentos diferentes e ainda não existe uma peça canônica para publicação.</td></tr>
+<tr><td class="key mono">processo</td><td>Consolidar a tese, revisar evidências e produzir os ativos na sequência definida.</td></tr>
+<tr><td class="key mono accent">progresso</td><td>A estrutura editorial e o posicionamento já foram definidos.</td></tr>
+<tr><td class="key mono">passo_1</td><td>Revisar a headline.</td></tr>
+<tr><td class="key mono">passo_2</td><td>Fechar a landing page.</td></tr>
+<tr><td class="key mono">passo_3</td><td>Validar as peças antes da publicação.</td></tr>
+<tr><td class="key mono accent">risco</td><td>Publicar peças inconsistentes antes da validação da tese.</td></tr>
+<tr><td class="key mono">prevencao</td><td>Manter uma fonte canônica e revisar cada peça contra ela.</td></tr>
+<tr><td class="key mono">entrega</td><td>Campanha validada, publicada e rastreável a uma fonte canônica.</td></tr></table>
+<div class="tags">
+<div class="tag-label mono">FOCO</div><span class="tag-purple">problema</span><span class="tag-purple">progresso</span><span class="tag-purple">risco</span>
+<div class="tag-label mono">ESTADO</div><span class="tag-purple">26%</span><span class="tag-purple">ciclo-03</span><span class="tag-purple">hoje-33</span>
+<div class="tag-label mono">ORIGEM</div><span class="tag-grey">input-project.md</span>
+</div>
+</section>
+<footer class="footer mono">EXECUTAR_STATUS_REPORT_V1 · leitura: header → progresso → agora → properties → tags</footer>
+</main>
+</body>
+</html>

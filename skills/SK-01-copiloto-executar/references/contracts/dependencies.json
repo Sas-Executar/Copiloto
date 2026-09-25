@@ -1,0 +1,48 @@
+{
+  "id": "DEP-COP-001",
+  "skill_name": "copiloto-executar",
+  "version": "1.0",
+  "required_resources": [
+    {
+      "id": "ORQ-COP-001",
+      "path": "references/orchestrator.md"
+    },
+    {
+      "id": "AGENTE-Copiloto-007",
+      "path": "references/copiloto-007.md"
+    },
+    {
+      "id": "COP-PROD-001",
+      "path": "references/produtividade.md"
+    },
+    {
+      "id": "COP-OPS-001",
+      "path": "references/operacoes.md"
+    },
+    {
+      "id": "CMD-COP-001",
+      "path": "references/commands.md"
+    }
+  ],
+  "required_contracts": [
+    "references/contracts/command-router.json",
+    "references/contracts/state-contract.json",
+    "references/contracts/orchestrator-input.schema.json",
+    "references/contracts/orchestrator-output.schema.json",
+    "references/contracts/orchestrator-tests.json",
+    "references/contracts/preflight-checks.json",
+    "references/contracts/drive-bindings.json"
+  ],
+  "external_authorities": [
+    "EXECUTAR_CONTROL_CENTER",
+    "00_AGORA"
+  ],
+  "invariants": [
+    "uma_unica_fonte_de_verdade",
+    "done_requer_dod_evidencia_verificacao",
+    "wip_critico_igual_1",
+    "portugues_do_brasil_na_interacao",
+    "leitura_minima_por_padrao",
+    "legado_nao_e_runtime"
+  ]
+}

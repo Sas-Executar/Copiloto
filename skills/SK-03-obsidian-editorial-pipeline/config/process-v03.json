@@ -1,0 +1,918 @@
+{
+  "id": "SOP-KP-001",
+  "version": "3.0",
+  "based_on": "SOP-KP-001 — Processo Definitivo de Produção de Knowledge Pack Editorial",
+  "wip": 1,
+  "blocos": [
+    {
+      "code": "A",
+      "name": "Estratégia & Problema"
+    },
+    {
+      "code": "B",
+      "name": "Conhecimento & Evidência"
+    },
+    {
+      "code": "C",
+      "name": "Conteúdo Master"
+    },
+    {
+      "code": "D",
+      "name": "Produto/Solução (condicional)"
+    },
+    {
+      "code": "E",
+      "name": "Design & Visual"
+    },
+    {
+      "code": "F",
+      "name": "Derivados e Distribuição"
+    },
+    {
+      "code": "G",
+      "name": "QA & Governança"
+    },
+    {
+      "code": "H",
+      "name": "Operação"
+    }
+  ],
+  "default_assets": {
+    "artigo_mae": 1,
+    "video_mae": 1,
+    "infografico": 3,
+    "imagem_estatica": 6,
+    "carrossel": 6,
+    "video_vertical": 4,
+    "stories": 12,
+    "cta_ferramenta": 6,
+    "newsletter": 3,
+    "ebook": 3
+  },
+  "steps": [
+    {
+      "id": "S01",
+      "bloco": "A",
+      "title": "Definir a transformação",
+      "ui_title": "Definir a transformação",
+      "objetivo": "Registrar o antes/depois que este ciclo entrega ao leitor — sem ainda nomear o problema.",
+      "artefato_id": "{pack_id}.TRANSFORMATION.V1",
+      "depends_on": [],
+      "dod": "A transformação (antes → depois) está escrita em uma frase e é específica deste ciclo.",
+      "evidence_required": "registro do antes/depois aprovado",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [],
+      "output": "02 - TRILHA/Etapa 01 - Definir a transformação.md",
+      "gancho": "Sobre \"{tema}\": o que o leitor não sabe/não faz hoje em relação a isto, e o que ele vai saber/fazer depois de consumir este ciclo? Escreva só essa virada — ainda não o problema."
+    },
+    {
+      "id": "S02",
+      "bloco": "A",
+      "title": "Definir o problema canônico",
+      "ui_title": "Definir o problema canônico",
+      "objetivo": "Escrever a frase única e concreta que este ciclo resolve. O tema é o mecanismo; o problema é a dificuldade real — não confundir os dois.",
+      "artefato_id": "{pack_id}.PROBLEM.V1",
+      "depends_on": [
+        "S01"
+      ],
+      "dod": "O problema está em uma frase concreta, distinta do tema, e o problem_id do ciclo foi atribuído aqui — não antes.",
+      "evidence_required": "problem_id atribuído + frase do problema aprovada",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S01"
+      ],
+      "output": "02 - TRILHA/Etapa 02 - Definir o problema canônico.md",
+      "gancho": "Dentro de \"{tema}\", qual é a dificuldade real e específica (não o tema em si, não uma categoria genérica) que este ciclo resolve? É aqui que o problem_id nasce."
+    },
+    {
+      "id": "S03",
+      "bloco": "A",
+      "title": "Definir público e contexto",
+      "ui_title": "Definir público e contexto",
+      "objetivo": "Descrever o público primário e os contextos de aplicação (trabalho, estudo, rotina, projetos pessoais etc.).",
+      "artefato_id": "{pack_id}.AUDIENCE_CONTEXT.V1",
+      "depends_on": [
+        "S02"
+      ],
+      "dod": "Público primário e contextos de aplicação estão descritos e amarrados ao problema de S02.",
+      "evidence_required": "descrição de público + contextos aprovada",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S02"
+      ],
+      "output": "02 - TRILHA/Etapa 03 - Definir público e contexto.md",
+      "gancho": "Quem, dentro do público interessado em \"{tema}\", sente esse problema na prática — e em quais contextos concretos (trabalho, estudo, rotina, projeto pessoal)?"
+    },
+    {
+      "id": "S04",
+      "bloco": "A",
+      "title": "Definir perguntas editoriais",
+      "ui_title": "Definir perguntas editoriais",
+      "objetivo": "Escrever 1 pergunta central + as 4 perguntas O quê / Por quê / Onde / Como.",
+      "artefato_id": "{pack_id}.EDITORIAL_QUESTIONS.V1",
+      "depends_on": [
+        "S02"
+      ],
+      "dod": "A pergunta central e as 4 perguntas O quê/Por quê/Onde/Como estão escritas e respondem ao problema de S02.",
+      "evidence_required": "5 perguntas registradas",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S02"
+      ],
+      "output": "02 - TRILHA/Etapa 04 - Definir perguntas editoriais.md",
+      "gancho": "Qual é a 1 pergunta central que alguém preocupado com \"{tema}\" faria — e as variações O quê / Por quê / Onde / Como dela?"
+    },
+    {
+      "id": "S05",
+      "bloco": "A",
+      "title": "Definir a tese central",
+      "ui_title": "Definir a tese central",
+      "objetivo": "Escrever a afirmação-síntese que vai orientar todo o ciclo, com a regra conceitual associada.",
+      "artefato_id": "{pack_id}.THESIS.V1",
+      "depends_on": [
+        "S03",
+        "S04"
+      ],
+      "dod": "A tese central está escrita e a regra conceitual associada está explícita. Isto fecha o Bloco A — não redigir nada antes disso.",
+      "evidence_required": "tese + regra conceitual aprovadas",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "output": "02 - TRILHA/Etapa 05 - Definir a tese central.md",
+      "gancho": "Se você resumisse tudo o que este ciclo sobre \"{tema}\" defende em 1 frase, qual seria a tese — e qual é a regra conceitual por trás dela?"
+    },
+    {
+      "id": "S06",
+      "bloco": "B",
+      "title": "Mapear o inventário de fatores/elementos",
+      "ui_title": "Mapear o inventário",
+      "objetivo": "Congelar a lista completa dos elementos/fatores que compõem o tema — ainda sem transformá-los em argumento.",
+      "artefato_id": "{pack_id}.FACTOR_INVENTORY.V1",
+      "depends_on": [
+        "S05"
+      ],
+      "dod": "O inventário completo está congelado (nenhum item foi transformado em argumento ainda).",
+      "evidence_required": "lista de fatores/elementos congelada",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S05"
+      ],
+      "output": "02 - TRILHA/Etapa 06 - Mapear o inventário.md",
+      "gancho": "Liste todos os elementos/fatores que compõem \"{tema}\" que você já mapeou ou tem em fontes/knowledge packs anteriores — sem ainda organizar ou argumentar, só congelar a lista."
+    },
+    {
+      "id": "S07",
+      "bloco": "B",
+      "title": "Organizar em macrogrupos MECE",
+      "ui_title": "Organizar em macrogrupos MECE",
+      "objetivo": "Agrupar o inventário de S06 em categorias mutuamente exclusivas e coletivamente exaustivas.",
+      "artefato_id": "{pack_id}.FACTOR_MECE.V1",
+      "depends_on": [
+        "S06"
+      ],
+      "dod": "Cada item do inventário pertence a exatamente um macrogrupo; a cobertura soma 100% do inventário.",
+      "evidence_required": "macrogrupos MECE registrados + cobertura conferida",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S06"
+      ],
+      "output": "02 - TRILHA/Etapa 07 - Organizar em macrogrupos MECE.md",
+      "gancho": "Como os itens do inventário de \"{tema}\" se agrupam em categorias que não se sobrepõem e que, juntas, cobrem tudo? Nomeie os macrogrupos."
+    },
+    {
+      "id": "S08",
+      "bloco": "B",
+      "title": "Definir núcleo × aprofundamento",
+      "ui_title": "Definir núcleo × aprofundamento",
+      "objetivo": "Selecionar o subconjunto que vai para o artigo principal; o resto vira camada de aprofundamento reutilizável.",
+      "artefato_id": "{pack_id}.CONTENT_SCOPE.V1",
+      "depends_on": [
+        "S07"
+      ],
+      "dod": "O núcleo do artigo e a camada de aprofundamento estão definidos e juntos cobrem o inventário de S06.",
+      "evidence_required": "núcleo + aprofundamento registrados",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S07"
+      ],
+      "output": "02 - TRILHA/Etapa 08 - Definir núcleo × aprofundamento.md",
+      "gancho": "De todos os grupos de \"{tema}\", quais entram no artigo principal (núcleo) e quais ficam para aprofundamento (ebook, newsletter, etc.)?"
+    },
+    {
+      "id": "S09",
+      "bloco": "B",
+      "title": "Definir a sequência narrativa",
+      "ui_title": "Definir a sequência narrativa",
+      "objetivo": "Ordenar os itens do núcleo (S08) em progressão argumentativa, do reconhecimento imediato ao mecanismo mais sistêmico.",
+      "artefato_id": "{pack_id}.NARRATIVE_SEQUENCE.V1",
+      "depends_on": [
+        "S08"
+      ],
+      "dod": "A ordem final dos itens do núcleo está congelada e não deve mudar sem decisão explícita.",
+      "evidence_required": "sequência narrativa congelada",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S08"
+      ],
+      "output": "02 - TRILHA/Etapa 09 - Definir a sequência narrativa.md",
+      "gancho": "Em que ordem os itens do núcleo de \"{tema}\" devem aparecer para o leitor ir do reconhecimento imediato até o mecanismo mais profundo?"
+    },
+    {
+      "id": "S10",
+      "bloco": "B",
+      "title": "Construir o mapa estrutural do artigo",
+      "ui_title": "Mapa estrutural do artigo",
+      "objetivo": "Transformar tese + perguntas + sequência narrativa em títulos e subtítulos — sem ainda redigir.",
+      "artefato_id": "{pack_id}.ARTICLE_OUTLINE.V1",
+      "depends_on": [
+        "S09"
+      ],
+      "dod": "O outline (H1/H2/H3) existe e nenhuma seção foi redigida ainda.",
+      "evidence_required": "outline aprovado",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S05",
+        "S09"
+      ],
+      "output": "02 - TRILHA/Etapa 10 - Mapa estrutural do artigo.md",
+      "gancho": "Com a tese e a sequência de \"{tema}\" definidas, quais são os títulos e subtítulos (H1/H2/H3) do artigo? Ainda sem redigir frases."
+    },
+    {
+      "id": "S11",
+      "bloco": "B",
+      "title": "Construir o mapa argumentativo",
+      "ui_title": "Mapa argumentativo",
+      "objetivo": "Para cada seção do outline: afirmação → argumento → evidência necessária.",
+      "artefato_id": "{pack_id}.ARGUMENT_MAP.V1",
+      "depends_on": [
+        "S10"
+      ],
+      "dod": "Toda seção do outline tem sua cadeia afirmação → argumento → evidência necessária escrita.",
+      "evidence_required": "mapa argumentativo completo",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S10"
+      ],
+      "output": "02 - TRILHA/Etapa 11 - Mapa argumentativo.md",
+      "gancho": "Para cada seção do outline de \"{tema}\": qual é a afirmação, o argumento que a sustenta e que tipo de evidência seria necessária?"
+    },
+    {
+      "id": "S12",
+      "bloco": "B",
+      "title": "Montar a matriz de evidências",
+      "ui_title": "Matriz de evidências",
+      "objetivo": "Vincular cada afirmação do mapa argumentativo a uma fonte prioritária, força e classificação (norma, experimento, guia técnico, framework).",
+      "artefato_id": "{pack_id}.EVIDENCE_MATRIX.V1",
+      "depends_on": [
+        "S11"
+      ],
+      "dod": "Toda afirmação do mapa argumentativo tem fonte, força e classificação — sem lacunas preenchidas artificialmente.",
+      "evidence_required": "matriz de evidências fechada (evidência insuficiente é um resultado válido, nunca inventado)",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S11"
+      ],
+      "output": "02 - TRILHA/Etapa 12 - Matriz de evidências.md",
+      "gancho": "Para cada afirmação do mapa argumentativo de \"{tema}\", qual é a fonte prioritária, a força dela e a classificação (norma/experimento/guia técnico/framework)? Onde não há evidência suficiente, registre isso como resultado válido."
+    },
+    {
+      "id": "S13",
+      "bloco": "B",
+      "title": "Fechar o contrato de claims autorizados",
+      "ui_title": "Contrato de claims autorizados",
+      "objetivo": "Congelar exatamente o que pode ser escrito, com qual referência, em qual nível de cautela — e o que não pode ser escrito.",
+      "artefato_id": "{pack_id}.AUTHORIZED_CLAIMS.V1",
+      "depends_on": [
+        "S12"
+      ],
+      "dod": "Cada claim tem etiqueta [E1]/[E2]/[S]/[FW] definida; nenhuma redação começa antes disto. Isto fecha o Bloco B.",
+      "evidence_required": "claims autorizados com etiqueta + limites de linguagem",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S12",
+        "S13"
+      ],
+      "output": "02 - TRILHA/Etapa 13 - Contrato de claims autorizados.md",
+      "gancho": "De tudo que foi mapeado sobre \"{tema}\", o que pode ser escrito como fato sustentado [E1]/[E2], o que só pode ser sugerido [S], e o que é apenas hipótese de framework [FW] que nunca deve virar [E1]?"
+    },
+    {
+      "id": "S14",
+      "bloco": "C",
+      "title": "Construir o storyboard argumentativo",
+      "ui_title": "Storyboard argumentativo",
+      "objetivo": "Transformar outline + claims autorizados em progressão parágrafo a parágrafo (abertura → blocos → virada → fechamento/CTA).",
+      "artefato_id": "{pack_id}.ARTICLE_STORYBOARD.V1",
+      "depends_on": [
+        "S13"
+      ],
+      "dod": "O storyboard cobre abertura, blocos temáticos, virada conceitual e fechamento/CTA, todos ligados a um claim autorizado.",
+      "evidence_required": "storyboard parágrafo a parágrafo aprovado",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S10",
+        "S13"
+      ],
+      "output": "02 - TRILHA/Etapa 14 - Storyboard argumentativo.md",
+      "gancho": "Parágrafo a parágrafo, como o artigo sobre \"{tema}\" abre, desenvolve os blocos, faz a virada conceitual e fecha com o CTA — sempre ancorado em um claim autorizado?"
+    },
+    {
+      "id": "S15",
+      "bloco": "C",
+      "title": "Definir o brief visual",
+      "ui_title": "Brief visual",
+      "objetivo": "Definir as imagens e o infográfico vinculados a cada bloco do storyboard, com um único cenário/linguagem gráfica.",
+      "artefato_id": "{pack_id}.VISUAL_BRIEF.V1",
+      "depends_on": [
+        "S14"
+      ],
+      "dod": "Cada peça visual do brief está ligada a um bloco específico do storyboard.",
+      "evidence_required": "brief visual aprovado",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S14"
+      ],
+      "output": "02 - TRILHA/Etapa 15 - Brief visual.md",
+      "gancho": "Quais imagens e o infográfico deste ciclo sobre \"{tema}\" se conectam a cada bloco do storyboard? Qual é o cenário/linguagem gráfica único que amarra tudo?"
+    },
+    {
+      "id": "S16",
+      "bloco": "C",
+      "title": "Fechar o Content-Spec",
+      "ui_title": "Content-Spec",
+      "objetivo": "Escrever o contrato bloco a bloco: objetivo → claim autorizado → evidência → exemplo → visual relacionado → CTA → limite de linguagem.",
+      "artefato_id": "CONTENT-SPEC-{pack_id}-V1",
+      "depends_on": [
+        "S14"
+      ],
+      "dod": "Todo bloco do Content-Spec tem claim autorizado, evidência e CTA definidos antes de qualquer frase final ser escrita.",
+      "evidence_required": "Content-Spec aprovado",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S13",
+        "S14"
+      ],
+      "output": "02 - TRILHA/Etapa 16 - Content-Spec.md",
+      "gancho": "Bloco a bloco do artigo sobre \"{tema}\": qual objetivo, claim autorizado, evidência, exemplo, visual e CTA cada um carrega, e qual o limite de linguagem permitido?"
+    },
+    {
+      "id": "S17",
+      "bloco": "C",
+      "title": "Redigir o artigo master",
+      "ui_title": "Redigir o artigo master",
+      "objetivo": "Escrever o Knowledge Master seguindo literalmente o Content-Spec. Decidir aqui, explicitamente, se o CTA deste ciclo gera uma solução/produto (abre o Bloco D) ou não.",
+      "artefato_id": "ARTICLE-MASTER-{pack_id}-V1",
+      "depends_on": [
+        "S16"
+      ],
+      "dod": "O artigo segue a ordem aprovada, claims [E1]/[E2] só aparecem onde a evidência sustenta, [FW] nunca vira [E1], existe 1 CTA primário com destino mensurável, e a decisão produto_esperado (sim/não) foi registrada. Isto fecha o Bloco C.",
+      "evidence_required": "artigo aprovado pelo quality gate do Bloco C + decisão produto_esperado registrada",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S16"
+      ],
+      "output": "02 - TRILHA/Etapa 17 - Redigir o artigo master.md",
+      "gancho": "Escreva o Knowledge Master de \"{tema}\" seguindo literalmente o Content-Spec — e decida agora, explicitamente: o CTA deste ciclo vai gerar uma ferramenta/solução (Bloco D)? Registre sim ou não com --produto-esperado."
+    },
+    {
+      "id": "S18",
+      "bloco": "D",
+      "title": "Montar a matriz elemento → sentido → problema → solução",
+      "ui_title": "Matriz elemento→solução",
+      "objetivo": "Transformar os itens canônicos em problemas observáveis e oportunidades de solução, sem alterar a taxonomia original.",
+      "artefato_id": "{pack_id}.FACTOR_SOLUTION_MATRIX.V1",
+      "depends_on": [
+        "S17"
+      ],
+      "dod": "Cada elemento prioritário tem um sentido/canal e uma oportunidade de solução mapeados.",
+      "evidence_required": "matriz elemento→solução aprovada",
+      "asset_key": null,
+      "conditional": "produto",
+      "context_refs": [
+        "S06",
+        "S17"
+      ],
+      "output": "02 - TRILHA/Etapa 18 - Matriz elemento→solução.md",
+      "gancho": "Se este ciclo sobre \"{tema}\" vai gerar um produto: para cada elemento prioritário, qual é o sentido/canal em que ele aparece e qual a oportunidade de solução (sem mudar a taxonomia original)?"
+    },
+    {
+      "id": "S19",
+      "bloco": "D",
+      "title": "Escrever a especificação-base da solução",
+      "ui_title": "Especificação-base da solução",
+      "objetivo": "Definir objetivo, entrada, dimensões analisadas, saída mínima e o que a solução explicitamente não faz.",
+      "artefato_id": "SOLUTION-SPEC.V1",
+      "depends_on": [
+        "S18"
+      ],
+      "dod": "A especificação diz o que a solução faz e o que ela explicitamente não faz (sem diagnóstico/score clínico).",
+      "evidence_required": "especificação-base aprovada",
+      "asset_key": null,
+      "conditional": "produto",
+      "context_refs": [
+        "S18"
+      ],
+      "output": "02 - TRILHA/Etapa 19 - Especificação-base da solução.md",
+      "gancho": "Qual é o objetivo da solução ligada a \"{tema}\", o que ela recebe como entrada, quais dimensões analisa, o que devolve como saída mínima — e o que ela explicitamente NÃO faz (sem diagnóstico clínico)?"
+    },
+    {
+      "id": "S20",
+      "bloco": "D",
+      "title": "Montar o catálogo de perguntas/inputs",
+      "ui_title": "Catálogo de perguntas",
+      "objetivo": "Definir perguntas observáveis (não clínicas/diagnósticas) que alimentam a solução.",
+      "artefato_id": "QUESTION-CATALOG-V1",
+      "depends_on": [
+        "S19"
+      ],
+      "dod": "Todas as perguntas do catálogo são observáveis e nenhuma é clínica ou diagnóstica.",
+      "evidence_required": "catálogo de perguntas aprovado",
+      "asset_key": null,
+      "conditional": "produto",
+      "context_refs": [
+        "S19"
+      ],
+      "output": "02 - TRILHA/Etapa 20 - Catálogo de perguntas.md",
+      "gancho": "Quais perguntas observáveis (nunca clínicas/diagnósticas) sobre \"{tema}\" alimentam essa solução?"
+    },
+    {
+      "id": "S21",
+      "bloco": "D",
+      "title": "Definir o algoritmo de classificação/priorização",
+      "ui_title": "Algoritmo de classificação",
+      "objetivo": "Definir as regras de convergência de evidência → Top N candidatos, com níveis de confiança qualitativos (nunca score clínico/percentual exposto).",
+      "artefato_id": "CLASSIFICATION-ENGINE-V1",
+      "depends_on": [
+        "S20"
+      ],
+      "dod": "As regras de priorização usam apenas níveis de confiança qualitativos, nunca score clínico ou percentual exposto ao usuário.",
+      "evidence_required": "algoritmo de classificação aprovado",
+      "asset_key": null,
+      "conditional": "produto",
+      "context_refs": [
+        "S20"
+      ],
+      "output": "02 - TRILHA/Etapa 21 - Algoritmo de classificação.md",
+      "gancho": "Quais regras convertem as respostas do catálogo em um Top N de candidatos, usando só níveis de confiança qualitativos (nunca score clínico/percentual exposto)?"
+    },
+    {
+      "id": "S22",
+      "bloco": "D",
+      "title": "Especificar o output da solução",
+      "ui_title": "Output da solução",
+      "objetivo": "Definir exatamente o que o usuário recebe, em que ordem, com que linguagem, terminando em ação prática.",
+      "artefato_id": "OUTPUT-SPEC-V1",
+      "depends_on": [
+        "S21"
+      ],
+      "dod": "O output está especificado passo a passo e termina em uma ação prática concreta.",
+      "evidence_required": "especificação de output aprovada",
+      "asset_key": null,
+      "conditional": "produto",
+      "context_refs": [
+        "S21"
+      ],
+      "output": "02 - TRILHA/Etapa 22 - Output da solução.md",
+      "gancho": "O que exatamente o usuário recebe como output desta solução sobre \"{tema}\", em que ordem, com que linguagem — terminando em qual ação prática?"
+    },
+    {
+      "id": "S23",
+      "bloco": "D",
+      "title": "Montar o catálogo de intervenções",
+      "ui_title": "Catálogo de intervenções",
+      "objetivo": "Para cada elemento prioritário: controle preventivo → detectivo → corretivo → ação prática → solução tecnológica → placeholder → métrica.",
+      "artefato_id": "INTERVENTION-CATALOG-V1",
+      "depends_on": [
+        "S22"
+      ],
+      "dod": "Cada elemento prioritário tem sua cadeia completa de controles e uma métrica associada.",
+      "evidence_required": "catálogo de intervenções aprovado",
+      "asset_key": null,
+      "conditional": "produto",
+      "context_refs": [
+        "S22"
+      ],
+      "output": "02 - TRILHA/Etapa 23 - Catálogo de intervenções.md",
+      "gancho": "Para cada elemento prioritário de \"{tema}\": qual é o controle preventivo, detectivo, corretivo, a ação prática, a solução tecnológica, o placeholder e a métrica associada?"
+    },
+    {
+      "id": "S24",
+      "bloco": "D",
+      "title": "Formalizar o subprojeto do produto",
+      "ui_title": "Formalizar subprojeto",
+      "objetivo": "Registrar PRD → FRD → UX → Agent Spec → Tech Spec → ADR → Data → NFR → Safety → MVP como dossiê estacionado do subprojeto — sem implementar código e sem consumir o fluxo editorial principal.",
+      "artefato_id": "SUBPROJECT-DOSSIE.V1",
+      "depends_on": [
+        "S23"
+      ],
+      "dod": "O dossiê existe, está marcado como subprojeto estacionado do pack e nenhuma linha de código foi produzida a partir dele.",
+      "evidence_required": "dossiê do subprojeto registrado",
+      "asset_key": null,
+      "conditional": "produto",
+      "context_refs": [
+        "S23"
+      ],
+      "output": "02 - TRILHA/Etapa 24 - Formalizar subprojeto.md",
+      "gancho": "Registre o dossiê do subprojeto de produto de \"{tema}\" (PRD→FRD→UX→Agent Spec→Tech Spec→ADR→Data→NFR→Safety→MVP) como algo estacionado — sem escrever código nenhum aqui."
+    },
+    {
+      "id": "S25",
+      "bloco": "E",
+      "title": "Confirmar o design system do pack",
+      "ui_title": "Confirmar design system",
+      "objetivo": "Confirmar tipografia por hierarquia, paleta, estilo de ilustração, limites de texto por peça e regras de overflow/safe area (16:9, 4:5, 9:16) — aplicado a todos os packs da marca, salvo rebranding.",
+      "artefato_id": "DESIGN-SYSTEM-CONFIRM.V1",
+      "depends_on": [
+        "S17"
+      ],
+      "dod": "O design system do ciclo está confirmado (ou herdado sem alteração) e cobre os três formatos-alvo.",
+      "evidence_required": "confirmação do design system",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S15"
+      ],
+      "output": "02 - TRILHA/Etapa 25 - Confirmar design system.md",
+      "gancho": "O design system já existente da marca cobre \"{tema}\" sem alteração, ou este ciclo exige um ajuste de tipografia/paleta/estilo de ilustração para os 3 formatos-alvo (16:9, 4:5, 9:16)?"
+    },
+    {
+      "id": "S26",
+      "bloco": "E",
+      "title": "Produzir os visuais do Brief",
+      "ui_title": "Visuais master",
+      "objetivo": "Para cada visual do Brief Visual (S15): função, copy (eyebrow/título/subtítulo/labels/callout), hierarquia de leitura, descrição de imagem, deriváveis.",
+      "artefato_id": "VISUAL-MASTER-SET.V1",
+      "depends_on": [
+        "S25",
+        "S15"
+      ],
+      "dod": "Cada peça visual do brief tem função, copy e hierarquia de leitura definidas — nenhuma peça sem função narrativa clara.",
+      "evidence_required": "conjunto de visuais master aprovado",
+      "asset_key": "imagem_estatica",
+      "conditional": null,
+      "context_refs": [
+        "S15",
+        "S25"
+      ],
+      "output": "02 - TRILHA/Etapa 26 - Visuais master.md",
+      "gancho": "Para cada visual do Brief de \"{tema}\": qual a função, o copy (eyebrow/título/subtítulo/labels/callout) e a hierarquia de leitura?"
+    },
+    {
+      "id": "S27",
+      "bloco": "E",
+      "title": "Especificar o infográfico master",
+      "ui_title": "Infográfico master",
+      "objetivo": "Título, arquitetura (do objetivo ao impacto, passando pelos elementos centrais e pela cadeia de controle), com a segunda metade mostrando a inversão operacional — marcada como arquitetura do framework, nunca como modelo clínico/causal validado.",
+      "artefato_id": "INFO-MASTER.V1",
+      "depends_on": [
+        "S26"
+      ],
+      "dod": "A arquitetura do infográfico está completa e a cadeia proprietária está explicitamente marcada como framework, não como ciência validada.",
+      "evidence_required": "especificação do infográfico aprovada",
+      "asset_key": "infografico",
+      "conditional": null,
+      "context_refs": [
+        "S26"
+      ],
+      "output": "02 - TRILHA/Etapa 27 - Infográfico master.md",
+      "gancho": "Qual é a arquitetura do infográfico master de \"{tema}\" — do objetivo ao impacto, passando pelos elementos centrais e pela cadeia de controle — deixando claro que é framework, não ciência validada?"
+    },
+    {
+      "id": "S28",
+      "bloco": "E",
+      "title": "Roteirizar o vídeo master",
+      "ui_title": "Roteiro do vídeo master",
+      "objetivo": "Duração-alvo, estrutura (Hook → Tese → Definição → elementos centrais → Acúmulo → Framework → aplicação manual → CTA).",
+      "artefato_id": "VID-MASTER-SCRIPT.V1",
+      "depends_on": [
+        "S17"
+      ],
+      "dod": "O roteiro cobre a estrutura completa Hook→Tese→Definição→elementos→Acúmulo→Framework→aplicação→CTA.",
+      "evidence_required": "roteiro do vídeo master aprovado",
+      "asset_key": "video_mae",
+      "conditional": null,
+      "context_refs": [
+        "S17",
+        "S15"
+      ],
+      "output": "02 - TRILHA/Etapa 28 - Roteiro do vídeo master.md",
+      "gancho": "Qual é a estrutura do roteiro do vídeo master de \"{tema}\" (Hook → Tese → Definição → elementos centrais → Acúmulo → Framework → aplicação manual → CTA) e a duração-alvo?"
+    },
+    {
+      "id": "S29",
+      "bloco": "F",
+      "title": "Mapear a origem dos derivados",
+      "ui_title": "Mapear origem dos derivados",
+      "objetivo": "Sinalizar, no artigo e no roteiro do vídeo, quais trechos/timestamps viram qual derivado. Derivados reutilizam o Knowledge Master; não refazem a pesquisa.",
+      "artefato_id": "DERIVATIVE-ORIGIN-MAP.V1",
+      "depends_on": [
+        "S27",
+        "S28"
+      ],
+      "dod": "Todo derivado planejado nas etapas seguintes já tem um bloco/timestamp de origem definido aqui.",
+      "evidence_required": "mapeamento origem → derivado aprovado",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S17",
+        "S28"
+      ],
+      "output": "02 - TRILHA/Etapa 29 - Mapear origem dos derivados.md",
+      "gancho": "No artigo e no roteiro de \"{tema}\", quais trechos/timestamps específicos viram qual derivado (texto curto, vertical, carrossel, stories, newsletter, ebook)?"
+    },
+    {
+      "id": "S30",
+      "bloco": "F",
+      "title": "Produzir textos curtos derivados",
+      "ui_title": "Textos curtos",
+      "objetivo": "Legendas e posts curtos a partir dos trechos marcados em S29 — sem nova pesquisa.",
+      "artefato_id": "SHORT-TEXTS.V1",
+      "depends_on": [
+        "S29"
+      ],
+      "dod": "Cada texto curto referencia explicitamente seu bloco de origem.",
+      "evidence_required": "banco de textos curtos versionado",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S29"
+      ],
+      "output": "02 - TRILHA/Etapa 30 - Textos curtos.md",
+      "gancho": "A partir dos trechos marcados sobre \"{tema}\": quais legendas e posts curtos nascem daqui, sem pesquisa nova?"
+    },
+    {
+      "id": "S31",
+      "bloco": "F",
+      "title": "Roteirizar vídeos verticais",
+      "ui_title": "Vídeos verticais",
+      "objetivo": "Cortes do vídeo master, cada um com gancho próprio nos primeiros segundos.",
+      "artefato_id": "VERTICAL-SCRIPTS.V1",
+      "depends_on": [
+        "S29"
+      ],
+      "dod": "Cada corte tem gancho próprio e referencia o timestamp de origem no vídeo master.",
+      "evidence_required": "roteiros de cortes versionados",
+      "asset_key": "video_vertical",
+      "conditional": null,
+      "context_refs": [
+        "S28",
+        "S29"
+      ],
+      "output": "02 - TRILHA/Etapa 31 - Vídeos verticais.md",
+      "gancho": "Quais cortes do vídeo master de \"{tema}\" viram vídeos verticais, e qual o gancho próprio de cada um nos primeiros segundos?"
+    },
+    {
+      "id": "S32",
+      "bloco": "F",
+      "title": "Produzir carrosséis",
+      "ui_title": "Carrosséis",
+      "objetivo": "Sequência de slides por carrossel, com uma ideia por slide, reaproveitando os visuais master já aprovados.",
+      "artefato_id": "CAROUSELS.V1",
+      "depends_on": [
+        "S29"
+      ],
+      "dod": "Cada carrossel tem uma ideia por slide e referencia seu bloco/visual de origem.",
+      "evidence_required": "copies de carrossel versionadas",
+      "asset_key": "carrossel",
+      "conditional": null,
+      "context_refs": [
+        "S26",
+        "S29"
+      ],
+      "output": "02 - TRILHA/Etapa 32 - Carrosséis.md",
+      "gancho": "Reaproveitando os visuais master já aprovados de \"{tema}\": como fica a sequência de slides de cada carrossel, uma ideia por slide?"
+    },
+    {
+      "id": "S33",
+      "bloco": "F",
+      "title": "Escrever copy das imagens estáticas",
+      "ui_title": "Copy das imagens",
+      "objetivo": "Texto de apoio e legenda de cada peça visual master, ligando a imagem ao elemento correspondente.",
+      "artefato_id": "IMAGE-COPY.V1",
+      "depends_on": [
+        "S26",
+        "S29"
+      ],
+      "dod": "Toda imagem estática do conjunto master tem copy e legenda ligadas ao elemento correspondente.",
+      "evidence_required": "copies de imagem versionadas",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S26",
+        "S29"
+      ],
+      "output": "02 - TRILHA/Etapa 33 - Copy das imagens.md",
+      "gancho": "Qual é o texto de apoio e a legenda de cada imagem estática master de \"{tema}\", ligando a imagem ao elemento correspondente?"
+    },
+    {
+      "id": "S34",
+      "bloco": "F",
+      "title": "Produzir sequência de Stories",
+      "ui_title": "Stories",
+      "objetivo": "Roteiro da sequência com as quatro portas — descoberta, prova, urgência, retenção — e CTA(s).",
+      "artefato_id": "STORIES-SEQUENCE.V1",
+      "depends_on": [
+        "S29"
+      ],
+      "dod": "A sequência cobre as quatro portas na ordem certa e termina em CTA.",
+      "evidence_required": "sequência de stories aprovada",
+      "asset_key": "stories",
+      "conditional": null,
+      "context_refs": [
+        "S29"
+      ],
+      "output": "02 - TRILHA/Etapa 34 - Stories.md",
+      "gancho": "Como fica a sequência de Stories de \"{tema}\" passando pelas quatro portas — descoberta, prova, urgência, retenção — até o CTA?"
+    },
+    {
+      "id": "S35",
+      "bloco": "F",
+      "title": "Produzir newsletters",
+      "ui_title": "Newsletters",
+      "objetivo": "Sequência de e-mails que educa por segmento, antecipa objeções e mostra prova antes do CTA.",
+      "artefato_id": "NEWSLETTERS.V1",
+      "depends_on": [
+        "S29"
+      ],
+      "dod": "A sequência de e-mails segue a ordem educa → antecipa objeção → prova → CTA.",
+      "evidence_required": "copies de newsletter versionadas",
+      "asset_key": "newsletter",
+      "conditional": null,
+      "context_refs": [
+        "S29"
+      ],
+      "output": "02 - TRILHA/Etapa 35 - Newsletters.md",
+      "gancho": "Qual é a sequência de e-mails de newsletter sobre \"{tema}\" que educa por segmento, antecipa objeções e mostra prova antes do CTA?"
+    },
+    {
+      "id": "S36",
+      "bloco": "F",
+      "title": "Produzir ebooks",
+      "ui_title": "Ebooks",
+      "objetivo": "Outline e redação dos ebooks — lead magnets ligados ao CTA do pack, aprofundando um recorte específico não esgotado pelo artigo.",
+      "artefato_id": "EBOOKS.V1",
+      "depends_on": [
+        "S29"
+      ],
+      "dod": "Cada ebook aprofunda um recorte que o artigo não esgota e está ligado ao CTA do pack.",
+      "evidence_required": "ebooks/outlines versionados",
+      "asset_key": "ebook",
+      "conditional": null,
+      "context_refs": [
+        "S08",
+        "S29"
+      ],
+      "output": "02 - TRILHA/Etapa 36 - Ebooks.md",
+      "gancho": "Qual recorte de \"{tema}\" o artigo não esgota e vira ebook — ligado a qual CTA do pack?"
+    },
+    {
+      "id": "S37",
+      "bloco": "F",
+      "title": "Mapear CTAs por peça",
+      "ui_title": "Mapear CTAs",
+      "objetivo": "Definir em quais peças cada CTA de ferramenta aparece, cobrindo artigo, vídeo e os derivados produzidos neste bloco.",
+      "artefato_id": "CTA-MAP.V1",
+      "depends_on": [
+        "S30",
+        "S31",
+        "S32",
+        "S33",
+        "S34",
+        "S35",
+        "S36"
+      ],
+      "dod": "Todo CTA planejado aparece em pelo menos uma peça nomeada, e toda peça relevante tem um CTA definido.",
+      "evidence_required": "mapa de CTAs por peça aprovado",
+      "asset_key": "cta_ferramenta",
+      "conditional": null,
+      "context_refs": [
+        "S17",
+        "S29"
+      ],
+      "output": "02 - TRILHA/Etapa 37 - Mapear CTAs.md",
+      "gancho": "Em quais peças específicas de \"{tema}\" (artigo, vídeo, cada derivado) cada CTA de ferramenta aparece?"
+    },
+    {
+      "id": "S38",
+      "bloco": "G",
+      "title": "Executar o QA de copy, overflow, acessibilidade e rastreabilidade",
+      "ui_title": "QA & Governança",
+      "objetivo": "Checklist mínimo antes de qualquer publicação: elemento ≠ conclusão automática de risco; overflow nos 3 formatos-alvo sem corte; contraste e leitura linear; todo asset carrega problem_id/solution_id/evidence_refs/cta_id/métrica.",
+      "artefato_id": "QA-SPEC.V1",
+      "depends_on": [
+        "S37"
+      ],
+      "dod": "Todos os itens do checklist de QA (copy, hierarquia de leitura, overflow, acessibilidade, rastreabilidade) estão marcados como verificados — não como presumidos.",
+      "evidence_required": "checklist de QA aprovado",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S13",
+        "S37"
+      ],
+      "output": "02 - TRILHA/Etapa 38 - QA & Governança.md",
+      "gancho": "Rodando o checklist de QA sobre as peças de \"{tema}\": overflow nos 3 formatos, contraste, leitura linear e rastreabilidade (problem_id/solution_id/evidence_refs/cta_id/métrica) — o que está realmente verificado, não presumido?"
+    },
+    {
+      "id": "S39",
+      "bloco": "H",
+      "title": "Agendar a publicação",
+      "ui_title": "Agendar publicação",
+      "objetivo": "Definir data, hora e canal de cada peça aprovada, sem republicar a mesma peça sem ajuste de formato nativo.",
+      "artefato_id": "SCHEDULE.V1",
+      "depends_on": [
+        "S38"
+      ],
+      "dod": "Todas as peças aprovadas têm data, hora e canal definidos no calendário.",
+      "evidence_required": "calendário de publicação completo",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S37",
+        "S38"
+      ],
+      "output": "02 - TRILHA/Etapa 39 - Agendar publicação.md",
+      "gancho": "Para cada peça aprovada de \"{tema}\": qual data, hora e canal de publicação?"
+    },
+    {
+      "id": "S40",
+      "bloco": "H",
+      "title": "Registrar a publicação",
+      "ui_title": "Registrar publicação",
+      "objetivo": "Publicar conforme o calendário e registrar a URL real de cada peça publicada.",
+      "artefato_id": "PUBLISH-LOG.V1",
+      "depends_on": [
+        "S39"
+      ],
+      "dod": "Cada peça publicada tem uma URL real registrada — nunca um placeholder tratado como prova de publicação.",
+      "evidence_required": "log de publicação com URLs",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S39"
+      ],
+      "output": "02 - TRILHA/Etapa 40 - Registrar publicação.md",
+      "gancho": "Depois de publicar as peças de \"{tema}\" conforme o calendário: qual é a URL real de cada uma?"
+    },
+    {
+      "id": "S41",
+      "bloco": "H",
+      "title": "Capturar as métricas",
+      "ui_title": "Capturar métricas",
+      "objetivo": "Ler os KPIs definidos (conteúdo: content_seen → tool_used → next_action_completed; produto, se houver: scan_completed/uso_completo → recommendation_used → next_action_completed).",
+      "artefato_id": "METRICS-CAPTURE.V1",
+      "depends_on": [
+        "S40"
+      ],
+      "dod": "Os KPIs primários do ciclo foram capturados nas fontes corretas (analytics/produto), sem número inventado.",
+      "evidence_required": "métricas capturadas por fonte",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S40"
+      ],
+      "output": "02 - TRILHA/Etapa 41 - Capturar métricas.md",
+      "gancho": "Que métricas (content_seen → tool_used → next_action_completed; e as de produto, se houver) você já tem disponíveis para capturar sobre \"{tema}\"?"
+    },
+    {
+      "id": "S42",
+      "bloco": "H",
+      "title": "Registrar o aprendizado",
+      "ui_title": "Registrar aprendizado",
+      "objetivo": "Registrar problema → fator/elemento → solução → uso → resultado → decisão, alimentando o próximo ciclo sem apagar o histórico anterior.",
+      "artefato_id": "LEARNING-LOG.V1",
+      "depends_on": [
+        "S41"
+      ],
+      "dod": "O aprendizado está registrado como adição ao histórico (nunca sobrescrevendo decisões anteriores) e aponta ao menos 1 decisão para o próximo ciclo.",
+      "evidence_required": "registro de aprendizado",
+      "asset_key": null,
+      "conditional": null,
+      "context_refs": [
+        "S41"
+      ],
+      "output": "02 - TRILHA/Etapa 42 - Registrar aprendizado.md",
+      "gancho": "O que este ciclo sobre \"{tema}\" ensinou — problema → elemento → solução → uso → resultado → decisão — para o próximo ciclo, sem apagar o histórico anterior?"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:executar-mapa-os:input:v1",
+  "title": "EXECUTAR Mapa-OS Input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sources"],
+  "properties": {
+    "request_id": {"type": ["string", "null"]},
+    "projection": {
+      "type": "string",
+      "enum": ["auto", "mapa_operacional", "agora_proximo_depois", "status_terminal", "prisma_7d"],
+      "default": "auto"
+    },
+    "mode": {"type": "string", "enum": ["MAPA", "EXECUTAR"], "default": "MAPA"},
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "source_type", "content"],
+        "properties": {
+          "source_id": {"type": "string", "minLength": 1},
+          "name": {"type": ["string", "null"]},
+          "version": {"type": ["string", "null"]},
+          "date": {"type": ["string", "null"]},
+          "source_type": {
+            "type": "string",
+            "enum": ["norm", "decision", "evidence", "status", "plan", "template", "example", "illustrative"]
+          },
+          "content": {"type": ["string", "object", "array", "number", "boolean"]},
+          "authority_note": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "current_position": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "project_id": {"type": ["string", "null"]},
+        "delivery_id": {"type": ["string", "null"]},
+        "workflow_id": {"type": ["string", "null"]},
+        "action_id": {"type": ["string", "null"]}
+      }
+    },
+    "as_of": {"type": ["string", "null"], "format": "date-time"},
+    "constraints": {"type": "array", "items": {"type": "string"}}
+  }
+}

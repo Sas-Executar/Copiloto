@@ -1,0 +1,18 @@
+{
+  "version": "3.0.0",
+  "based_on_sop": "SOP-KP-001",
+  "tests": "7/7 PASS (tests/test_pipeline.py)",
+  "python_compile": "PASS",
+  "entry_point": "PASS",
+  "internal_navigation": "PASS",
+  "manual_state_sync": "PASS",
+  "no_problem_id_required_at_creation": "PASS",
+  "bloco_d_conditional_gated_by_explicit_decision": "PASS",
+  "bloco_d_never_blocks_bloco_e": "PASS",
+  "progress_is_continuous_not_quantized": "PASS",
+  "pronto_para_empacotar_before_100_percent": "PASS",
+  "empacotado_only_after_validated_package": "PASS",
+  "package_blocked_before_all_steps_done": "PASS",
+  "end_to_end_bloco_d_false": "PASS (34/34 steps, 41 files zipped, verify_package valid)",
+  "end_to_end_bloco_d_true": "PASS (41/41 steps, 48 files zipped, verify_package valid)"
+}

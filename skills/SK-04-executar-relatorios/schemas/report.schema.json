@@ -1,0 +1,356 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EXECUTAR_STATUS_REPORT_V1",
+  "type": "object",
+  "required": [
+    "meta",
+    "progress",
+    "depth",
+    "triptych",
+    "now",
+    "properties",
+    "tags",
+    "provenance",
+    "quality"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "title",
+        "kicker",
+        "schema",
+        "status",
+        "date",
+        "source_count"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "kicker": {
+          "type": "string"
+        },
+        "schema": {
+          "const": "EXECUTAR_STATUS_REPORT_V1"
+        },
+        "status": {
+          "type": "string"
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "progress": {
+      "type": "object",
+      "required": [
+        "overall_percent",
+        "cycle_current",
+        "cycle_total",
+        "today_percent"
+      ],
+      "properties": {
+        "overall_percent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "cycle_current": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "cycle_total": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "today_percent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "depth": {
+      "type": "object",
+      "required": [
+        "project",
+        "cycle",
+        "today",
+        "task",
+        "action"
+      ],
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "cycle": {
+          "type": "string"
+        },
+        "today": {
+          "type": "string"
+        },
+        "task": {
+          "type": "string"
+        },
+        "action": {
+          "type": "string"
+        }
+      }
+    },
+    "triptych": {
+      "type": "object",
+      "required": [
+        "yesterday",
+        "today",
+        "tomorrow"
+      ],
+      "properties": {
+        "yesterday": {
+          "type": "object",
+          "required": [
+            "title",
+            "state",
+            "percent"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "percent": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 100
+            }
+          }
+        },
+        "today": {
+          "type": "object",
+          "required": [
+            "title",
+            "state",
+            "percent"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "percent": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 100
+            }
+          }
+        },
+        "tomorrow": {
+          "type": "object",
+          "required": [
+            "title",
+            "state",
+            "percent"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "percent": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 100
+            }
+          }
+        }
+      }
+    },
+    "now": {
+      "type": "object",
+      "required": [
+        "title",
+        "meta",
+        "chip"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "meta": {
+          "type": "string"
+        },
+        "chip": {
+          "type": "string"
+        }
+      }
+    },
+    "properties": {
+      "type": "object",
+      "required": [
+        "context",
+        "problem",
+        "process",
+        "progress",
+        "step_1",
+        "step_2",
+        "step_3",
+        "risk",
+        "prevention",
+        "delivery"
+      ],
+      "properties": {
+        "context": {
+          "type": "string"
+        },
+        "problem": {
+          "type": "string"
+        },
+        "process": {
+          "type": "string"
+        },
+        "progress": {
+          "type": "string"
+        },
+        "step_1": {
+          "type": "string"
+        },
+        "step_2": {
+          "type": "string"
+        },
+        "step_3": {
+          "type": "string"
+        },
+        "risk": {
+          "type": "string"
+        },
+        "prevention": {
+          "type": "string"
+        },
+        "delivery": {
+          "type": "string"
+        }
+      }
+    },
+    "tags": {
+      "type": "object",
+      "required": [
+        "focus",
+        "state",
+        "origin"
+      ],
+      "properties": {
+        "focus": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "state": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "origin": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "sources",
+        "field_map"
+      ],
+      "properties": {
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "field_map": {
+          "type": "object"
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": [
+        "conflicts",
+        "warnings",
+        "missing_fields"
+      ],
+      "properties": {
+        "conflicts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "missing_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

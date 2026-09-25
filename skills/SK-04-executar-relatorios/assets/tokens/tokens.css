@@ -1,0 +1,85 @@
+/*
+  Gerado a partir de assets/tokens/tokens.json via `python3 scripts/tokens.py --css`.
+  Nao editar a mao.
+  Fonte: EXECUTAR-REPORT-PRINT-DS-001 v1.0 (references/200-executive-report-print-contract.md).
+*/
+:root{
+  --exec-color-brand:#00BF63;
+  --exec-color-brand-strong:#007A45;
+  --exec-color-brand-soft:#F3FAF6;
+  --exec-color-accent-soft:#F3F6FA;
+  --exec-color-accent-soft-alt:#E4EDF6;
+  --exec-color-accent-soft-strong:#CFE2F4;
+  --exec-color-ink-title:#4B4A4A;
+  --exec-color-ink-body:#4B4A4A;
+  --exec-color-ink-secondary:#7C7B7B;
+  --exec-color-ink-secondary-strong:#646363;
+  --exec-color-ink-muted:#959494;
+  --exec-color-ink-placeholder:#959494;
+  --exec-color-ink-data:#4B4A4A;
+  --exec-color-ink-inverse:#FFFFFF;
+  --exec-color-rule-subtle:#EAEAEA;
+  --exec-color-rule-default:#E4E4E4;
+  --exec-color-rule-strong:#C5C5C5;
+  --exec-color-rule-brand:#00BF63;
+  --exec-color-surface-shell:#FFFFFF;
+  --exec-color-surface-page:#FFFFFF;
+  --exec-color-surface-raised:#FFFFFF;
+  --exec-color-surface-sunken:#F6F6F6;
+  --exec-color-surface-sunken-alt:#F0F0F0;
+  --exec-color-surface-cool:#FCFCFD;
+  --exec-color-data-fill:#00BF63;
+  --exec-color-data-fill-alt:#1F93FF;
+  --exec-color-data-track:#F0F0F0;
+  --bg:#FFFFFF;
+  --fg:#4B4A4A;
+  --fg-strong:#4B4A4A;
+  --muted:#7C7B7B;
+  --faint:#959494;
+  --line:#E4E4E4;
+  --line-strong:#C5C5C5;
+  --soft:#F6F6F6;
+  --soft-2:#F0F0F0;
+  --accent:#00BF63;
+  --accent-ink:#007A45;
+  --accent-soft:#F3FAF6;
+  --status-positive:#00BF63;
+  --status-positive-soft:#F3FAF6;
+  --exec-page-width:210mm;
+  --exec-page-height:297mm;
+  --exec-page-margin:10mm;
+  --exec-content-width:190mm;
+  --exec-grid-gutter:3mm;
+  --exec-grid-columns:12;
+  --exec-check-size:4mm;
+  --exec-check-stroke:0.35mm;
+  --exec-touch-target:44px;
+  --exec-space-1:1mm;
+  --exec-space-2:2mm;
+  --exec-space-3:3mm;
+  --exec-space-4:4mm;
+  --exec-space-6:6mm;
+  --exec-space-8:8mm;
+  --exec-space-12:12mm;
+  --exec-space-16:16mm;
+  --exec-space-24:24mm;
+  --exec-space-32:32mm;
+  --exec-radius-artifact:3mm;
+  --exec-radius-control:999mm;
+  --exec-radius-check:0.4mm;
+  --exec-stroke-hairline:0.25mm;
+  --exec-stroke-subtle:0.35mm;
+  --exec-stroke-default:0.5mm;
+  --exec-stroke-strong:0.8mm;
+  --exec-stroke-selected:1.2mm;
+  --exec-font-stack:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --exec-font-caption:2.4mm;
+  --exec-font-label:2.8mm;
+  --exec-font-body:3.2mm;
+  --exec-font-card-title:4.2mm;
+  --exec-font-section:6mm;
+  --exec-font-page-title:9mm;
+  --exec-font-display:18mm;
+  --exec-line-body:1.5;
+  --exec-line-title:1.2;
+}

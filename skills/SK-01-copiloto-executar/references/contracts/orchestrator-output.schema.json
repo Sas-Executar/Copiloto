@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "orchestrator-output.schema.json",
+  "title": "Saída do Orquestrador do Copiloto",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status",
+    "route",
+    "read_scope",
+    "write_policy",
+    "ui"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "OK",
+        "BLOQUEADO",
+        "CONDICIONAL",
+        "ERRO"
+      ]
+    },
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "module",
+        "action"
+      ],
+      "properties": {
+        "module": {
+          "type": "string",
+          "enum": [
+            "ORQ-COP-001",
+            "AGENTE-Copiloto-007",
+            "COP-PROD-001",
+            "COP-OPS-001"
+          ]
+        },
+        "action": {
+          "type": "string"
+        }
+      }
+    },
+    "read_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "write_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allowed",
+        "targets"
+      ],
+      "properties": {
+        "allowed": {
+          "type": "boolean"
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requires_human_confirmation": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "state_transition": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "object_id": {
+          "type": "string"
+        },
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        },
+        "guards": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "object_id",
+        "from",
+        "to",
+        "guards"
+      ]
+    },
+    "derived_progress_pct": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "ui": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "headline",
+        "agora",
+        "proxima_acao"
+      ],
+      "properties": {
+        "headline": {
+          "type": "string"
+        },
+        "agora": {
+          "type": "string"
+        },
+        "tempo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "conclui_quando": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidencia": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "proxima_acao": {
+          "type": "string"
+        },
+        "mermaid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

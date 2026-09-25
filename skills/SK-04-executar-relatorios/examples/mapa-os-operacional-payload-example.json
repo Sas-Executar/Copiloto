@@ -1,0 +1,727 @@
+{
+  "meta": {
+    "titulo": "Mapa Operacional do EXECUTAR HUB",
+    "subtitulo": "Visão executiva para compreender, navegar e operar a planilha completa",
+    "objetivo": "Permitir que uma pessoa entenda a planilha inteira sem precisar decodificar sua estrutura técnica: o que existe, como as partes se conectam, onde cada assunto está, o que pode ser preenchido, o que é apenas referência e quais pontos ainda exigem validação.",
+    "idioma": "Português do Brasil",
+    "fonte_principal": "EXECUTAR_HUB_Control_Plane_v2.xlsx",
+    "data_de_referencia": "23/09/2026",
+    "tipo_de_mapa": "Operacional e permanente; não é cronograma semanal."
+  },
+  "diretrizes_de_exibicao": {
+    "linguagem": "Executiva, clara, direta e sem jargão desnecessário.",
+    "portugues_como_padrao": true,
+    "identificadores": "Exibir como rastreio secundário, nunca como título principal.",
+    "termos_tecnicos": "Traduzir para português sempre que houver equivalente claro.",
+    "prioridade_visual": [
+      "Nome e finalidade da área",
+      "Domínios e documentos principais",
+      "Quantidade de campos e local de preenchimento",
+      "Situação e pontos de atenção",
+      "Identificadores de rastreio"
+    ],
+    "nao_fazer": [
+      "Não organizar o mapa em plano de sete dias.",
+      "Não tratar pendências como se fossem a estrutura principal da planilha.",
+      "Não usar termos em inglês como linguagem de interface quando houver equivalente em português.",
+      "Não expor identificadores longos como informação principal.",
+      "Não transformar o mapa em relatório técnico ou lista de códigos."
+    ]
+  },
+  "visao_geral": {
+    "resumo": "O EXECUTAR HUB é uma planilha de controle que organiza o programa em macroáreas, domínios, documentos, campos de informação, portfólio, marcos de validação, decisões, lacunas, conflitos e fontes. O preenchimento humano acontece somente nos formulários das macroáreas; as demais abas servem para leitura, consolidação e governança.",
+    "numeros_chave": [
+      {
+        "rotulo": "Macroáreas",
+        "valor": 13
+      },
+      {
+        "rotulo": "Domínios",
+        "valor": 24,
+        "observacao": "D0 + D01 a D23"
+      },
+      {
+        "rotulo": "Documentos e entregáveis",
+        "valor": 37
+      },
+      {
+        "rotulo": "Campos de informação",
+        "valor": 1125,
+        "observacao": "0 preenchidos no momento da leitura"
+      },
+      {
+        "rotulo": "Itens de portfólio",
+        "valor": 20
+      },
+      {
+        "rotulo": "Marcos de validação",
+        "valor": 12,
+        "observacao": "todos pendentes"
+      },
+      {
+        "rotulo": "Conflitos registrados",
+        "valor": 10,
+        "observacao": "todos abertos"
+      },
+      {
+        "rotulo": "Lacunas e ações pendentes",
+        "valor": 10
+      }
+    ]
+  },
+  "como_ler_a_planilha": [
+    {
+      "passo": 1,
+      "titulo": "Entenda a estrutura",
+      "descricao": "Comece por este mapa e pela aba 00_Leia-me para compreender regras, hierarquia e limites de edição."
+    },
+    {
+      "passo": 2,
+      "titulo": "Escolha a macroárea",
+      "descricao": "Use o mapa das 13 macroáreas para localizar o assunto, seus domínios e documentos relacionados."
+    },
+    {
+      "passo": 3,
+      "titulo": "Consulte as visões",
+      "descricao": "Use as abas 02 a 09 para enxergar programa, macroáreas, portfólio, documentos, dependências, marcos e documentos finais."
+    },
+    {
+      "passo": 4,
+      "titulo": "Preencha quando necessário",
+      "descricao": "O preenchimento humano ocorre apenas nas abas 01_Formulario_A00 a 01_Formulario_A12 e somente na coluna Resposta."
+    },
+    {
+      "passo": 5,
+      "titulo": "Aprofunde o rastreio",
+      "descricao": "Use as abas 10 a 24 quando precisar verificar identificadores, fontes, decisões, lacunas, conflitos ou evidências."
+    }
+  ],
+  "mapa_operacional": {
+    "titulo": "Macroáreas, domínios e documentos",
+    "descricao": "Esta é a camada principal do mapa. Os nomes explicam o conteúdo; os identificadores ficam apenas como rastreio.",
+    "macroareas": [
+      {
+        "ordem": 0,
+        "nome": "Governança, Estratégia e Gestão",
+        "rastreio_id": "A00",
+        "finalidade_executiva": "Define a base do programa: direção empresarial, governança, jurídico, riscos, finanças, contratos e regras de funcionamento.",
+        "dominios": [
+          {
+            "nome": "Governança e Operação do Programa",
+            "rastreio_id": "D0",
+            "documentos_principais": []
+          },
+          {
+            "nome": "Gestão Empresarial",
+            "rastreio_id": "D01",
+            "documentos_principais": [
+              {
+                "nome": "Documento de Direção Empresarial",
+                "rastreio_id": "D01-DOC-DDE-001"
+              },
+              {
+                "nome": "Termo de Abertura do Ecossistema",
+                "rastreio_id": "D01-DOC-TAP-001"
+              },
+              {
+                "nome": "Modelo de Negócio do Ecossistema",
+                "rastreio_id": "D01-DOC-MNE-001"
+              },
+              {
+                "nome": "Mapa de Relações do Ecossistema",
+                "rastreio_id": "D01-DOC-MRE-001"
+              }
+            ]
+          },
+          {
+            "nome": "Jurídico, Riscos e Conformidade",
+            "rastreio_id": "D02",
+            "documentos_principais": [
+              {
+                "nome": "Documento de Governança, Riscos e Conformidade",
+                "rastreio_id": "D02-DOC-DGRC-001"
+              },
+              {
+                "nome": "Matriz de Riscos e Controles",
+                "rastreio_id": "D02-DOC-MRC-001"
+              },
+              {
+                "nome": "Política de Privacidade e Termos",
+                "rastreio_id": "D02-DOC-PPT-001"
+              }
+            ]
+          },
+          {
+            "nome": "Finanças",
+            "rastreio_id": "D03",
+            "documentos_principais": [
+              {
+                "nome": "Plano Financeiro e Orçamentário",
+                "rastreio_id": "D03-DOC-PFO-001"
+              },
+              {
+                "nome": "Modelo Financeiro do Ecossistema",
+                "rastreio_id": "D03-DOC-MFO-001"
+              }
+            ]
+          },
+          {
+            "nome": "Contratos e Estruturas",
+            "rastreio_id": "D18",
+            "documentos_principais": [
+              {
+                "nome": "Plano de Contratos e Esquemas",
+                "rastreio_id": "D18-DOC-PCE-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 307,
+        "aba_de_preenchimento": "01_Formulario_A00",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      },
+      {
+        "ordem": 1,
+        "nome": "Negócio e Entrada no Mercado",
+        "rastreio_id": "A01",
+        "finalidade_executiva": "Organiza mercado, geração de demanda, vendas, lançamento, atendimento e sucesso do cliente.",
+        "dominios": [
+          {
+            "nome": "Mercado e Geração de Demanda",
+            "rastreio_id": "D13",
+            "documentos_principais": [
+              {
+                "nome": "Documento de Requisitos de Mercado",
+                "rastreio_id": "D13-DOC-DRM-001"
+              },
+              {
+                "nome": "Plano de Entrada no Mercado e Lançamento",
+                "rastreio_id": "D13-DOC-GTM-001"
+              }
+            ]
+          },
+          {
+            "nome": "Vendas",
+            "rastreio_id": "D14",
+            "documentos_principais": [
+              {
+                "nome": "Plano Comercial e de Vendas",
+                "rastreio_id": "D14-DOC-PCV-001"
+              }
+            ]
+          },
+          {
+            "nome": "Atendimento e Sucesso do Cliente",
+            "rastreio_id": "D15",
+            "documentos_principais": [
+              {
+                "nome": "Plano de Atendimento e Sucesso do Cliente",
+                "rastreio_id": "D15-DOC-PASC-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 130,
+        "aba_de_preenchimento": "01_Formulario_A01",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      },
+      {
+        "ordem": 2,
+        "nome": "Produto e Experiência",
+        "rastreio_id": "A02",
+        "finalidade_executiva": "Consolida requisitos de produto, experiência, interface e decisões de projeto antes da implementação.",
+        "dominios": [
+          {
+            "nome": "Gestão de Produto",
+            "rastreio_id": "D10",
+            "documentos_principais": [
+              {
+                "nome": "Documento de Requisitos de Produto",
+                "rastreio_id": "D10-DOC-DRP-001"
+              },
+              {
+                "nome": "Requisitos Integrados dos Produtos",
+                "rastreio_id": "D10-DOC-PRD-001"
+              }
+            ]
+          },
+          {
+            "nome": "Experiência e Projeto",
+            "rastreio_id": "D11",
+            "documentos_principais": [
+              {
+                "nome": "Especificação de Experiência e Projeto",
+                "rastreio_id": "D11-DOC-EEP-001"
+              },
+              {
+                "nome": "Sistema de Design e Interface",
+                "rastreio_id": "D11-DOC-DSI-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 113,
+        "aba_de_preenchimento": "01_Formulario_A02",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      },
+      {
+        "ordem": 3,
+        "nome": "Transição Produto → Engenharia",
+        "rastreio_id": "A03",
+        "finalidade_executiva": "Área prevista para conectar decisões de produto à preparação de engenharia. Atualmente não possui domínio, documento ou campo mapeado.",
+        "dominios": [],
+        "quantidade_de_campos": 0,
+        "aba_de_preenchimento": "01_Formulario_A03",
+        "situacao": "Sem domínio e sem campos mapeados; exige definição estrutural."
+      },
+      {
+        "ordem": 4,
+        "nome": "Arquitetura, Engenharia e Implementação",
+        "rastreio_id": "A04",
+        "finalidade_executiva": "Transforma requisitos em especificação técnica e orientações de engenharia para construção e implementação.",
+        "dominios": [
+          {
+            "nome": "Engenharia",
+            "rastreio_id": "D12",
+            "documentos_principais": [
+              {
+                "nome": "Especificação Técnica de Engenharia",
+                "rastreio_id": "D12-DOC-ETE-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 48,
+        "aba_de_preenchimento": "01_Formulario_A04",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      },
+      {
+        "ordem": 5,
+        "nome": "Operações, Plataforma, Implantação e Segurança",
+        "rastreio_id": "A05",
+        "finalidade_executiva": "Define operação contínua, procedimentos, execução operacional, implantação e controles do ambiente.",
+        "dominios": [
+          {
+            "nome": "Operações",
+            "rastreio_id": "D08",
+            "documentos_principais": [
+              {
+                "nome": "Manual de Operações",
+                "rastreio_id": "D08-DOC-MOP-001"
+              },
+              {
+                "nome": "Runbook Operacional do Ecossistema",
+                "rastreio_id": "D08-DOC-RUN-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 43,
+        "aba_de_preenchimento": "01_Formulario_A05",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      },
+      {
+        "ordem": 6,
+        "nome": "Dados, Pesquisa e Conhecimento",
+        "rastreio_id": "A06",
+        "finalidade_executiva": "Organiza dados, métricas, conhecimento corporativo, identidades, pesquisa, experimentação e evidências.",
+        "dominios": [
+          {
+            "nome": "Dados",
+            "rastreio_id": "D05",
+            "documentos_principais": [
+              {
+                "nome": "Estratégia e Plano de Gestão de Dados",
+                "rastreio_id": "D05-DOC-EPGD-001"
+              },
+              {
+                "nome": "Dicionário de Dados e Catálogo de Métricas",
+                "rastreio_id": "D05-DOC-DCM-001"
+              }
+            ]
+          },
+          {
+            "nome": "Conhecimento e Busca Corporativa",
+            "rastreio_id": "D06",
+            "documentos_principais": [
+              {
+                "nome": "Estratégia de Gestão do Conhecimento",
+                "rastreio_id": "D06-DOC-EGC-001"
+              },
+              {
+                "nome": "Registro Mestre de Identidades",
+                "rastreio_id": "D06-DOC-RMI-001"
+              }
+            ]
+          },
+          {
+            "nome": "Pesquisa e Inovação",
+            "rastreio_id": "D09",
+            "documentos_principais": [
+              {
+                "nome": "Plano de Pesquisa e Experimentação",
+                "rastreio_id": "D09-DOC-PPE-001"
+              },
+              {
+                "nome": "Dossiê de Evidências e Base Científica",
+                "rastreio_id": "D09-DOC-DEB-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 142,
+        "aba_de_preenchimento": "01_Formulario_A06",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      },
+      {
+        "ordem": 7,
+        "nome": "Corporativo e Suporte",
+        "rastreio_id": "A07",
+        "finalidade_executiva": "Concentra pessoas, capacidade, recursos humanos e sustentação organizacional.",
+        "dominios": [
+          {
+            "nome": "Pessoas e Recursos Humanos",
+            "rastreio_id": "D04",
+            "documentos_principais": [
+              {
+                "nome": "Plano de Pessoas e Capacidade",
+                "rastreio_id": "D04-DOC-PPC-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 39,
+        "aba_de_preenchimento": "01_Formulario_A07",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      },
+      {
+        "ordem": 8,
+        "nome": "Conteúdo, Comunicação e Crescimento",
+        "rastreio_id": "A08",
+        "finalidade_executiva": "Estrutura comunicação, mídias sociais, distribuição de conteúdo e ações de crescimento.",
+        "dominios": [
+          {
+            "nome": "Mídias Sociais e Distribuição Digital",
+            "rastreio_id": "D16",
+            "documentos_principais": [
+              {
+                "nome": "Plano Estratégico de Mídias Sociais",
+                "rastreio_id": "D16-DOC-PEM-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 36,
+        "aba_de_preenchimento": "01_Formulario_A08",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      },
+      {
+        "ordem": 9,
+        "nome": "Execução e Planejamento do Trabalho",
+        "rastreio_id": "A09",
+        "finalidade_executiva": "Converte estratégia em plano de execução, marcos, acompanhamento e implementação.",
+        "dominios": [
+          {
+            "nome": "Produtividade e Execução",
+            "rastreio_id": "D07",
+            "documentos_principais": [
+              {
+                "nome": "Plano de Execução",
+                "rastreio_id": "D07-DOC-PEX-001"
+              },
+              {
+                "nome": "Plano de Implementação e Marcos",
+                "rastreio_id": "D07-DOC-PIM-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 59,
+        "aba_de_preenchimento": "01_Formulario_A09",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      },
+      {
+        "ordem": 10,
+        "nome": "Documentação e Governança do Conhecimento",
+        "rastreio_id": "A10",
+        "finalidade_executiva": "Centraliza registros de decisão, cadernos de trabalho, modelos estruturais e documentação de controle.",
+        "dominios": [
+          {
+            "nome": "Cadernos de Trabalho",
+            "rastreio_id": "D21",
+            "documentos_principais": [
+              {
+                "nome": "Plano de Cadernos de Trabalho",
+                "rastreio_id": "D21-DOC-PWB-001"
+              }
+            ]
+          },
+          {
+            "nome": "Registro de Decisões e Controles",
+            "rastreio_id": "D22",
+            "documentos_principais": [
+              {
+                "nome": "Registro de Decisões e Controles do Ecossistema",
+                "rastreio_id": "D22-DOC-DRL-001"
+              }
+            ]
+          },
+          {
+            "nome": "Modelos Estruturais",
+            "rastreio_id": "D23",
+            "documentos_principais": [
+              {
+                "nome": "Plano de Modelos Estruturais",
+                "rastreio_id": "D23-DOC-PBL-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 93,
+        "aba_de_preenchimento": "01_Formulario_A10",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      },
+      {
+        "ordem": 11,
+        "nome": "Ferramentas, Inteligência Artificial e Ativos Reutilizáveis",
+        "rastreio_id": "A11",
+        "finalidade_executiva": "Organiza ferramentas, ativos, chamadas para ação, plataformas, repositórios e componentes reutilizáveis.",
+        "dominios": [
+          {
+            "nome": "Ativos e Chamadas para Ação",
+            "rastreio_id": "D19",
+            "documentos_principais": [
+              {
+                "nome": "Plano de Ativos e Chamadas para Ação",
+                "rastreio_id": "D19-DOC-PAC-001"
+              }
+            ]
+          },
+          {
+            "nome": "Plataformas e Repositórios",
+            "rastreio_id": "D20",
+            "documentos_principais": [
+              {
+                "nome": "Plano de Plataformas e Repositórios",
+                "rastreio_id": "D20-DOC-PPR-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 76,
+        "aba_de_preenchimento": "01_Formulario_A11",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      },
+      {
+        "ordem": 12,
+        "nome": "Stakeholders e Ecossistema",
+        "rastreio_id": "A12",
+        "finalidade_executiva": "Concentra relações externas, emprego, portfólio e conexões relevantes do ecossistema.",
+        "dominios": [
+          {
+            "nome": "Emprego e Portfólio",
+            "rastreio_id": "D17",
+            "documentos_principais": [
+              {
+                "nome": "Plano de Emprego e Portfólio",
+                "rastreio_id": "D17-DOC-PEP-001"
+              }
+            ]
+          }
+        ],
+        "quantidade_de_campos": 39,
+        "aba_de_preenchimento": "01_Formulario_A12",
+        "situacao": "Estrutura mapeada; conteúdo ainda depende de preenchimento e validação."
+      }
+    ]
+  },
+  "estrutura_da_planilha": {
+    "orientacao": [
+      {
+        "aba": "00_Leia-me",
+        "funcao": "Explica regras de uso, hierarquia, cores e limites de edição."
+      }
+    ],
+    "entrada_humana": {
+      "abas": "01_Formulario_A00 até 01_Formulario_A12",
+      "funcao": "São as únicas abas destinadas ao preenchimento humano.",
+      "regra": "Editar somente a coluna Resposta."
+    },
+    "visoes_de_leitura": [
+      {
+        "aba": "02_Visao_Programa",
+        "funcao": "Resumo estrutural do programa."
+      },
+      {
+        "aba": "03_Visao_Macroareas",
+        "funcao": "Leitura consolidada das macroáreas."
+      },
+      {
+        "aba": "04_Visao_Portfolio",
+        "funcao": "Mapa do portfólio e das iniciativas."
+      },
+      {
+        "aba": "05_Visao_Artefatos",
+        "funcao": "Visão dos documentos e seus campos."
+      },
+      {
+        "aba": "06_Visao_Dependencias",
+        "funcao": "Mostra relações entre documentos quando existirem."
+      },
+      {
+        "aba": "07_Visao_Gates",
+        "funcao": "Mostra os marcos de validação do programa."
+      },
+      {
+        "aba": "08_Visao_Documentos_Finais",
+        "funcao": "Mostra os documentos finais previstos."
+      },
+      {
+        "aba": "09_Indice_IDs",
+        "funcao": "Índice de rastreio entre identificadores atuais e anteriores."
+      }
+    ],
+    "registros_estruturais": [
+      {
+        "aba": "10_REG_Macroareas",
+        "funcao": "Cadastro das macroáreas."
+      },
+      {
+        "aba": "11_REG_Dominios",
+        "funcao": "Cadastro dos domínios."
+      },
+      {
+        "aba": "12_REG_Portfolio",
+        "funcao": "Cadastro do portfólio."
+      },
+      {
+        "aba": "13_REG_Templates",
+        "funcao": "Cadastro dos modelos de documento."
+      },
+      {
+        "aba": "14_REG_Artefatos",
+        "funcao": "Cadastro dos documentos e entregáveis."
+      },
+      {
+        "aba": "15_REG_Campos",
+        "funcao": "Cadastro dos 1.125 campos de informação."
+      },
+      {
+        "aba": "16_REG_Dependencias",
+        "funcao": "Registro das dependências entre documentos; atualmente vazio."
+      },
+      {
+        "aba": "17_REG_Gates",
+        "funcao": "Registro dos marcos de validação."
+      },
+      {
+        "aba": "18_REG_Evidencias",
+        "funcao": "Registro de evidências e fontes de apoio."
+      },
+      {
+        "aba": "19_REG_Documentos",
+        "funcao": "Registro dos documentos finais previstos."
+      },
+      {
+        "aba": "20_REG_Decisoes",
+        "funcao": "Registro de decisões estruturais e validações necessárias."
+      },
+      {
+        "aba": "21_REG_Gaps",
+        "funcao": "Registro de lacunas e ações pendentes."
+      },
+      {
+        "aba": "22_REG_Conflitos",
+        "funcao": "Registro de divergências entre fontes."
+      },
+      {
+        "aba": "23_REG_Legacy_ID_Map",
+        "funcao": "Correspondência entre identificadores antigos e atuais."
+      },
+      {
+        "aba": "24_REG_Sources",
+        "funcao": "Registro das fontes utilizadas para construir a planilha."
+      }
+    ]
+  },
+  "pontos_de_atencao": [
+    {
+      "titulo": "Área de transição ainda sem conteúdo estrutural",
+      "descricao": "A macroárea A03 existe na estrutura, mas não possui domínio, documento ou campo associado.",
+      "rastreio": [
+        "A03",
+        "01_Formulario_A03"
+      ]
+    },
+    {
+      "titulo": "Dependências ainda não registradas",
+      "descricao": "A planilha possui uma área específica para relações entre documentos, mas o registro está vazio.",
+      "rastreio": [
+        "16_REG_Dependencias"
+      ]
+    },
+    {
+      "titulo": "Conflitos de fonte aguardam decisão",
+      "descricao": "Existem 10 divergências registradas entre fontes que ainda não foram resolvidas.",
+      "rastreio": [
+        "22_REG_Conflitos"
+      ]
+    },
+    {
+      "titulo": "Há decisões que dependem de validação humana",
+      "descricao": "Quatro itens estão explicitamente marcados como ação obrigatória do usuário; além disso, decisões estruturais de mapeamento permanecem propostas.",
+      "rastreio": [
+        "20_REG_Decisoes",
+        "21_REG_Gaps"
+      ]
+    },
+    {
+      "titulo": "Grande parte do conteúdo ainda é proposta",
+      "descricao": "Dos 1.125 campos, 1.013 estão classificados como conteúdo proposto e não devem ser tratados como fato confirmado sem validação.",
+      "rastreio": [
+        "15_REG_Campos"
+      ]
+    }
+  ],
+  "legenda_executiva": [
+    {
+      "termo": "Macroárea",
+      "significado": "Grande frente de trabalho do programa."
+    },
+    {
+      "termo": "Domínio",
+      "significado": "Assunto especializado dentro de uma macroárea."
+    },
+    {
+      "termo": "Documento",
+      "significado": "Entregável estruturado que reúne informações de um domínio."
+    },
+    {
+      "termo": "Campo",
+      "significado": "Informação específica que deve ser preenchida, confirmada ou mantida."
+    },
+    {
+      "termo": "Marco de validação",
+      "significado": "Ponto de controle usado para verificar se uma etapa pode avançar."
+    },
+    {
+      "termo": "Rastreio",
+      "significado": "Identificador técnico usado para localizar exatamente o registro na planilha."
+    }
+  ],
+  "fonte_e_rastreabilidade": {
+    "planilha": "EXECUTAR_HUB_Control_Plane_v2.xlsx",
+    "abas_principais_de_rastreio": [
+      "10_REG_Macroareas",
+      "11_REG_Dominios",
+      "14_REG_Artefatos",
+      "15_REG_Campos",
+      "17_REG_Gates",
+      "20_REG_Decisoes",
+      "21_REG_Gaps",
+      "22_REG_Conflitos",
+      "24_REG_Sources"
+    ],
+    "regra": "Em caso de divergência, o mapa serve para navegação; a confirmação final deve ser feita no registro correspondente da planilha."
+  }
+}

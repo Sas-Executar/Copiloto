@@ -1,0 +1,69 @@
+{
+  "id": "BIND-COP-002",
+  "version": "1.0",
+  "skill_root": {
+    "name": "copiloto-executar",
+    "entrypoint": "SKILL.md"
+  },
+  "internal_bindings": [
+    {
+      "logical_id": "ORCHESTRATOR",
+      "path": "references/orchestrator.md",
+      "required": true
+    },
+    {
+      "logical_id": "COPILOTO_007",
+      "path": "references/copiloto-007.md",
+      "required": true
+    },
+    {
+      "logical_id": "PRODUCTIVITY",
+      "path": "references/produtividade.md",
+      "required": true
+    },
+    {
+      "logical_id": "OPERATIONS",
+      "path": "references/operacoes.md",
+      "required": true
+    },
+    {
+      "logical_id": "COMMANDS",
+      "path": "references/commands.md",
+      "required": true
+    },
+    {
+      "logical_id": "CONTRACTS",
+      "path": "references/contracts/",
+      "required": true
+    },
+    {
+      "logical_id": "LEGACY_PROVENANCE",
+      "path": "references/legado.md",
+      "required": false
+    },
+    {
+      "logical_id": "VALIDATOR",
+      "path": "scripts/validate_skill.py",
+      "required": true
+    }
+  ],
+  "external_authorities": [
+    {
+      "logical_id": "CONTROL_CENTER",
+      "name": "EXECUTAR_CONTROL_CENTER",
+      "resolution": "resolver no Google Drive pela autoridade existente; nunca criar substituto automaticamente",
+      "required": true
+    },
+    {
+      "logical_id": "HUMAN_ENTRY",
+      "name": "00_AGORA",
+      "resolution": "resolver no Google Drive pela autoridade existente",
+      "required": true
+    }
+  ],
+  "write_policy": {
+    "never_create_parallel_control_center": true,
+    "never_promote_legacy_to_authority": true,
+    "writes_require_resolved_authority": true
+  }
+}

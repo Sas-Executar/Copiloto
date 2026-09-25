@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relatório de ciclo · operação solo</title>
+<style>
+/* TOKENS:INICIO */
+/* AGUARDANDO CONTRATO DE TOKENS — cores não definidas de propósito.
+   Ressincronize com tokens.py depois que assets/tokens/ tiver valores reais. */
+:root{
+  --exec-color-brand: #00BF63;
+  --exec-color-brand-strong: #007A45;
+  --exec-color-brand-soft: #F3FAF6;
+  --exec-color-surface-page: #FFFFFF;
+  --exec-color-surface-raised: #FFFFFF;
+  --exec-color-surface-sunken: #F6F6F6;
+  --exec-color-surface-cool: #FCFCFD;
+  --exec-color-surface-inverse: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.surface-inverse) */;
+  --exec-color-ink-data: #4B4A4A;
+  --exec-color-ink-title: #4B4A4A;
+  --exec-color-ink-body: #4B4A4A;
+  --exec-color-ink-placeholder: #959494;
+  --exec-color-ink-muted: #959494;
+  --exec-color-ink-inverse: #FFFFFF;
+  --exec-color-rule-subtle: #EAEAEA;
+  --exec-color-rule-default: #E4E4E4;
+  --exec-color-rule-strong: #C5C5C5;
+  --exec-color-rule-brand: #00BF63;
+  --exec-color-accent-peach: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.accent-peach) */;
+  --exec-color-accent-blue: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.accent-blue) */;
+  --exec-color-accent-violet: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.accent-violet) */;
+  --exec-color-accent-green: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.accent-green) */;
+  --exec-color-accent-lavender: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.accent-lavender) */;
+  --exec-color-data-fill: #00BF63;
+  --exec-color-data-fill-alt: #1F93FF;
+  --exec-color-data-track: #F0F0F0;
+  --exec-color-data-neutral: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.data-neutral) */;
+  --exec-space-1:1mm;
+  --exec-space-2:2mm;
+  --exec-space-3:3mm;
+  --exec-space-4:4mm;
+  --exec-space-6:6mm;
+  --exec-space-8:8mm;
+  --exec-space-12:12mm;
+  --exec-space-16:16mm;
+  --exec-space-24:24mm;
+  --exec-space-32:32mm;
+  --exec-page-width:210mm;
+  --exec-page-height:297mm;
+  --exec-page-margin:10mm;
+  --exec-content-width:190mm;
+  --exec-grid-columns:12;
+  --exec-grid-gutter:3mm;
+  --exec-radius-artifact:3mm;
+  --exec-radius-control:999mm;
+  --exec-radius-check:0.4mm;
+  --exec-stroke-hairline:0.25mm;
+  --exec-stroke-subtle:0.35mm;
+  --exec-stroke-default:0.5mm;
+  --exec-stroke-strong:0.8mm;
+  --exec-stroke-selected:1.2mm;
+  --exec-font-stack:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --exec-font-caption:2.4mm;
+  --exec-font-label:2.8mm;
+  --exec-font-body:3.2mm;
+  --exec-font-card-title:4.2mm;
+  --exec-font-section:6mm;
+  --exec-font-page-title:9mm;
+  --exec-font-display:18mm;
+  --exec-line-body:1.5;
+  --exec-line-title:1.2;
+  --exec-check-size:4mm;
+  --exec-check-stroke:0.35mm;
+  --exec-touch-target:44px;
+}
+/* TOKENS:FIM */
+
+/* A margem física real vive numa área interna, nunca no @page: se ela for
+   declarada no @page o motor de impressão aplica escala por conta própria. */
+@page { size: 210mm 297mm; margin: 0; }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+html, body { margin: 0; padding: 0; background: var(--exec-color-surface-page); }
+body { font-family: var(--exec-font-stack); color: var(--exec-color-ink-body);
+        font-size: 10pt; line-height: 1.5; }
+
+.folha { width: 210mm; min-height: 297mm;
+          padding: 10mm; margin: 0 auto;
+          page-break-after: always; break-after: page; position: relative; }
+.folha:last-child { page-break-after: auto; break-after: auto; }
+
+h1 { font-size: 24pt; line-height: 1.2; color: var(--exec-color-ink-title); margin: 0 0 4mm; }
+h2 { font-size: 15pt; line-height: 1.25; color: var(--exec-color-ink-title); margin: 0 0 3mm;
+      page-break-after: avoid; break-after: avoid; }
+h3 { font-size: 11pt; color: var(--exec-color-ink-title); margin: 6mm 0 2mm;
+      page-break-after: avoid; break-after: avoid; }
+p  { margin: 0 0 3mm; max-width: 150mm; }
+
+/* Nenhum bloco de dado é cortado ao meio entre páginas. */
+.kpi, .barra, .medidor, .checklist, .destaque, .cronograma, .campo,
+table, tr, figure { page-break-inside: avoid; break-inside: avoid; }
+
+.eyebrow { display:inline-block; background: var(--exec-color-brand);
+            color: var(--exec-color-ink-inverse); border-radius: var(--exec-radius-control);
+            padding: 1.2mm 4mm; font-size: 7.5pt; font-weight: 600; letter-spacing: .06em; }
+.rotulo  { display:block; font-size: 7.5pt; font-weight: 600; letter-spacing: .04em;
+            color: var(--exec-color-ink-body); margin-bottom: 1mm; }
+.nota, .legenda { display:block; font-size: 7pt; color: var(--exec-color-ink-muted); }
+
+/* Campo vazio: itálico + cinza legível + sentinela. As três coisas juntas,
+   porque só a cor não sobrevive a fotocópia em preto e branco. */
+.exec-is-placeholder { font-style: italic; color: var(--exec-color-ink-placeholder); }
+.campo { margin: 0 0 3mm; }
+.valor { display:block; }
+.exec-field__box { display:block; height: 6mm; border: var(--exec-stroke-subtle) solid var(--exec-color-rule-strong);
+                    border-radius: var(--exec-radius-check); }
+.linha-escrita   { border-top: none; border-left: none; border-right: none; }
+
+.kpi-valor  { display:block; font-size: 34pt; line-height: 1.05; color: var(--exec-color-ink-data); }
+.kpi-metodo { display:block; font-size: 7pt; color: var(--exec-color-ink-muted); margin-top: 1mm; }
+
+.trilha        { display:block; height: 5mm; background: var(--exec-color-data-track);
+                  border-radius: var(--exec-radius-control); overflow: hidden; }
+.preenchimento { display:block; height: 100%; background: var(--exec-color-data-fill); }
+.preenchimento.alt { background: var(--exec-color-data-fill-alt); }
+.valor-barra   { display:block; font-size: 8pt; margin-top: 1mm; }
+.barra, .medidor, .cronograma { margin: 0 0 5mm; }
+.medidor-linha { display:grid; grid-template-columns: 38mm 1fr 18mm; gap: 3mm;
+                  align-items:center; margin-bottom: 2mm; }
+.medidor-nome  { font-size: 8pt; }
+.medidor-linha .valor-barra { margin:0; text-align:right; }
+
+.raia      { display:grid; grid-template-columns: 34mm 1fr; gap: 3mm; align-items:center; margin-bottom: 2mm; }
+.raia-nome { font-size: 8pt; }
+.raia-pista{ display:block; height: 4.5mm; background: var(--exec-color-data-track);
+              border-radius: var(--exec-radius-control); }
+.raia-barra{ display:block; height: 100%; background: var(--exec-color-brand);
+              border-radius: var(--exec-radius-control); }
+
+.tabela { width:100%; border-collapse: collapse; margin: 0 0 5mm; font-size: 8.5pt; }
+.tabela caption { caption-side: bottom; text-align:left; font-size: 7pt;
+                   color: var(--exec-color-ink-muted); padding-top: 1.5mm; }
+.tabela th { text-align:left; font-size: 7.5pt; letter-spacing:.04em;
+              background: var(--exec-color-surface-sunken); padding: 2mm; }
+.tabela td { padding: 2mm; border-bottom: var(--exec-stroke-hairline) solid var(--exec-color-rule-subtle); }
+.tabela td.num { text-align:right; font-variant-numeric: tabular-nums; }
+.tabela tbody tr:nth-child(even) td { background: var(--exec-color-surface-raised); }
+
+.checklist ul { list-style:none; margin:0; padding:0; }
+.exec-check { display:grid; grid-template-columns: var(--exec-check-size) 1fr;
+               gap: 2.5mm; align-items:start; margin-bottom: 2.5mm; }
+.exec-check__box { width: var(--exec-check-size); height: var(--exec-check-size);
+                    border: var(--exec-check-stroke) solid var(--exec-color-rule-strong);
+                    border-radius: var(--exec-radius-check); position:relative; display:block; }
+.exec-check__mark { position:absolute; left: 22%; top: 8%; width: 34%; height: 62%;
+                     border-right: var(--exec-stroke-strong) solid var(--exec-color-brand);
+                     border-bottom: var(--exec-stroke-strong) solid var(--exec-color-brand);
+                     transform: rotate(42deg); display:block; }
+.exec-check__na  { position:absolute; left: 10%; top: 48%; width: 80%; height: 0;
+                    border-top: var(--exec-stroke-subtle) solid var(--exec-color-ink-muted);
+                    transform: rotate(-38deg); display:block; }
+.exec-check__label { font-size: 8.5pt; }
+.exec-check .nota { grid-column: 2; }
+
+.destaque { background: var(--exec-color-accent-blue); border-left: var(--exec-stroke-selected) solid var(--exec-color-brand);
+             border-radius: var(--exec-radius-artifact); padding: 4mm; margin: 0 0 5mm; }
+.destaque p { margin:0; }
+
+.capa { background: var(--exec-color-surface-inverse); color: var(--exec-color-ink-inverse);
+         display:flex; flex-direction:column; justify-content:space-between; }
+.capa h1, .capa .rotulo, .capa .valor { color: var(--exec-color-ink-inverse); }
+.capa .exec-is-placeholder { color: var(--exec-color-ink-inverse); opacity: .78; }
+.capa-meta { display:grid; grid-template-columns: repeat(2, 1fr); gap: 4mm; font-size: 8.5pt; }
+
+.indice li { display:grid; grid-template-columns: 8mm 1fr; gap: 2mm; padding: 1.8mm 0;
+              border-bottom: var(--exec-stroke-hairline) solid var(--exec-color-rule-subtle); }
+.indice ul { list-style:none; margin:0; padding:0; }
+.indice .num-secao { color: var(--exec-color-ink-muted); font-variant-numeric: tabular-nums; }
+
+.rodape { position:absolute; left: 10mm; right: 10mm;
+           bottom: 6mm; display:flex; justify-content:space-between;
+           font-size: 7pt; color: var(--exec-color-ink-muted);
+           border-top: var(--exec-stroke-hairline) solid var(--exec-color-rule-subtle); padding-top: 2mm; }
+
+@media screen {
+  body { background: var(--exec-color-surface-sunken); padding: 8mm 0; }
+  .folha { background: var(--exec-color-surface-page); margin-bottom: 6mm; }
+}
+</style>
+</head>
+<body>
+<section class="folha capa"><div><span class="eyebrow">EXECUTAR PLAYBOOK</span><h1>Relatório de ciclo · operação solo</h1><p>Sétimo ciclo do portfólio híbrido: o que fechou, o que travou e o que muda no próximo.</p></div><div class="capa-meta"><div class="campo" data-field="meta-cliente" data-state="filled"><span class="rotulo">CLIENTE</span><span class="valor">Operação própria</span></div><div class="campo" data-field="meta-periodo" data-state="filled"><span class="rotulo">PERÍODO</span><span class="valor">01 a 28 de setembro</span></div><div class="campo" data-field="meta-responsavel" data-state="empty"><span class="rotulo">RESPONSÁVEL</span><span class="valor exec-is-placeholder">— pendente</span></div><div class="campo" data-field="meta-confidencialidade" data-state="filled"><span class="rotulo">CLASSIFICAÇÃO</span><span class="valor">Uso interno</span></div></div></section><section class="folha indice"><h2>Índice</h2><ul><li><span class="num-secao">01</span><span>Indicadores do ciclo</span></li><li><span class="num-secao">02</span><span>Entregas e causas de atraso</span></li><li><span class="num-secao">03</span><span>Cronograma do próximo ciclo</span></li><li><span class="num-secao">04</span><span>Decisão e registro</span></li></ul><div class="rodape"><span>Relatório de ciclo · operação solo · v1.0</span><span>02 / 07</span></div></section><section class="folha"><h2>Resumo executivo</h2><p>O ciclo fechou seis das dez entregas planejadas. As quatro que não fecharam têm a mesma causa declarada: dependência de terceiro sem data acordada, e não falta de tempo do operador.</p><p>A oferta digital passou a responder por quase metade da receita do ciclo sem custo variável adicional, o que muda a ordem de prioridade do próximo roadmap. A oferta física continua sustentando margem, mas exige presença física que compete diretamente com o tempo de produção do digital.</p><p>A decisão que este relatório pede é uma só: manter as três naturezas de oferta no próximo ciclo, ou suspender a física por um trimestre para liberar a agenda.</p><div class="checklist"><span class="rotulo">PENDÊNCIAS ABERTAS</span><ul><li class="exec-check" data-check="pend-01" data-state="off" data-label="Fechar data com o fornecedor da oferta física"><span class="exec-check__box"></span><span class="exec-check__label">Fechar data com o fornecedor da oferta física</span></li><li class="exec-check" data-check="pend-02" data-state="on" data-label="Publicar a página de preço da oferta digital"><span class="exec-check__box"><span class="exec-check__mark"></span></span><span class="exec-check__label">Publicar a página de preço da oferta digital</span></li><li class="exec-check" data-check="pend-03" data-state="na" data-label="Revisar contrato de serviço recorrente"><span class="exec-check__box"><span class="exec-check__na"></span></span><span class="exec-check__label">Revisar contrato de serviço recorrente</span><span class="nota">Não se aplica: nenhum contrato venceu neste ciclo.</span></li></ul></div><div class="rodape"><span>Relatório de ciclo · operação solo · v1.0</span><span>03 / 07</span></div></section><section class="folha"><h2>01 · Indicadores do ciclo</h2><p>Três indicadores acompanham o ciclo. O primeiro é o único com série histórica suficiente para comparação; os outros dois começaram a ser medidos neste ciclo e ainda não têm base.</p><div class="kpi campo" data-field="kpi-conversao" data-state="filled"><span class="rotulo">TAXA DE CONVERSÃO</span><span class="kpi-valor">33%</span><span class="kpi-metodo">Visitantes que chegaram ao checkout dividido por visitantes únicos, janela de 28 dias, sem deduplicação por dispositivo.</span></div><div class="kpi campo" data-field="kpi-recorrencia" data-state="filled"><span class="rotulo">RECEITA RECORRENTE</span><span class="kpi-valor">R$ 0,00</span><span class="kpi-metodo">Zero por decisão: a oferta digital abriu gratuita no primeiro ciclo e a cobrança começa no oitavo.</span></div><div class="kpi campo" data-field="kpi-margem-fisica" data-state="empty"><span class="rotulo">MARGEM DA OFERTA FÍSICA</span><span class="kpi-valor exec-is-placeholder">— pendente</span><span class="kpi-metodo">O cálculo depende do custo de frete fechado do fornecedor, ainda não recebido.</span></div><div class="barra"><span class="rotulo">ENTREGAS FECHADAS NO CICLO</span><span class="trilha"><span class="preenchimento" style="width:60%"></span></span><span class="valor-barra">60%</span><span class="nota">Seis de dez. As quatro abertas foram devolvidas ao backlog com a causa registrada.</span></div><div class="medidor"><span class="rotulo">PARTICIPAÇÃO NA RECEITA POR NATUREZA DE OFERTA</span><div class="medidor-linha"><span class="medidor-nome">Digital</span><span class="trilha"><span class="preenchimento" style="width:47%"></span></span><span class="valor-barra">47%</span></div><div class="medidor-linha"><span class="medidor-nome">Serviço</span><span class="trilha"><span class="preenchimento alt" style="width:34%"></span></span><span class="valor-barra">34%</span></div><div class="medidor-linha"><span class="medidor-nome">Física</span><span class="trilha"><span class="preenchimento alt" style="width:19%"></span></span><span class="valor-barra">19%</span></div></div><div class="rodape"><span>Relatório de ciclo · operação solo · v1.0</span><span>04 / 07</span></div></section><section class="folha"><h2>02 · Entregas e causas de atraso</h2><table class="tabela"><caption>Célula sem valor significa que o dado não foi coletado; não confunda com zero.</caption><thead><tr><th>Entrega</th><th>Natureza</th><th>Dias planejados</th><th>Dias reais</th><th>Causa do desvio</th></tr></thead><tbody><tr><td>Página de preço</td><td>Digital</td><td class="num">3</td><td class="num">2</td><td>Fechou antes: escopo menor que o estimado</td></tr><tr><td>Aula gravada 01</td><td>Digital</td><td class="num">5</td><td class="num">5</td><td>Sem desvio</td></tr><tr><td>Aula gravada 02</td><td>Digital</td><td class="num">5</td><td class="num">9</td><td>Regravação por falha de áudio</td></tr><tr><td>Onboarding do cliente A</td><td>Serviço</td><td class="num">4</td><td class="num">4</td><td>Sem desvio</td></tr><tr><td>Onboarding do cliente B</td><td>Serviço</td><td class="num">4</td><td class="exec-is-placeholder">— pendente</td><td>Não iniciada: cliente adiou</td></tr><tr><td>Lote de produção</td><td>Física</td><td class="num">10</td><td class="exec-is-placeholder">— pendente</td><td>Bloqueada: fornecedor sem data</td></tr><tr><td>Revisão de embalagem</td><td>Física</td><td class="num">2</td><td class="num">2</td><td>Sem desvio</td></tr></tbody></table><aside class="destaque"><span class="rotulo">PADRÃO QUE APARECEU</span><p>Todo desvio acima de três dias veio de dependência externa. Nenhum veio de estimativa errada do operador, o que aponta para gestão de dependência e não para melhoria de estimativa.</p></aside><div class="rodape"><span>Relatório de ciclo · operação solo · v1.0</span><span>05 / 07</span></div></section><section class="folha"><h2>03 · Cronograma do próximo ciclo</h2><div class="cronograma"><span class="rotulo">OITO SEMANAS</span><div class="raia"><span class="raia-nome">Cobrança do digital</span><span class="raia-pista"><span class="raia-barra" style="margin-left:0%;width:25%"></span></span></div><div class="raia"><span class="raia-nome">Serviço recorrente</span><span class="raia-pista"><span class="raia-barra" style="margin-left:12%;width:45%"></span></span></div><div class="raia"><span class="raia-nome">Decisão sobre a física</span><span class="raia-pista"><span class="raia-barra" style="margin-left:50%;width:15%"></span></span></div><div class="raia"><span class="raia-nome">Revisão de portfólio</span><span class="raia-pista"><span class="raia-barra" style="margin-left:72%;width:28%"></span></span></div></div><ul class="lista"><li>A cobrança do digital abre na semana 1 e não depende de terceiro.</li><li>A decisão sobre a oferta física entra depois de seis semanas de dado novo, não antes.</li><li>A revisão de portfólio fecha o ciclo com os três indicadores recalculados.</li></ul><div class="rodape"><span>Relatório de ciclo · operação solo · v1.0</span><span>06 / 07</span></div></section><section class="folha"><h2>04 · Decisão e registro</h2><p>Este bloco existe para ser preenchido na leitura, não antes dela. A decisão escrita à mão aqui é o que autoriza o próximo ciclo a começar.</p><div class="campo" data-field="decisao-tomada" data-state="blank"><span class="rotulo">DECISÃO TOMADA</span><span class="exec-field__box linha-escrita"></span></div><div class="campo" data-field="data-decisao" data-state="blank"><span class="rotulo">DATA</span><span class="exec-field__box linha-escrita"></span></div><div class="campo" data-field="proxima-revisao" data-state="empty"><span class="rotulo">PRÓXIMA REVISÃO</span><span class="valor exec-is-placeholder">— pendente</span></div><div class="checklist"><span class="rotulo">CRITÉRIOS DE ACEITE DESTE RELATÓRIO</span><ul><li class="exec-check" data-check="ac-01" data-state="on" data-label="Todo indicador tem a regra de cálculo escrita em linha separada"><span class="exec-check__box"><span class="exec-check__mark"></span></span><span class="exec-check__label">Todo indicador tem a regra de cálculo escrita em linha separada</span></li><li class="exec-check" data-check="ac-02" data-state="on" data-label="Toda célula sem valor está marcada como ausência, não como zero"><span class="exec-check__box"><span class="exec-check__mark"></span></span><span class="exec-check__label">Toda célula sem valor está marcada como ausência, não como zero</span></li><li class="exec-check" data-check="ac-03" data-state="on" data-label="Toda entrega atrasada tem causa declarada"><span class="exec-check__box"><span class="exec-check__mark"></span></span><span class="exec-check__label">Toda entrega atrasada tem causa declarada</span></li><li class="exec-check" data-check="ac-04" data-state="off" data-label="A decisão do ciclo foi registrada com data"><span class="exec-check__box"></span><span class="exec-check__label">A decisão do ciclo foi registrada com data</span></li><li class="exec-check" data-check="ac-05" data-state="na" data-label="Conversão para CMYK conferida na gráfica"><span class="exec-check__box"><span class="exec-check__na"></span></span><span class="exec-check__label">Conversão para CMYK conferida na gráfica</span><span class="nota">Não se aplica: este ciclo circula apenas em PDF.</span></li></ul></div><div class="rodape"><span>Relatório de ciclo · operação solo · v1.0</span><span>07 / 07</span></div></section>
+</body>
+</html>

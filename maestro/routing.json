@@ -1,0 +1,25 @@
+{
+  "orchestrator_id": "ORC-MAESTRO-001",
+  "version": "1.0.0",
+  "canonical_source": "HUB-CP-002",
+  "wip_limit": 1,
+  "routes": [
+    {"skill_id": "SK-01", "skill": "copiloto-executar", "path": "skills/SK-01-copiloto-executar",
+     "triggers": ["/bomdia", "/agora", "/estado", "/fechardia", "/replanejamento", "rotina diária", "registrar evidência", "bloqueio"],
+     "inputs": ["EXECUTAR_CONTROL_CENTER", "00_AGORA"], "outputs": ["estado do dia", "próxima ação", "registro de evidência"],
+     "macroareas": ["A00", "A09"], "handoff_to": ["SK-04"]},
+    {"skill_id": "SK-02", "skill": "plano-operacional-rastreavel", "path": "skills/SK-02-plano-operacional-rastreavel",
+     "triggers": ["plano operacional", "plano mensal", "formulário mensal", "motor de evidência", "pacote de entregáveis"],
+     "inputs": ["formulário de intake", "fontes do cliente"], "outputs": ["documento interno", "roadmap do cliente", "CSV Linear", "calendário one-page"],
+     "macroareas": ["A09", "A00"], "handoff_to": ["SK-01", "SK-04"]},
+    {"skill_id": "SK-03", "skill": "obsidian-editorial-pipeline", "path": "skills/SK-03-obsidian-editorial-pipeline",
+     "triggers": ["ciclo editorial", "artigo", "SOP-KP-001", "Obsidian", "carrossel", "newsletter", "empacotar job"],
+     "inputs": ["editorial-form.json"], "outputs": ["job editorial rastreável", "pacote ZIP de produção"],
+     "macroareas": ["A08", "A10"], "handoff_to": ["SK-04"]},
+    {"skill_id": "SK-04", "skill": "executar-relatorios", "path": "skills/SK-04-executar-relatorios",
+     "triggers": ["status report", "relatório executivo", "memo", "proposta", "SOP", "RAID", "RACI", "OKR", "Mapa-OS", "Prisma", "workbook", "Desk&Go"],
+     "inputs": ["texto/documento fonte", "payload PRISM"], "outputs": ["JSON canônico", "HTML A4 de impressão", "SVG workbook"],
+     "macroareas": ["A10", "A00"], "handoff_to": []}
+  ],
+  "fallback": {"action": "USER_ACTION_REQUIRED", "reason": "intenção sem rota inequívoca"}
+}

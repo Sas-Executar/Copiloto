@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://executar.local/schemas/tokens.schema.json",
+  "title": "Executar — contrato de tokens (forma esperada)",
+  "description": "Documenta a forma que assets/tokens/tokens.json deve ter. Não contém valores concretos: aguardando o novo contrato de tokens do usuário. Ver references/design-tokens.md.",
+  "type": "object",
+  "required": ["meta", "raw", "alias", "componente"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "description": "Metadados de proveniência do stack como um todo.",
+      "required": ["id", "familia", "versao", "proveniencia", "regra_de_unidade"],
+      "properties": {
+        "id": { "type": "string" },
+        "familia": { "type": "string" },
+        "versao": { "type": "string" },
+        "derivado_de": {
+          "type": "object",
+          "description": "Opcional: aponta para uma extração/fonte de design anterior, se houver.",
+          "properties": {
+            "arquivo": { "type": "string" },
+            "id_extracao": { "type": "string" },
+            "status_extracao": { "type": "string" },
+            "unidade_origem": { "type": "string" }
+          }
+        },
+        "proveniencia": {
+          "type": "object",
+          "description": "Glossário dos três valores possíveis de 'origem' em cada item.",
+          "required": ["FONTE", "DECISAO", "LACUNA"],
+          "properties": {
+            "FONTE": { "type": "string" },
+            "DECISAO": { "type": "string" },
+            "LACUNA": { "type": "string" }
+          }
+        },
+        "regra_de_unidade": { "type": "string" },
+        "base_geometrica": { "type": "string" }
+      }
+    },
+    "raw": {
+      "type": "object",
+      "description": "Camada 1: valores primitivos (cor medida, número bruto). Nenhum componente consome esta camada diretamente.",
+      "additionalProperties": { "$ref": "#/$defs/tokenItem" }
+    },
+    "alias": {
+      "type": "object",
+      "description": "Camada 2: o que os componentes consomem. Trocar um alias não pode mudar hierarquia, layout ou dado — só a leitura visual.",
+      "additionalProperties": { "$ref": "#/$defs/tokenItem" }
+    },
+    "componente": {
+      "type": "object",
+      "description": "Camada 3: o que cada componente visual consome. Nenhum valor literal aqui — só referência a um alias, na forma '{nome-do-alias}'.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": { "type": "string", "pattern": "^\\{[a-z0-9-]+\\}$" }
+      }
+    }
+  },
+  "$defs": {
+    "tokenItem": {
+      "type": "object",
+      "description": "Um item de token. 'valor' fica null enquanto origem for LACUNA.",
+      "required": ["valor", "origem", "base"],
+      "properties": {
+        "valor": {
+          "description": "Valor do token (cor, dimensão, número, string de fonte, ou referência '{outro-token}'). null quando origem é LACUNA — aguardando decisão.",
+          "type": ["string", "number", "null"]
+        },
+        "origem": {
+          "type": "string",
+          "enum": ["FONTE", "DECISAO", "LACUNA"]
+        },
+        "base": {
+          "type": "string",
+          "description": "Cálculo, critério ou fonte que justifica o valor. Obrigatório mesmo quando LACUNA (explica o que falta decidir)."
+        }
+      }
+    }
+  }
+}

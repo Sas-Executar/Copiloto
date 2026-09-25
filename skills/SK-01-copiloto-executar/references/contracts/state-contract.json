@@ -1,0 +1,21 @@
+{
+  "id": "STATE-COP-001",
+  "states": [
+    "BACKLOG_VALIDATED",
+    "READY",
+    "DOING",
+    "VERIFY",
+    "DONE",
+    "BLOCKED"
+  ],
+  "done_guards": [
+    "dod_atendido",
+    "evidencia_presente",
+    "verificacao_concluida"
+  ],
+  "rules": {
+    "wip_critical": 1,
+    "progress_is_derived": true,
+    "blocked_is_exception": true
+  }
+}

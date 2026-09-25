@@ -1,0 +1,43 @@
+{
+  "name": "executar-relatorios",
+  "version": "0.1.0",
+  "description": "Skill consolidada de progressive disclosure para geração de relatórios, artefatos de negócio, mapas operacionais semanais PRISM e entregáveis visuais Desk&Go — quatro capacidades antes distribuídas em skills separadas.",
+  "consolidates": [
+    {
+      "source": "executar-status-report",
+      "role": "Motor base de status report: contrato de grounding, schema JSON, renderizador HTML, regras de impressão.",
+      "note": "Superado em conteúdo por executar-status-report-business-pack, que é uma superset idêntica exceto pelo SKILL.md; a superset foi usada como fonte de verdade para os arquivos compartilhados."
+    },
+    {
+      "source": "executar-status-report-business-pack",
+      "role": "Pacote de ~60 templates de negócio (customer, emails, workbooks, strategy, reports, writing, execution) + roteamento de template + perfis de renderer."
+    },
+    {
+      "source": "executar-mapa-os",
+      "version": "1.1.0",
+      "role": "Protocolo PRISM de mapa operacional semanal (Agora/Próximo/Depois, WIP=1, epistemologia de evidência), schemas de ativação/entrada/saída, template A4 de status report Prisma."
+    },
+    {
+      "source": "deskgo-business-workbook",
+      "role": "Motor visual/token: workbook de 5 peças SVG, gerador de wireframe, validador de artefato, e o stack de design tokens (agora substituído por schemas vazios — ver design-tokens)."
+    }
+  ],
+  "design_tokens": {
+    "status": "placeholder",
+    "note": "Todo valor concreto de cor/espaçamento/tema foi removido. assets/tokens/ contém apenas tokens.schema.json, temas.schema.json e um README explicando o que falta. Ver references/design-tokens.md.",
+    "pending": "Novo contrato de tokens de design do usuário."
+  },
+  "activation": {
+    "reference": "SKILL.md",
+    "capabilities": ["status-report", "business-template-pack", "mapa-os-prism", "workbook-visual"]
+  },
+  "validation": {
+    "report_schema": "schemas/report.schema.json",
+    "activation_schema": "schemas/activation.schema.json",
+    "input_schema": "schemas/input.schema.json",
+    "output_schema": "schemas/output.schema.json",
+    "prism_schema": "schemas/prism-report.schema.json",
+    "tokens_schema": "assets/tokens/tokens.schema.json",
+    "temas_schema": "assets/tokens/temas.schema.json"
+  }
+}

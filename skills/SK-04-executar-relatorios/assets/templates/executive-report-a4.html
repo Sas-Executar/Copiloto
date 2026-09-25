@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{REPORT_TITLE}} — EXECUTAR</title>
+
+<!--
+EXECUTAR-REPORT-PRINT-DS-001
+Version: 1.0
+Purpose: HTML paginado A4 para relatórios executivos.
+Visual source: EXECUTAR Green/Azure + IBM Plex design system.
+Composition source: EXECUTAR Showroom grammar (white space, neutral surfaces,
+controlled green/azure accents, fine rules, low visual noise).
+
+IMPORTANT:
+- Replace {{PLACEHOLDERS}} with report content.
+- Do not introduce raw colors when a token exists.
+- Keep one decision/message per page or major block.
+- Prefer evidence -> implication -> action.
+-->
+
+<style>
+/* =========================================================
+   01. EXECUTAR — CANONICAL DESIGN TOKENS
+   Source family: Green / Azure / Neutral + IBM Plex
+   ========================================================= */
+:root {
+  /* Green */
+  --green-1:#FCFDFC; --green-2:#F3FAF6; --green-3:#E4F6ED;
+  --green-4:#CFF4E2; --green-5:#B4F4D5; --green-6:#8BF6C2;
+  --green-7:#58FBAD; --green-8:#1FFF93; --green-9:#00BF63;
+  --green-10:#008C49; --green-11:#007A45; --green-12:#064727;
+
+  /* Azure */
+  --azure-1:#FCFCFD; --azure-2:#F3F6FA; --azure-3:#E4EDF6;
+  --azure-4:#CFE2F4; --azure-5:#B4D5F4; --azure-6:#8BC2F6;
+  --azure-7:#58ACFB; --azure-8:#3CA0FD; --azure-9:#1F93FF;
+  --azure-10:#007AEB; --azure-11:#0B6FD3; --azure-12:#062747;
+
+  /* Neutral */
+  --neutral-1:#FFFFFF; --neutral-2:#F6F6F6; --neutral-3:#F0F0F0;
+  --neutral-4:#EAEAEA; --neutral-5:#E4E4E4; --neutral-6:#DEDEDE;
+  --neutral-7:#C5C5C5; --neutral-8:#ADADAD; --neutral-9:#959494;
+  --neutral-10:#7C7B7B; --neutral-11:#646363; --neutral-12:#4B4A4A;
+
+  /* Semantic */
+  --bg:var(--neutral-1);
+  --surface:var(--neutral-2);
+  --surface-strong:var(--neutral-3);
+  --text:var(--neutral-12);
+  --text-secondary:var(--neutral-10);
+  --text-muted:var(--neutral-9);
+  --border:var(--neutral-5);
+  --border-strong:var(--neutral-7);
+  --action:var(--green-9);
+  --action-dark:var(--green-11);
+  --info:var(--azure-9);
+  --info-dark:var(--azure-11);
+  --focus:var(--azure-8);
+  --warning:#B45309;
+  --error:#DC2626;
+
+  /* Typography */
+  --font-sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --font-mono:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;
+  --display:56px;
+  --h1:44px; --h2:34px; --h3:26px;
+  --title:20px; --subtitle:18px;
+  --body-lg:18px; --body:16px; --body-sm:14px;
+  --caption:12px; --overline:11px; --mono:14px;
+
+  /* Geometry */
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s6:24px;
+  --s8:32px; --s12:48px; --s16:64px; --s24:96px; --s32:128px;
+  --r-sm:4px; --r-md:8px; --r-lg:12px; --r-xl:16px; --r-pill:999px;
+  --shadow-sm:0 1px 2px rgba(20,20,20,.04);
+  --shadow-md:0 4px 12px rgba(20,20,20,.06);
+
+  /* Print-specific semantic tokens */
+  --page-w:210mm;
+  --page-h:297mm;
+  --page-top:15mm;
+  --page-side:16mm;
+  --page-bottom:18mm;
+  --rule:.35pt solid var(--border);
+  --rule-strong:.7pt solid var(--border-strong);
+}
+
+/* =========================================================
+   02. PAGED MEDIA CONTRACT
+   ========================================================= */
+@page {
+  size:A4 portrait;
+  margin:var(--page-top) var(--page-side) var(--page-bottom);
+}
+
+@page cover {
+  size:A4 portrait;
+  margin:0;
+}
+
+@page report {
+  size:A4 portrait;
+  margin:15mm 16mm 18mm 16mm;
+
+  @top-left {
+    content:string(report-title);
+    font-family:Arial,sans-serif;
+    font-size:8pt;
+    color:#7C7B7B;
+  }
+  @top-right {
+    content:"EXECUTAR";
+    font-family:Arial,sans-serif;
+    font-size:8pt;
+    font-weight:700;
+    color:#4B4A4A;
+  }
+  @bottom-left {
+    content:string(report-meta);
+    font-family:Arial,sans-serif;
+    font-size:7.5pt;
+    color:#959494;
+  }
+  @bottom-right {
+    content:counter(page) " / " counter(pages);
+    font-family:Arial,sans-serif;
+    font-size:7.5pt;
+    color:#959494;
+  }
+}
+
+* { box-sizing:border-box; }
+html { background:#ddd; }
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-sans);
+  font-size:10.5pt;
+  line-height:1.42;
+  -webkit-print-color-adjust:exact;
+  print-color-adjust:exact;
+}
+
+.report-title-string { string-set:report-title content(text); }
+.report-meta-string { string-set:report-meta content(text); }
+
+.cover {
+  page:cover;
+  width:210mm;
+  height:297mm;
+  padding:22mm 20mm 18mm;
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+  background:
+    linear-gradient(180deg, rgba(0,191,99,.03), transparent 33%),
+    var(--bg);
+  position:relative;
+  overflow:hidden;
+  break-after:page;
+}
+
+.cover::after {
+  content:"";
+  position:absolute;
+  right:-34mm;
+  bottom:-38mm;
+  width:125mm;
+  height:125mm;
+  border:1px solid var(--green-5);
+  border-radius:50%;
+  box-shadow:
+    0 0 0 18mm rgba(0,191,99,.025),
+    0 0 0 38mm rgba(31,147,255,.018);
+}
+
+.report-page {
+  page:report;
+  min-height:260mm;
+  break-after:page;
+  position:relative;
+}
+
+.report-page:last-child { break-after:auto; }
+
+.page-break { break-before:page; }
+.avoid-break, .card, table, .callout, .metric, figure { break-inside:avoid; }
+h1,h2,h3 { break-after:avoid; }
+p { orphans:3; widows:3; }
+
+/* =========================================================
+   03. SHOWROOM → REPORT VISUAL GRAMMAR
+   ========================================================= */
+.brand {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+  letter-spacing:-.02em;
+  font-size:15pt;
+}
+.brand-mark {
+  width:10mm;
+  height:10mm;
+  border-radius:3mm;
+  display:grid;
+  place-items:center;
+  background:var(--action);
+  color:#fff;
+  font-weight:700;
+  font-size:13pt;
+}
+
+.eyebrow {
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  color:var(--action-dark);
+  font-size:8pt;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.eyebrow::before {
+  content:"";
+  width:9mm;
+  height:1.2pt;
+  background:var(--action);
+}
+
+.cover-main {
+  align-self:center;
+  max-width:156mm;
+  position:relative;
+  z-index:1;
+}
+.cover h1 {
+  margin:7mm 0 5mm;
+  font-size:31pt;
+  line-height:1.03;
+  letter-spacing:-.04em;
+  max-width:165mm;
+}
+.cover .dek {
+  font-size:14pt;
+  line-height:1.4;
+  color:var(--text-secondary);
+  max-width:135mm;
+}
+.cover-meta {
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:8mm;
+  align-items:end;
+  padding-top:8mm;
+  border-top:var(--rule);
+  color:var(--text-secondary);
+  font-size:9pt;
+}
+
+.kicker {
+  font-size:7.5pt;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight:700;
+  color:var(--text-muted);
+  margin-bottom:2mm;
+}
+
+h1,h2,h3,p { margin-top:0; }
+h1 {
+  font-size:25pt;
+  line-height:1.07;
+  letter-spacing:-.035em;
+  margin-bottom:5mm;
+}
+h2 {
+  font-size:18pt;
+  line-height:1.15;
+  letter-spacing:-.025em;
+  margin-bottom:4mm;
+}
+h3 {
+  font-size:12.5pt;
+  line-height:1.25;
+  letter-spacing:-.01em;
+  margin-bottom:2.5mm;
+}
+.lead {
+  font-size:12pt;
+  line-height:1.46;
+  color:var(--text-secondary);
+  max-width:160mm;
+}
+
+.section-head {
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:5mm;
+  align-items:end;
+  margin-bottom:7mm;
+  padding-bottom:4mm;
+  border-bottom:var(--rule);
+}
+.section-no {
+  font-family:var(--font-mono);
+  font-size:9pt;
+  color:var(--action-dark);
+  font-weight:700;
+}
+.section-head h2 { margin:0; }
+
+/* Consulting-style answer-first structure */
+.answer-first {
+  border-top:2.2pt solid var(--action);
+  padding-top:5mm;
+  margin-bottom:7mm;
+}
+.answer-first .answer {
+  font-size:17pt;
+  line-height:1.25;
+  letter-spacing:-.02em;
+  font-weight:600;
+  max-width:170mm;
+}
+.answer-first .implication {
+  margin-top:3mm;
+  color:var(--text-secondary);
+  font-size:10.5pt;
+}
+
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:5mm; }
+.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:4mm; }
+.grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:3.5mm; }
+.stack { display:grid; gap:4mm; }
+
+.card {
+  border:var(--rule);
+  border-radius:var(--r-lg);
+  padding:5mm;
+  background:#fff;
+  box-shadow:var(--shadow-sm);
+}
+.card.soft { background:var(--surface); border-color:transparent; }
+.card.info { background:var(--azure-2); border-color:var(--azure-4); }
+.card.action { background:var(--green-2); border-color:var(--green-4); }
+
+.metric {
+  padding:4mm 4mm 3.5mm;
+  border-top:1.8pt solid var(--action);
+  background:var(--surface);
+}
+.metric .value {
+  font-size:22pt;
+  font-weight:600;
+  line-height:1;
+  letter-spacing:-.04em;
+}
+.metric .label {
+  margin-top:2mm;
+  font-size:8.5pt;
+  color:var(--text-secondary);
+}
+.metric.info { border-top-color:var(--info); }
+
+.callout {
+  border-left:3pt solid var(--info);
+  padding:4mm 5mm;
+  background:var(--azure-2);
+  border-radius:0 var(--r-md) var(--r-md) 0;
+}
+.callout.action {
+  border-left-color:var(--action);
+  background:var(--green-2);
+}
+.callout strong { display:block; margin-bottom:1.2mm; }
+
+.pill {
+  display:inline-flex;
+  padding:1.2mm 2.6mm;
+  border-radius:var(--r-pill);
+  font-size:7.5pt;
+  font-weight:700;
+  color:var(--action-dark);
+  background:var(--green-3);
+  white-space:nowrap;
+}
+.pill.info { color:var(--info-dark); background:var(--azure-3); }
+.pill.neutral { color:var(--text-secondary); background:var(--surface-strong); }
+
+/* Tables */
+table {
+  width:100%;
+  border-collapse:collapse;
+  font-size:8.8pt;
+  line-height:1.35;
+}
+th {
+  text-align:left;
+  font-size:7.5pt;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:var(--text-secondary);
+  background:var(--surface);
+  border-top:var(--rule-strong);
+  border-bottom:var(--rule-strong);
+  padding:2.8mm 2.5mm;
+}
+td {
+  vertical-align:top;
+  border-bottom:var(--rule);
+  padding:3mm 2.5mm;
+}
+td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+
+/* Evidence / recommendation matrix */
+.matrix td:first-child { width:22%; font-weight:600; }
+.matrix td:nth-child(2) { width:28%; }
+.matrix td:nth-child(3) { width:28%; }
+.matrix td:nth-child(4) { width:22%; }
+
+/* Roadmap */
+.roadmap {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:3mm;
+}
+.phase {
+  min-height:42mm;
+  padding:4mm;
+  background:var(--surface);
+  border-top:2pt solid var(--border-strong);
+}
+.phase.active { border-top-color:var(--action); background:var(--green-2); }
+.phase.info { border-top-color:var(--info); background:var(--azure-2); }
+.phase .n {
+  font-family:var(--font-mono);
+  font-size:7.5pt;
+  color:var(--text-muted);
+  margin-bottom:3mm;
+}
+.phase h3 { font-size:10.5pt; }
+
+/* Simple data bars — replace width inline */
+.bar-row {
+  display:grid;
+  grid-template-columns:34mm 1fr 14mm;
+  gap:3mm;
+  align-items:center;
+  margin:2.2mm 0;
+  font-size:8.8pt;
+}
+.track { height:4.5mm; background:var(--surface-strong); border-radius:999px; overflow:hidden; }
+.fill { height:100%; background:var(--action); border-radius:999px; }
+.fill.info { background:var(--info); }
+
+/* Source notes */
+.source-note {
+  margin-top:4mm;
+  padding-top:2.5mm;
+  border-top:var(--rule);
+  color:var(--text-muted);
+  font-size:7.4pt;
+  line-height:1.35;
+}
+.mono { font-family:var(--font-mono); }
+.muted { color:var(--text-secondary); }
+.small { font-size:8.5pt; }
+
+/* Print-safe helpers */
+.screen-only { display:block; }
+.print-only { display:none; }
+
+@media screen {
+  body { max-width:210mm; margin:16px auto; box-shadow:0 0 25px rgba(0,0,0,.12); }
+  .report-page { padding:15mm 16mm 18mm; }
+}
+
+@media print {
+  html,body { background:#fff; }
+  body { max-width:none; box-shadow:none; }
+  .report-page { padding:0; }
+  .screen-only { display:none !important; }
+  .print-only { display:block; }
+  a { text-decoration:none; color:inherit; }
+}
+</style>
+</head>
+
+<body>
+<!-- Running strings for paged-media engines -->
+<span class="report-title-string" style="display:none">{{REPORT_SHORT_TITLE}}</span>
+<span class="report-meta-string" style="display:none">{{REPORT_ID}} · {{VERSION}} · {{DATE}}</span>
+
+<!-- ======================================================
+     COVER
+     ====================================================== -->
+<section class="cover">
+  <div class="brand">
+    <span class="brand-mark">E</span>
+    <span>EXECUTAR</span>
+  </div>
+
+  <div class="cover-main">
+    <div class="eyebrow">{{AREA_OR_TOPIC}}</div>
+    <h1>{{REPORT_TITLE}}</h1>
+    <p class="dek">{{REPORT_SUBTITLE_OR_DECISION_CONTEXT}}</p>
+  </div>
+
+  <div class="cover-meta">
+    <div>
+      <div class="kicker">Preparado para</div>
+      <strong>{{AUDIENCE_OR_OWNER}}</strong><br>
+      <span>{{ORGANIZATION_OR_PROJECT}}</span>
+    </div>
+    <div style="text-align:right">
+      <div class="kicker">Documento</div>
+      <span class="mono">{{REPORT_ID}}</span><br>
+      <span>{{DATE}} · v{{VERSION}}</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     PAGE 1 — EXECUTIVE SUMMARY
+     ====================================================== -->
+<section class="report-page">
+  <div class="section-head">
+    <div class="section-no">01</div>
+    <h2>Resumo executivo</h2>
+  </div>
+
+  <div class="answer-first">
+    <div class="answer">{{ONE_SENTENCE_ANSWER}}</div>
+    <div class="implication">{{WHY_IT_MATTERS_NOW}}</div>
+  </div>
+
+  <div class="grid-3" style="margin-bottom:7mm">
+    <div class="metric">
+      <div class="value">{{KPI_1}}</div>
+      <div class="label">{{KPI_1_LABEL}}</div>
+    </div>
+    <div class="metric info">
+      <div class="value">{{KPI_2}}</div>
+      <div class="label">{{KPI_2_LABEL}}</div>
+    </div>
+    <div class="metric">
+      <div class="value">{{KPI_3}}</div>
+      <div class="label">{{KPI_3_LABEL}}</div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <span class="pill">Diagnóstico</span>
+      <h3 style="margin-top:3mm">{{DIAGNOSIS_TITLE}}</h3>
+      <p>{{DIAGNOSIS_TEXT}}</p>
+    </div>
+    <div class="card action">
+      <span class="pill">Decisão recomendada</span>
+      <h3 style="margin-top:3mm">{{RECOMMENDATION_TITLE}}</h3>
+      <p>{{RECOMMENDATION_TEXT}}</p>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:6mm">
+    <strong>Implicação executiva</strong>
+    {{EXECUTIVE_IMPLICATION}}
+  </div>
+
+  <div class="source-note">
+    Fontes principais: {{PRIMARY_SOURCES}} · Base temporal: {{TIME_PERIOD}} ·
+    Hipóteses relevantes: {{KEY_ASSUMPTIONS}}
+  </div>
+</section>
+
+<!-- ======================================================
+     PAGE 2 — DIAGNOSIS / EVIDENCE
+     ====================================================== -->
+<section class="report-page">
+  <div class="section-head">
+    <div class="section-no">02</div>
+    <h2>Diagnóstico e evidências</h2>
+  </div>
+
+  <div class="answer-first">
+    <div class="answer">{{DIAGNOSIS_ANSWER}}</div>
+  </div>
+
+  <div class="grid-2" style="margin-bottom:6mm">
+    <div class="card soft">
+      <div class="kicker">Evidência 1</div>
+      <h3>{{EVIDENCE_1_TITLE}}</h3>
+      <p>{{EVIDENCE_1_TEXT}}</p>
+    </div>
+    <div class="card soft">
+      <div class="kicker">Evidência 2</div>
+      <h3>{{EVIDENCE_2_TITLE}}</h3>
+      <p>{{EVIDENCE_2_TEXT}}</p>
+    </div>
+  </div>
+
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th>Questão</th>
+        <th>Evidência</th>
+        <th>Implicação</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ISSUE_1}}</td>
+        <td>{{EVIDENCE_1}}</td>
+        <td>{{IMPLICATION_1}}</td>
+        <td>{{ACTION_1}}</td>
+      </tr>
+      <tr>
+        <td>{{ISSUE_2}}</td>
+        <td>{{EVIDENCE_2}}</td>
+        <td>{{IMPLICATION_2}}</td>
+        <td>{{ACTION_2}}</td>
+      </tr>
+      <tr>
+        <td>{{ISSUE_3}}</td>
+        <td>{{EVIDENCE_3}}</td>
+        <td>{{IMPLICATION_3}}</td>
+        <td>{{ACTION_3}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="source-note">{{EVIDENCE_NOTES}}</div>
+</section>
+
+<!-- ======================================================
+     PAGE 3 — QUANT / COMPARISON
+     ====================================================== -->
+<section class="report-page">
+  <div class="section-head">
+    <div class="section-no">03</div>
+    <h2>Leitura quantitativa</h2>
+  </div>
+
+  <div class="answer-first">
+    <div class="answer">{{QUANT_ANSWER}}</div>
+    <div class="implication">{{QUANT_IMPLICATION}}</div>
+  </div>
+
+  <div class="card" style="margin-bottom:6mm">
+    <h3>{{BAR_CHART_TITLE}}</h3>
+    <div class="bar-row">
+      <span>{{BAR_1_LABEL}}</span>
+      <div class="track"><div class="fill" style="width:{{BAR_1_PCT}}%"></div></div>
+      <strong class="mono">{{BAR_1_VALUE}}</strong>
+    </div>
+    <div class="bar-row">
+      <span>{{BAR_2_LABEL}}</span>
+      <div class="track"><div class="fill info" style="width:{{BAR_2_PCT}}%"></div></div>
+      <strong class="mono">{{BAR_2_VALUE}}</strong>
+    </div>
+    <div class="bar-row">
+      <span>{{BAR_3_LABEL}}</span>
+      <div class="track"><div class="fill" style="width:{{BAR_3_PCT}}%"></div></div>
+      <strong class="mono">{{BAR_3_VALUE}}</strong>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Indicador</th>
+        <th class="num">Atual</th>
+        <th class="num">Meta / referência</th>
+        <th>Leitura executiva</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{METRIC_A}}</td>
+        <td class="num">{{CURRENT_A}}</td>
+        <td class="num">{{TARGET_A}}</td>
+        <td>{{READOUT_A}}</td>
+      </tr>
+      <tr>
+        <td>{{METRIC_B}}</td>
+        <td class="num">{{CURRENT_B}}</td>
+        <td class="num">{{TARGET_B}}</td>
+        <td>{{READOUT_B}}</td>
+      </tr>
+      <tr>
+        <td>{{METRIC_C}}</td>
+        <td class="num">{{CURRENT_C}}</td>
+        <td class="num">{{TARGET_C}}</td>
+        <td>{{READOUT_C}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="source-note">{{QUANT_SOURCE_NOTE}}</div>
+</section>
+
+<!-- ======================================================
+     PAGE 4 — RECOMMENDATIONS
+     ====================================================== -->
+<section class="report-page">
+  <div class="section-head">
+    <div class="section-no">04</div>
+    <h2>Recomendações</h2>
+  </div>
+
+  <div class="answer-first">
+    <div class="answer">{{RECOMMENDATION_ANSWER}}</div>
+  </div>
+
+  <div class="stack">
+    <div class="card action">
+      <span class="pill">Prioridade 1</span>
+      <h3 style="margin-top:3mm">{{REC_1_TITLE}}</h3>
+      <p>{{REC_1_TEXT}}</p>
+      <p class="small muted"><strong>Resultado esperado:</strong> {{REC_1_OUTCOME}}</p>
+    </div>
+    <div class="card">
+      <span class="pill info">Prioridade 2</span>
+      <h3 style="margin-top:3mm">{{REC_2_TITLE}}</h3>
+      <p>{{REC_2_TEXT}}</p>
+      <p class="small muted"><strong>Resultado esperado:</strong> {{REC_2_OUTCOME}}</p>
+    </div>
+    <div class="card">
+      <span class="pill neutral">Prioridade 3</span>
+      <h3 style="margin-top:3mm">{{REC_3_TITLE}}</h3>
+      <p>{{REC_3_TEXT}}</p>
+      <p class="small muted"><strong>Resultado esperado:</strong> {{REC_3_OUTCOME}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     PAGE 5 — ROADMAP
+     ====================================================== -->
+<section class="report-page">
+  <div class="section-head">
+    <div class="section-no">05</div>
+    <h2>Plano de execução</h2>
+  </div>
+
+  <div class="answer-first">
+    <div class="answer">{{ROADMAP_ANSWER}}</div>
+  </div>
+
+  <div class="roadmap">
+    <div class="phase active">
+      <div class="n">01 · {{PHASE_1_TIME}}</div>
+      <h3>{{PHASE_1_TITLE}}</h3>
+      <p>{{PHASE_1_TEXT}}</p>
+    </div>
+    <div class="phase active">
+      <div class="n">02 · {{PHASE_2_TIME}}</div>
+      <h3>{{PHASE_2_TITLE}}</h3>
+      <p>{{PHASE_2_TEXT}}</p>
+    </div>
+    <div class="phase info">
+      <div class="n">03 · {{PHASE_3_TIME}}</div>
+      <h3>{{PHASE_3_TITLE}}</h3>
+      <p>{{PHASE_3_TEXT}}</p>
+    </div>
+    <div class="phase">
+      <div class="n">04 · {{PHASE_4_TIME}}</div>
+      <h3>{{PHASE_4_TITLE}}</h3>
+      <p>{{PHASE_4_TEXT}}</p>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top:7mm">
+    <div class="callout action">
+      <strong>Gate de aceite</strong>
+      {{ACCEPTANCE_GATE}}
+    </div>
+    <div class="callout">
+      <strong>Dependência crítica</strong>
+      {{CRITICAL_DEPENDENCY}}
+    </div>
+  </div>
+
+  <table style="margin-top:7mm">
+    <thead>
+      <tr>
+        <th>Entregável</th>
+        <th>Responsável</th>
+        <th>Critério de aceite</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>{{DELIV_1}}</td><td>{{OWNER_1}}</td><td>{{AC_1}}</td><td><span class="pill">{{STATUS_1}}</span></td></tr>
+      <tr><td>{{DELIV_2}}</td><td>{{OWNER_2}}</td><td>{{AC_2}}</td><td><span class="pill info">{{STATUS_2}}</span></td></tr>
+      <tr><td>{{DELIV_3}}</td><td>{{OWNER_3}}</td><td>{{AC_3}}</td><td><span class="pill neutral">{{STATUS_3}}</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ======================================================
+     PAGE 6 — RISKS / DECISIONS
+     ====================================================== -->
+<section class="report-page">
+  <div class="section-head">
+    <div class="section-no">06</div>
+    <h2>Riscos, decisões e próximos passos</h2>
+  </div>
+
+  <div class="grid-2">
+    <div>
+      <h3>Riscos prioritários</h3>
+      <table>
+        <thead><tr><th>Risco</th><th>Tratamento</th></tr></thead>
+        <tbody>
+          <tr><td>{{RISK_1}}</td><td>{{MITIGATION_1}}</td></tr>
+          <tr><td>{{RISK_2}}</td><td>{{MITIGATION_2}}</td></tr>
+          <tr><td>{{RISK_3}}</td><td>{{MITIGATION_3}}</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h3>Decisões necessárias</h3>
+      <div class="stack">
+        <div class="card soft"><strong>{{DECISION_1}}</strong><p class="small muted">{{DECISION_1_CONTEXT}}</p></div>
+        <div class="card soft"><strong>{{DECISION_2}}</strong><p class="small muted">{{DECISION_2_CONTEXT}}</p></div>
+        <div class="card soft"><strong>{{DECISION_3}}</strong><p class="small muted">{{DECISION_3_CONTEXT}}</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout action" style="margin-top:7mm">
+    <strong>Próxima ação executável</strong>
+    {{NEXT_ACTION}}
+  </div>
+
+  <div class="source-note">
+    EVIDENCE: {{EVIDENCE_LOCATION}} · AUTOMATION_LEVEL: {{AUTOMATION_LEVEL}} ·
+    HANDOFF: {{HANDOFF}}
+  </div>
+</section>
+
+<!-- ======================================================
+     APPENDIX — OPTIONAL
+     ====================================================== -->
+<section class="report-page">
+  <div class="section-head">
+    <div class="section-no">A</div>
+    <h2>Apêndice metodológico</h2>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>Critérios de qualidade</h3>
+      <p>MECE quando aplicável; resposta primeiro; evidência antes de opinião; separação entre fato, hipótese e recomendação; unidade visual; rastreabilidade de fontes.</p>
+    </div>
+    <div class="card">
+      <h3>Contrato visual</h3>
+      <p>Green/Azure + IBM Plex; alto espaço negativo; superfícies neutras; linhas finas; cor reservada para ação, informação e destaque; nenhum HEX novo sem token ou justificativa.</p>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:6mm">
+    <strong>Regra de paginação</strong>
+    Uma página deve responder uma pergunta executiva principal. Se um bloco não altera decisão, entendimento ou ação, ele deve ser removido ou movido para o apêndice.
+  </div>
+</section>
+
+</body>
+</html>

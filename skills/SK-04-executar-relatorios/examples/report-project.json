@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "title": "Campanha de lançamento",
+    "kicker": "EXECUTAR / STATUS REPORT",
+    "schema": "EXECUTAR_STATUS_REPORT_V1",
+    "status": "ativo",
+    "date": "2026-08-28",
+    "source_count": 1
+  },
+  "progress": {
+    "overall_percent": 26,
+    "cycle_current": 3,
+    "cycle_total": 8,
+    "today_percent": 33
+  },
+  "depth": {
+    "project": "26%",
+    "cycle": "03/08",
+    "today": "33%",
+    "task": "em andamento",
+    "action": "agora"
+  },
+  "triptych": {
+    "yesterday": {
+      "title": "Direção estratégica concluída",
+      "state": "concluído",
+      "percent": 100
+    },
+    "today": {
+      "title": "Landing e peças editoriais",
+      "state": "em andamento",
+      "percent": 33
+    },
+    "tomorrow": {
+      "title": "Campanha validada e publicada",
+      "state": "planejado",
+      "percent": 0
+    }
+  },
+  "now": {
+    "title": "Revisar a headline da landing page",
+    "meta": "Hoje · próxima ação explicitada na fonte",
+    "chip": "próxima ação"
+  },
+  "properties": {
+    "context": "Consolidar a primeira campanha editorial antes de ampliar o produto.",
+    "problem": "O material está distribuído em documentos diferentes e ainda não existe uma peça canônica para publicação.",
+    "process": "Consolidar a tese, revisar evidências e produzir os ativos na sequência definida.",
+    "progress": "A estrutura editorial e o posicionamento já foram definidos.",
+    "step_1": "Revisar a headline.",
+    "step_2": "Fechar a landing page.",
+    "step_3": "Validar as peças antes da publicação.",
+    "risk": "Publicar peças inconsistentes antes da validação da tese.",
+    "prevention": "Manter uma fonte canônica e revisar cada peça contra ela.",
+    "delivery": "Campanha validada, publicada e rastreável a uma fonte canônica."
+  },
+  "tags": {
+    "focus": [
+      "problema",
+      "progresso",
+      "risco"
+    ],
+    "state": [
+      "26%",
+      "ciclo-03",
+      "hoje-33"
+    ],
+    "origin": [
+      "input-project.md"
+    ]
+  },
+  "provenance": {
+    "sources": [
+      {
+        "id": "S01",
+        "name": "input-project.md"
+      }
+    ],
+    "field_map": {
+      "properties.context": [
+        {
+          "source_id": "S01",
+          "evidence": "Contexto: consolidar a primeira campanha editorial antes de ampliar o produto."
+        }
+      ],
+      "properties.problem": [
+        {
+          "source_id": "S01",
+          "evidence": "Problema: o material está distribuído em documentos diferentes."
+        }
+      ],
+      "properties.process": [
+        {
+          "source_id": "S01",
+          "evidence": "Processo: consolidar a tese, revisar evidências e produzir os ativos."
+        }
+      ],
+      "properties.progress": [
+        {
+          "source_id": "S01",
+          "evidence": "Progresso: estrutura editorial e posicionamento já foram definidos."
+        }
+      ],
+      "properties.step_1": [
+        {
+          "source_id": "S01",
+          "evidence": "Passo 1: revisar a headline."
+        }
+      ],
+      "properties.step_2": [
+        {
+          "source_id": "S01",
+          "evidence": "Passo 2: fechar a landing page."
+        }
+      ],
+      "properties.step_3": [
+        {
+          "source_id": "S01",
+          "evidence": "Passo 3: validar as peças antes da publicação."
+        }
+      ],
+      "properties.risk": [
+        {
+          "source_id": "S01",
+          "evidence": "Risco: publicar peças inconsistentes antes da validação da tese."
+        }
+      ],
+      "properties.prevention": [
+        {
+          "source_id": "S01",
+          "evidence": "Prevenção: manter uma fonte canônica e revisar cada peça contra ela."
+        }
+      ],
+      "properties.delivery": [
+        {
+          "source_id": "S01",
+          "evidence": "Entrega: campanha validada, publicada e rastreável a uma fonte canônica."
+        }
+      ],
+      "now.title": [
+        {
+          "source_id": "S01",
+          "evidence": "Próxima ação: revisar a headline da landing page."
+        }
+      ]
+    }
+  },
+  "quality": {
+    "conflicts": [],
+    "warnings": [],
+    "missing_fields": []
+  }
+}

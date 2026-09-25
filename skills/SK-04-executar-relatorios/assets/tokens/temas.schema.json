@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://executar.local/schemas/temas.schema.json",
+  "title": "Executar — contrato de temas (forma esperada)",
+  "description": "Documenta a forma que assets/tokens/temas.json deve ter. Não contém nomes de tema nem valores concretos: aguardando o novo contrato de tokens do usuário. Ver references/design-tokens.md.",
+  "type": "object",
+  "additionalProperties": { "$ref": "#/$defs/tema" },
+  "$defs": {
+    "tema": {
+      "type": "object",
+      "description": "Um tema é uma sobreposição na camada alias. Nunca acrescenta token novo, nunca muda geometria, grade ou hierarquia — só a leitura visual da superfície.",
+      "required": ["rotulo", "descricao", "overrides"],
+      "properties": {
+        "rotulo": { "type": "string" },
+        "descricao": { "type": "string" },
+        "overrides": {
+          "type": "object",
+          "description": "Mapa de nome-de-alias -> valor. Toda chave aqui deve já existir na camada 'alias' de tokens.json; criar uma chave nova aqui é um erro de contrato.",
+          "additionalProperties": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Peça A4 de referência — família Executar Playbook.
+  Este arquivo é o contrato de marcação tornado visível: mostra, lado a lado,
+  campo preenchido, campo vazio, texto longo, valor no limite, e as três
+  situações de caixa de marcar (off / on / na).
+
+  Valide com o script validar_artefato.py, modo "preenchido".
+  Ressincronize os tokens com tokens.py, opção "sincronizar".
+  (Comentário XML não aceita hífen duplo, por isso as opções aparecem sem os traços.)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297"
+     role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Peça de referência — Fundação do Negócio</title>
+  <desc id="descricao">Peça A4 da família Executar Playbook demonstrando estados de campo e de caixa de marcar.</desc>
+
+  <style>
+    /* TOKENS:INICIO */
+    /* AGUARDANDO CONTRATO DE TOKENS — cores não definidas de propósito.
+       Ressincronize com tokens.py depois que assets/tokens/ tiver valores reais. */
+:root{
+  --exec-color-brand: #00BF63;
+  --exec-color-brand-strong: #007A45;
+  --exec-color-brand-soft: #F3FAF6;
+  --exec-color-surface-page: #FFFFFF;
+  --exec-color-surface-raised: #FFFFFF;
+  --exec-color-surface-sunken: #F6F6F6;
+  --exec-color-surface-cool: #FCFCFD;
+  --exec-color-surface-inverse: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.surface-inverse) */;
+  --exec-color-ink-data: #4B4A4A;
+  --exec-color-ink-title: #4B4A4A;
+  --exec-color-ink-body: #4B4A4A;
+  --exec-color-ink-placeholder: #959494;
+  --exec-color-ink-muted: #959494;
+  --exec-color-ink-inverse: #FFFFFF;
+  --exec-color-rule-subtle: #EAEAEA;
+  --exec-color-rule-default: #E4E4E4;
+  --exec-color-rule-strong: #C5C5C5;
+  --exec-color-rule-brand: #00BF63;
+  --exec-color-accent-peach: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.accent-peach) */;
+  --exec-color-accent-blue: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.accent-blue) */;
+  --exec-color-accent-violet: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.accent-violet) */;
+  --exec-color-accent-green: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.accent-green) */;
+  --exec-color-accent-lavender: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.accent-lavender) */;
+  --exec-color-data-fill: #00BF63;
+  --exec-color-data-fill-alt: #1F93FF;
+  --exec-color-data-track: #F0F0F0;
+  --exec-color-data-neutral: /* A DEFINIR — LACUNA (ver assets/tokens/tokens.json:alias.data-neutral) */;
+  --exec-space-1:1mm;
+  --exec-space-2:2mm;
+  --exec-space-3:3mm;
+  --exec-space-4:4mm;
+  --exec-space-6:6mm;
+  --exec-space-8:8mm;
+  --exec-space-12:12mm;
+  --exec-space-16:16mm;
+  --exec-space-24:24mm;
+  --exec-space-32:32mm;
+  --exec-page-width:210mm;
+  --exec-page-height:297mm;
+  --exec-page-margin:10mm;
+  --exec-content-width:190mm;
+  --exec-grid-columns:12;
+  --exec-grid-gutter:3mm;
+  --exec-radius-artifact:3mm;
+  --exec-radius-control:999mm;
+  --exec-radius-check:0.4mm;
+  --exec-stroke-hairline:0.25mm;
+  --exec-stroke-subtle:0.35mm;
+  --exec-stroke-default:0.5mm;
+  --exec-stroke-strong:0.8mm;
+  --exec-stroke-selected:1.2mm;
+  --exec-font-stack:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;
+  --exec-font-caption:2.4mm;
+  --exec-font-label:2.8mm;
+  --exec-font-body:3.2mm;
+  --exec-font-card-title:4.2mm;
+  --exec-font-section:6mm;
+  --exec-font-page-title:9mm;
+  --exec-font-display:18mm;
+  --exec-line-body:1.5;
+  --exec-line-title:1.2;
+  --exec-check-size:4mm;
+  --exec-check-stroke:0.35mm;
+  --exec-touch-target:44px;
+}
+    /* TOKENS:FIM */
+
+    /* Componentes: consomem só a camada alias acima. Nenhuma cor literal aqui. */
+    .pagina        { fill: var(--exec-color-surface-page); }
+    .faixa-marca   { fill: var(--exec-color-brand); }
+
+    text           { font-family: var(--exec-font-stack); }
+    .eyebrow       { font-size: 2.8px; font-weight: 600; letter-spacing: .6px;
+                     fill: var(--exec-color-ink-inverse); }
+    .titulo-pagina { font-size: 9px;   font-weight: 600; fill: var(--exec-color-ink-title); }
+    .titulo-secao  { font-size: 4.2px; font-weight: 600; fill: var(--exec-color-ink-title); }
+    .rotulo        { font-size: 2.8px; font-weight: 600; letter-spacing: .3px;
+                     fill: var(--exec-color-ink-body); }
+    .valor         { font-size: 3.2px; fill: var(--exec-color-ink-body); }
+    .legenda       { font-size: 2.4px; fill: var(--exec-color-ink-muted); }
+    .meta          { font-size: 2.4px; fill: var(--exec-color-ink-muted); }
+
+    /* Campo vazio: itálico + cinza legível + sentinela textual. As três coisas
+       juntas, porque só a cor não sobrevive a fotocópia em preto e branco. */
+    .exec-is-placeholder { font-style: italic; fill: var(--exec-color-ink-placeholder); }
+
+    .exec-field__box  { fill: none; stroke: var(--exec-color-rule-strong); }
+    .linha-escrita    { stroke: var(--exec-color-rule-subtle); }
+    .regua            { stroke: var(--exec-color-rule-default); }
+    .regua-unidade    { stroke: var(--exec-color-rule-default); stroke-dasharray: 1.4 1.4; }
+
+    .exec-check__box   { fill: none; stroke: var(--exec-color-rule-strong); }
+    .exec-check__mark  { fill: none; stroke: var(--exec-color-brand);
+                         stroke-width: .8; stroke-linecap: round; stroke-linejoin: round; }
+    .exec-check__na    { stroke: var(--exec-color-ink-muted); stroke-width: .35; }
+    .exec-check__label { font-size: 2.8px; fill: var(--exec-color-ink-body); }
+
+    .cartao        { fill: var(--exec-color-surface-cool); }
+    .cartao-pastel { fill: var(--exec-color-accent-blue); }
+    .kpi-valor     { font-size: 18px; font-weight: 600; fill: var(--exec-color-ink-data); }
+    .barra-trilha  { fill: var(--exec-color-data-track); }
+    .barra-preench { fill: var(--exec-color-data-fill); }
+    .corte         { stroke: var(--exec-color-ink-data); stroke-width: .3; }
+  </style>
+
+  <rect width="210" height="297" class="pagina"/>
+
+  <!-- marcas de corte: preto puro, nunca preto composto -->
+  <path class="corte" d="M0 10h6M10 0v6M204 10h6M200 0v6M0 287h6M10 291v6M204 287h6M200 291v6"/>
+
+  <!-- cabeçalho -->
+  <g>
+    <rect x="10" y="10" width="62" height="6" rx="3" class="faixa-marca"/>
+    <text x="14" y="14" class="eyebrow">EXECUTAR PLAYBOOK · PEÇA DE REFERÊNCIA</text>
+    <text x="10" y="29" class="titulo-pagina">Fundação do Negócio</text>
+    <line x1="10" y1="34" x2="200" y2="34" class="regua" stroke-width="0.5"/>
+  </g>
+
+  <!-- ===================== campos ===================== -->
+  <text x="10" y="42" class="titulo-secao">Campos</text>
+  <text x="10" y="46.5" class="legenda">Quatro situações reais: preenchido, texto longo, valor no limite e pendente.</text>
+
+  <!-- preenchido, caso comum -->
+  <g class="exec-field" data-field="proposito" data-state="filled">
+    <text x="10" y="54" class="rotulo">PROPÓSITO</text>
+    <rect x="10" y="56" width="93.5" height="16" rx="1" class="exec-field__box" stroke-width="0.35"/>
+    <text x="12.5" y="61.5" class="valor">Tirar o operador solo do improviso: um</text>
+    <text x="12.5" y="66" class="valor">sistema que cabe numa folha por semana.</text>
+  </g>
+
+  <!-- preenchido, texto longo: quebra em linhas, nunca reduz o corpo -->
+  <g class="exec-field" data-field="problema" data-state="filled">
+    <text x="106.5" y="54" class="rotulo">PROBLEMA</text>
+    <rect x="106.5" y="56" width="93.5" height="16" rx="1" class="exec-field__box" stroke-width="0.35"/>
+    <text x="109" y="61.5" class="valor">Quem opera sozinho perde o fio entre</text>
+    <text x="109" y="66" class="valor">planejar e executar, e recomeça o</text>
+    <text x="109" y="70.5" class="valor">diagnóstico toda segunda-feira.</text>
+  </g>
+
+  <!-- vazio: placeholder -->
+  <g class="exec-field" data-field="publico" data-state="empty">
+    <text x="10" y="80" class="rotulo">PÚBLICO</text>
+    <rect x="10" y="82" width="93.5" height="16" rx="1" class="exec-field__box" stroke-width="0.35"/>
+    <text x="12.5" y="87.5" class="valor exec-is-placeholder">— pendente</text>
+    <line x1="12.5" y1="92" x2="101" y2="92" class="linha-escrita" stroke-width="0.25"/>
+    <line x1="12.5" y1="96" x2="101" y2="96" class="linha-escrita" stroke-width="0.25"/>
+  </g>
+
+  <!-- preenchido, valor no limite: zero é dado, não ausência -->
+  <g class="exec-field" data-field="preco-ancora" data-state="filled">
+    <text x="106.5" y="80" class="rotulo">PREÇO ÂNCORA</text>
+    <rect x="106.5" y="82" width="93.5" height="16" rx="1" class="exec-field__box" stroke-width="0.35"/>
+    <text x="109" y="88.5" class="valor">R$ 0,00</text>
+    <text x="109" y="93" class="legenda">Zero por decisão: a oferta digital abre gratuita no primeiro ciclo.</text>
+  </g>
+
+  <!-- ===================== indicador ===================== -->
+  <line x1="10" y1="106" x2="200" y2="106" class="regua-unidade" stroke-width="0.35"/>
+  <text x="10" y="114" class="titulo-secao">Indicador do ciclo</text>
+
+  <g>
+    <rect x="10" y="118" width="93.5" height="40" rx="3" class="cartao"/>
+    <g class="exec-field" data-field="taxa-conversao" data-state="filled">
+      <text x="14" y="126" class="rotulo">TAXA DE CONVERSÃO</text>
+      <text x="14" y="146" class="kpi-valor">33%</text>
+      <!-- o número grande nunca carrega a metodologia junto: linha separada -->
+      <text x="14" y="153" class="legenda">Visitantes que chegaram ao checkout ÷ visitantes únicos, janela de 28 dias.</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="106.5" y="118" width="93.5" height="40" rx="3" class="cartao-pastel"/>
+    <text x="110.5" y="126" class="rotulo">PROGRESSO DO CICLO</text>
+    <rect x="110.5" y="130" width="85.5" height="5" rx="2.5" class="barra-trilha"/>
+    <rect x="110.5" y="130" width="51.3" height="5" rx="2.5" class="barra-preench"/>
+    <text x="110.5" y="141" class="valor">6 de 10 entregas fechadas</text>
+    <g class="exec-field" data-field="risco-do-ciclo" data-state="empty">
+      <text x="110.5" y="148" class="rotulo">RISCO ABERTO</text>
+      <text x="110.5" y="153" class="valor exec-is-placeholder">— pendente</text>
+    </g>
+  </g>
+
+  <!-- ===================== caixas de marcar ===================== -->
+  <line x1="10" y1="166" x2="200" y2="166" class="regua-unidade" stroke-width="0.35"/>
+  <text x="10" y="174" class="titulo-secao">Critérios de aceite</text>
+  <text x="10" y="178.5" class="legenda">Caixa de 4 mm de lado, traço de 0,35 mm: a menor combinação que ainda aceita caneta e sobrevive à impressão.</text>
+
+  <g class="exec-check" data-check="ac-01" data-state="off" data-label="Evidência anexada ao registro">
+    <rect x="10" y="183" width="4" height="4" rx="0.4" class="exec-check__box" stroke-width="0.35"/>
+    <text x="16" y="186.2" class="exec-check__label">Evidência anexada ao registro</text>
+  </g>
+
+  <g class="exec-check" data-check="ac-02" data-state="on" data-label="Oferta digital publicada">
+    <rect x="10" y="190" width="4" height="4" rx="0.4" class="exec-check__box" stroke-width="0.35"/>
+    <path class="exec-check__mark" d="M10.9 192.1l1.1 1.2 2.1-2.6"/>
+    <text x="16" y="193.2" class="exec-check__label">Oferta digital publicada</text>
+  </g>
+
+  <g class="exec-check" data-check="ac-03" data-state="na" data-label="Contrato de fornecedor revisado (não se aplica neste ciclo)">
+    <rect x="10" y="197" width="4" height="4" rx="0.4" class="exec-check__box" stroke-width="0.35"/>
+    <line x1="10.6" y1="200.4" x2="13.4" y2="197.6" class="exec-check__na"/>
+    <text x="16" y="200.2" class="exec-check__label">Contrato de fornecedor revisado</text>
+    <text x="16" y="203.6" class="legenda">Não se aplica neste ciclo — registrado, não apagado.</text>
+  </g>
+
+  <g class="exec-check" data-check="ac-04" data-state="off" data-label="Preço âncora validado com três clientes">
+    <rect x="10" y="208" width="4" height="4" rx="0.4" class="exec-check__box" stroke-width="0.35"/>
+    <text x="16" y="211.2" class="exec-check__label">Preço âncora validado com três clientes</text>
+  </g>
+
+  <!-- ===================== nota de papel ===================== -->
+  <line x1="10" y1="222" x2="200" y2="222" class="regua-unidade" stroke-width="0.35"/>
+  <g>
+    <rect x="10" y="228" width="190" height="24" rx="3" class="cartao"/>
+    <text x="14" y="236" class="titulo-secao">Registro do ciclo</text>
+    <!-- estado blank: desenhado para receber caneta. A pauta já diz o que fazer;
+         carimbar "— pendente" aqui só sujaria a folha. -->
+    <g class="exec-field" data-field="decisao-do-ciclo" data-state="blank">
+      <text x="14" y="241" class="rotulo">DECISÃO TOMADA</text>
+      <line x1="14" y1="245.5" x2="196" y2="245.5" class="linha-escrita" stroke-width="0.25"/>
+      <line x1="14" y1="249.5" x2="196" y2="249.5" class="linha-escrita" stroke-width="0.25"/>
+    </g>
+  </g>
+
+  <!-- rodapé -->
+  <text x="10" y="289" class="meta">Executar Playbook · peça de referência · A4 210 × 297 mm · margem segura 10 mm · v1.0.0</text>
+  <text x="200" y="289" class="meta" text-anchor="end">01</text>
+</svg>

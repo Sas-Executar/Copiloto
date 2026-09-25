@@ -1,0 +1,42 @@
+{
+  "id": "PREFLIGHT-COP-001",
+  "version": "1.0",
+  "checks": [
+    {
+      "check": "entrypoint_exists",
+      "critical": true
+    },
+    {
+      "check": "required_modules_exist",
+      "critical": true
+    },
+    {
+      "check": "contracts_exist",
+      "critical": true
+    },
+    {
+      "check": "control_center_resolved",
+      "critical": true
+    },
+    {
+      "check": "human_entry_resolved",
+      "critical": true
+    },
+    {
+      "check": "no_parallel_authority",
+      "critical": true
+    },
+    {
+      "check": "critical_tests_pass",
+      "critical": true
+    },
+    {
+      "check": "legacy_reference_available",
+      "critical": false
+    }
+  ],
+  "decision": {
+    "all_critical_pass": "READY",
+    "any_critical_fail": "NOT_READY"
+  }
+}
