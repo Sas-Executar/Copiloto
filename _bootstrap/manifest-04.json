@@ -153,5 +153,190 @@
   "number": 225,
   "id": 5582434967,
   "url": "https://github.com/Sas-Executar/Copiloto/issues/225"
+ },
+ "M4:TPL-DATA_INTEGRATION-001": {
+  "number": 306,
+  "id": 5582650572,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/306"
+ },
+ "M4:TPL-ANALYTICS-001": {
+  "number": 307,
+  "id": 5582650968,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/307"
+ },
+ "M4:TPL-ADR-001": {
+  "number": 308,
+  "id": 5582651574,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/308"
+ },
+ "M4:TPL-SPEC-001": {
+  "number": 309,
+  "id": 5582652018,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/309"
+ },
+ "M4:TPL-TEST-001": {
+  "number": 310,
+  "id": 5582652439,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/310"
+ },
+ "M4:TPL-RELEASE-001": {
+  "number": 311,
+  "id": 5582653323,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/311"
+ },
+ "M4:TPL-DEPLOY-001": {
+  "number": 312,
+  "id": 5582653842,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/312"
+ },
+ "M4:TPL-RUNBOOK-001": {
+  "number": 313,
+  "id": 5582654386,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/313"
+ },
+ "M4:TPL-GTM-001": {
+  "number": 314,
+  "id": 5582654764,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/314"
+ },
+ "M4:TPL-MEASUREMENT-001": {
+  "number": 315,
+  "id": 5582655211,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/315"
+ },
+ "M4:TPL-LEARNING-001": {
+  "number": 316,
+  "id": 5582656063,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/316"
+ },
+ "M4:TPL-FINAL_DOSSIER-001": {
+  "number": 317,
+  "id": 5582656546,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/317"
+ },
+ "M4-FINAL-001": {
+  "number": 318,
+  "id": 5582656857,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/318"
+ },
+ "EPIC-M5": {
+  "number": 319,
+  "id": 5582657354,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/319"
+ },
+ "EPIC-M6": {
+  "number": 320,
+  "id": 5582659387,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/320"
+ },
+ "EPIC-M7": {
+  "number": 321,
+  "id": 5582659888,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/321"
+ },
+ "M5:TPL-CHARTER-001": {
+  "number": 322,
+  "id": 5582674346,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/322"
+ },
+ "M5:TPL-BUSINESS-001": {
+  "number": 323,
+  "id": 5582674939,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/323"
+ },
+ "M5:TPL-PRD-001": {
+  "number": 324,
+  "id": 5582675395,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/324"
+ },
+ "M5:TPL-UX-001": {
+  "number": 325,
+  "id": 5582675833,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/325"
+ },
+ "M5:TPL-DRP-001": {
+  "number": 326,
+  "id": 5582676305,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/326"
+ },
+ "M5:TPL-FUNCTIONAL_REQ-001": {
+  "number": 327,
+  "id": 5582677239,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/327"
+ },
+ "M5:TPL-ACCEPTANCE_CRITERIA-001": {
+  "number": 328,
+  "id": 5582677725,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/328"
+ },
+ "M5:TPL-NFR-001": {
+  "number": 329,
+  "id": 5582678108,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/329"
+ },
+ "M5:TPL-DATA_INTEGRATION-001": {
+  "number": 330,
+  "id": 5582678619,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/330"
+ },
+ "M5:TPL-ANALYTICS-001": {
+  "number": 331,
+  "id": 5582679075,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/331"
+ },
+ "M5:TPL-ADR-001": {
+  "number": 332,
+  "id": 5582680047,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/332"
+ },
+ "M5:TPL-SPEC-001": {
+  "number": 333,
+  "id": 5582680437,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/333"
+ },
+ "M5:TPL-TEST-001": {
+  "number": 334,
+  "id": 5582680890,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/334"
+ },
+ "M5:TPL-RELEASE-001": {
+  "number": 335,
+  "id": 5582681333,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/335"
+ },
+ "M5:TPL-DEPLOY-001": {
+  "number": 336,
+  "id": 5582681957,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/336"
+ },
+ "M5:TPL-RUNBOOK-001": {
+  "number": 337,
+  "id": 5582682616,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/337"
+ },
+ "M5:TPL-GTM-001": {
+  "number": 338,
+  "id": 5582683053,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/338"
+ },
+ "M5:TPL-MEASUREMENT-001": {
+  "number": 339,
+  "id": 5582683665,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/339"
+ },
+ "M5:TPL-LEARNING-001": {
+  "number": 340,
+  "id": 5582684109,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/340"
+ },
+ "M5:TPL-FINAL_DOSSIER-001": {
+  "number": 341,
+  "id": 5582684616,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/341"
+ },
+ "M5-FINAL-001": {
+  "number": 342,
+  "id": 5582685171,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/342"
  }
 }
