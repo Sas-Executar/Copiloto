@@ -1,0 +1,67 @@
+{
+ "EPIC-A00": {
+  "number": 15,
+  "id": 5582354180,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/15"
+ },
+ "D01-DOC-DDE-001": {
+  "number": 17,
+  "id": 5582356475,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/17"
+ },
+ "D01-DOC-TAP-001": {
+  "number": 18,
+  "id": 5582357418,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/18"
+ },
+ "D01-DOC-MNE-001": {
+  "number": 20,
+  "id": 5582359843,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/20"
+ },
+ "D01-DOC-MRE-001": {
+  "number": 22,
+  "id": 5582361834,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/22"
+ },
+ "D02-DOC-DGRC-001": {
+  "number": 24,
+  "id": 5582362915,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/24"
+ },
+ "D02-DOC-MRC-001": {
+  "number": 26,
+  "id": 5582364756,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/26"
+ },
+ "D02-DOC-PPT-001": {
+  "number": 28,
+  "id": 5582365926,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/28"
+ },
+ "D03-DOC-PFO-001": {
+  "number": 30,
+  "id": 5582367061,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/30"
+ },
+ "D03-DOC-MFO-001": {
+  "number": 31,
+  "id": 5582369582,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/31"
+ },
+ "D18-DOC-PCE-001": {
+  "number": 32,
+  "id": 5582370751,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/32"
+ },
+ "A00-FINAL-001": {
+  "number": 33,
+  "id": 5582371711,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/33"
+ },
+ "EPIC-A01": {
+  "number": 34,
+  "id": 5582372736,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/34"
+ }
+}
