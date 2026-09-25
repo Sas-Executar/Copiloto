@@ -1,0 +1,157 @@
+{
+ "EPIC-M3": {
+  "number": 38,
+  "id": 5582375924,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/38"
+ },
+ "M3:TPL-CHARTER-001": {
+  "number": 43,
+  "id": 5582378471,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/43"
+ },
+ "M3:TPL-BUSINESS-001": {
+  "number": 50,
+  "id": 5582380227,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/50"
+ },
+ "M3:TPL-PRD-001": {
+  "number": 55,
+  "id": 5582381947,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/55"
+ },
+ "M3:TPL-UX-001": {
+  "number": 61,
+  "id": 5582383711,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/61"
+ },
+ "M3:TPL-DRP-001": {
+  "number": 69,
+  "id": 5582385603,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/69"
+ },
+ "M3:TPL-FUNCTIONAL_REQ-001": {
+  "number": 76,
+  "id": 5582387496,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/76"
+ },
+ "M3:TPL-ACCEPTANCE_CRITERIA-001": {
+  "number": 81,
+  "id": 5582389210,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/81"
+ },
+ "M3:TPL-NFR-001": {
+  "number": 88,
+  "id": 5582390874,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/88"
+ },
+ "M3:TPL-DATA_INTEGRATION-001": {
+  "number": 94,
+  "id": 5582392736,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/94"
+ },
+ "M3:TPL-ANALYTICS-001": {
+  "number": 101,
+  "id": 5582394495,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/101"
+ },
+ "M3:TPL-ADR-001": {
+  "number": 107,
+  "id": 5582396356,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/107"
+ },
+ "M3:TPL-SPEC-001": {
+  "number": 112,
+  "id": 5582398070,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/112"
+ },
+ "M3:TPL-TEST-001": {
+  "number": 118,
+  "id": 5582399856,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/118"
+ },
+ "M3:TPL-RELEASE-001": {
+  "number": 123,
+  "id": 5582401586,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/123"
+ },
+ "M3:TPL-DEPLOY-001": {
+  "number": 129,
+  "id": 5582404018,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/129"
+ },
+ "M3:TPL-RUNBOOK-001": {
+  "number": 137,
+  "id": 5582406263,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/137"
+ },
+ "M3:TPL-GTM-001": {
+  "number": 143,
+  "id": 5582408501,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/143"
+ },
+ "M3:TPL-MEASUREMENT-001": {
+  "number": 150,
+  "id": 5582410494,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/150"
+ },
+ "M3:TPL-LEARNING-001": {
+  "number": 157,
+  "id": 5582412896,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/157"
+ },
+ "M3:TPL-FINAL_DOSSIER-001": {
+  "number": 162,
+  "id": 5582414841,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/162"
+ },
+ "M3-FINAL-001": {
+  "number": 169,
+  "id": 5582416692,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/169"
+ },
+ "EPIC-M4": {
+  "number": 176,
+  "id": 5582418741,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/176"
+ },
+ "M4:TPL-CHARTER-001": {
+  "number": 181,
+  "id": 5582420779,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/181"
+ },
+ "M4:TPL-BUSINESS-001": {
+  "number": 188,
+  "id": 5582422934,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/188"
+ },
+ "M4:TPL-PRD-001": {
+  "number": 195,
+  "id": 5582425116,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/195"
+ },
+ "M4:TPL-UX-001": {
+  "number": 201,
+  "id": 5582427143,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/201"
+ },
+ "M4:TPL-DRP-001": {
+  "number": 207,
+  "id": 5582428979,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/207"
+ },
+ "M4:TPL-FUNCTIONAL_REQ-001": {
+  "number": 213,
+  "id": 5582431068,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/213"
+ },
+ "M4:TPL-ACCEPTANCE_CRITERIA-001": {
+  "number": 220,
+  "id": 5582433020,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/220"
+ },
+ "M4:TPL-NFR-001": {
+  "number": 225,
+  "id": 5582434967,
+  "url": "https://github.com/Sas-Executar/Copiloto/issues/225"
+ }
+}
